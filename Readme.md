@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Sne Syn](https://up.htmlacademy.ru/adaptive/16/user/543355).
-* Наставник: `Неизвестно`.
+* Наставник: [Ксения Торкова](https://up.htmlacademy.ru/adaptive/16/user/23249).
 
 ---
 
