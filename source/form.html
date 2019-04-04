@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+
+<body class="inner-page">
+  <header class="header">
+    <a class="header__logo" href="index.html">
+      <img class="header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Магазин «Мишка»">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1 class="page-title">Вязание на заказ</h1>
+    <section class="individual-order">
+      <p class="individual-order__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа
+        и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form action="https://echo.htmlacademy.ru" class="form individual-order__form" method="post">
+      <div class="radio form__radio">
+        <fieldset>
+          <legend class="radio__legend">Тип</legend>
+          <label class="radio__field" for="accessory">
+            <input class="visually-hidden" id="accessory" name="type" type="radio" checked>
+            <span class="radio__button"></span> Аксессуар для интерьера
+          </label>
+          <label class="radio__field" for="toy">
+            <input class="visually-hidden" id="toy" name="type" type="radio">
+            <span class="radio__button"></span> Детская игрушка
+          </label>
+        </fieldset>
+      </div>
+      <div class="checkbox form__checkbox">
+        <div class="checkbox__container">
+          <fieldset>
+            <legend class="checkbox__legend">Цвет</legend>
+            <label class="checkbox__field" for="white">
+              <input checked class="visually-hidden" id="white" name="colors" type="checkbox">
+              <span class="checkbox__indication"></span> Белый
+            </label>
+            <label class="checkbox__field" for="grey">
+              <input checked class="visually-hidden" id="grey" name="colors" type="checkbox">
+              <span class="checkbox__indication"></span> Серый
+            </label>
+            <label class="checkbox__field" for="tiffany">
+              <input class="visually-hidden" id="tiffany" name="colors" type="checkbox">
+              <span class="checkbox__indication"></span> «Тиффани»
+            </label>
+            <label class="checkbox__field" for="black">
+              <input class="visually-hidden" id="black" name="colors" type="checkbox">
+              <span class="checkbox__indication"></span> Черный
+            </label>
+            <label class="checkbox__field" for="rose">
+              <input class="visually-hidden" id="rose" name="colors" type="checkbox">
+              <span class="checkbox__indication"></span> Розовый
+            </label>
+            <label class="checkbox__field" for="orange">
+              <input class="visually-hidden" id="orange" name="colors" type="checkbox">
+              <span class="checkbox__indication"></span> Оранжевый
+            </label>
+          </fieldset>
+        </div>
+        <div class="user-info form__user-info">
+          <legend class="checkbox__legend">ФИО</legend>
+          <div class="user-info__field">
+            <label class="user-info__name" for="name">Имя:
+              <input id="name" name="user" placeholder="Введите ваше имя" type="text">
+            </label>
+          </div>
+          <div class="user-info__field">
+            <label class="user-info__surname" for="surname">Фамилия:
+              <input id="surname" name="user" placeholder="Укажите фамилию" type="text">
+            </label>
+          </div>
+          <div class="user-info__field">
+            <label class="user-info__patronymic" for="patronymic">Отчество:
+              <input id="patronymic" name="user" placeholder="Отчество, если желаете" type="text">
+            </label>
+          </div>
+          <div class="user-info__field">
+                <label class="user-info__number" for="number">тел<input id="number" name="number" placeholder="+7 XXX XX XX" type="number"></label>
+          </div>
+          <div class="user-info__field">
+            <label class="user-info__email" for="email">e-mail<input id="email" name="email" placeholder="Ваш Email"
+                type="email"></label>
+          </div>
+          <label class="user-info__text" for="comment">доп
+            <textarea id="comment" name="comment" placeholder="Опишите все ваши пожелания к заказу" rows="10"></textarea>
+          </label>
+        </div>
+        <small>Поля обязательны для заполнения</small>
+        <button class="btn individual-order__btn" type="submit">Отправить</button>
+        </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <a class="footer__logo">
+      <img class="footer__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Магазин «Мишка»">
+    </a>
+    <ul class="social__list">
+      <li class="social__item social__item--instagram">
+        <a href="#" tabindex="0"><span class="visually-hidden">Instagram</span></a>
+      </li>
+      <li class="social__item social__item--facebook">
+        <a href="#" tabindex="0"><span class="visually-hidden">Facebook</span></a>
+      </li>
+      <li class="social__item social__item--twitter">
+        <a href="#" tabindex="0"><span class="visually-hidden">Twitter</span></a>
+      </li>
+    </ul>
+    <span>Разработано</span>
+    <a class="social__copyright" href="https://htmlacademy.ru/intensive/htmlcss" tabindex="0">
+      <span class="visually-hidden">HTML Academy</span>
+    </a>
+  </footer>
+</body>
+
+</html>
