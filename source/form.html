@@ -38,7 +38,7 @@
         и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form action="https://echo.htmlacademy.ru" class="form individual-order__form" method="post">
       <div class="radio form__radio">
-        <fieldset>
+        <fieldset class="form__fieldset">
           <legend class="radio__legend">Тип</legend>
           <label class="radio__field" for="accessory">
             <input class="visually-hidden" id="accessory" name="type" type="radio" checked>
@@ -52,7 +52,7 @@
       </div>
       <div class="checkbox form__checkbox">
         <div class="checkbox__container">
-          <fieldset>
+          <fieldset class="form__fieldset">
             <legend class="checkbox__legend">Цвет</legend>
             <label class="checkbox__field" for="white">
               <input checked class="visually-hidden" id="white" name="colors" type="checkbox">
@@ -81,6 +81,7 @@
           </fieldset>
         </div>
         <div class="user-info form__user-info">
+          <fieldset class="form__fieldset">
           <legend class="checkbox__legend">ФИО</legend>
           <div class="user-info__field">
             <label class="user-info__name" for="name">Имя:
@@ -107,6 +108,7 @@
           <label class="user-info__text" for="comment">доп
             <textarea id="comment" name="comment" placeholder="Опишите все ваши пожелания к заказу" rows="10"></textarea>
           </label>
+          </fieldset>
         </div>
         <small>Поля обязательны для заполнения</small>
         <button class="btn individual-order__btn" type="submit">Отправить</button>
