@@ -37,73 +37,108 @@
       <h2 class="visually-hidden">Товары</h2>
       <ul class="category__list">
         <li class="category__item">
-          <img class="category-item__img" src="http://placehold.it/150x100" alt="Изображение игрушки-зайчика">
-          <div class="category-item__description">
-            <p class="category-item__title">Зайчик-попрыгайчик</p>
-            <p class="category-item__size">Рост 30 см, вес 200 г</p>
-            <div class="category__price-info">
-              <p class="category__price">1200 руб.</p>
-              <a class="category__basket" href="#">
-                <span class="visually-hidden">Добавить в корзину</span>
-              </a>
-            </div>
+          <a class="category__link" href="#">
+            <img class="category__img" src="http://placehold.it/150x100" alt="Изображение игрушки-зайчика">
+          </a>
+          <div class="category__description">
+            <a class="category__title" href="#">Зайчик-попрыгайчик</a>
+            <table class="category-table table">
+              <tr class="category-table__row table__row">
+                <th class="category-table__header table__header">Рост</th>
+                <td class="category-table__cell table__cell">30 см,</td>
+              </tr>
+              <tr class="category-table__row table__row">
+                <th class="category-table__header table__header">вес</th>
+                <td class="category-table__cell table__cell">200 г</td>
+              </tr>
+              <tr class="category-table__row table__row table__row">
+                <th class="visually-hidden">Цена</th>
+                <td class="category-table__cell table__cell">1 200 руб.</td>
+              </tr>
+            </table>
+            <a class="category__basket" href="#">
+              <span class="visually-hidden">Добавить в корзину</span>
+            </a>
           </div>
         </li>
         <li class="category__item">
-          <img class="category-item__img" src="http://placehold.it/150x100" alt="Изображение корзинки для белья">
-          <div class="category-item__description">
-            <p class="category-item__title">Корзинка для белья</p>
-            <p class="category-item__size">Диаметр 15 см, высота 10 см</p>
-            <div class="category__price-info">
-              <p class="category-item__price">690 руб.</p>
-              <a class="category-item__basket" href="#">
-                <span class="visually-hidden">Добавить в корзину</span>
-              </a>
-            </div>
+          <a class="category__link" href="#">
+            <img class="category__img" src="http://placehold.it/150x100" alt="Изображение корзинки для белья">
+          </a>
+          <div class="category__description">
+            <a class="category__title" href="#">Корзинка для белья</a>
+            <table class="category-table table">
+              <tr class="category-table__row table__row">
+                <th class="category-table__header table__header">Диаметр</th>
+                <td class="category-table__cell table__cell">15 см,</td>
+              </tr>
+              <tr class="category-table__row table__row">
+                <th class="category-table__header table__header">высота</th>
+                <td class="category-table__cell table__cell">10 см</td>
+              </tr>
+              <tr class="category-table__row table__row table__row">
+                <th class="visually-hidden">Цена</th>
+                <td class="category-table__cell table__cell">690 руб.</td>
+              </tr>
+            </table>
+            <a class="category__basket" href="#">
+              <span class="visually-hidden">Добавить в корзину</span>
+            </a>
           </div>
         </li>
         <li class="category__item">
-          <img class="category-item__img" src="http://placehold.it/150x100"
-            alt="Изображение большой корзинки для игрушек">
-          <div class="category-item__description">
-            <p class="category-item__title">Большая корзинка для игрушек</p>
-            <p class="category-item__size">Диаметр 30 см, высота 30см</p>
-            <div class="category__price-info">
-              <p class="category-item__price">1 500 руб.</p>
-              <a class="category-item__basket" href="#">
-                <span class="visually-hidden">Добавить в корзину</span>
-              </a>
-            </div>
+          <a class="category__link" href="#">
+            <img class="category__img" src="http://placehold.it/150x100" alt="Изображение большой корзинки для игрушек">
+          </a>
+          <div class="category__description">
+            <a class="category__title" href="#">Большая корзинка для игрушек</a>
+            <table class="category-table table">
+              <tr class="category-table__row table__row">
+                <th class="category-table__header table__header">Диаметр</th>
+                <td class="category-table__cell table__cell">30 см,</td>
+              </tr>
+              <tr class="category-table__row table__row">
+                <th class="category-table__header table__header">высота</th>
+                <td class="category-table__cell table__cell">30см</td>
+              </tr>
+              <tr class="category-table__row table__row table__row">
+                <th class="visually-hidden">Цена</th>
+                <td class="category-table__cell table__cell">1 500 руб.</td>
+              </tr>
+            </table>
+            <a class="category__basket" href="#">
+              <span class="visually-hidden">Добавить в корзину</span>
+            </a>
           </div>
         </li>
       </ul>
     </section>
     <section class="demonstration">
       <h2 class="demonstration__title">Процесс производства</h2>
-      <video class="demonstration__video">
-        <source src="http://placehold.it/150x100">
-      </video>
-      <p class="demonstration__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <div class="demonstration__video">
+        <img src="http://placehold.it/150x100" alt="Видео с описанием процесса производства товаров">
+      </div>
+      <p class="demonstration__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+        как появляются наши товары.</p>
       <a class="btn demonstration__btn" href="#">Сделать заказ</a>
-    </section> 
+    </section>
   </main>
   <footer class="footer">
-      <a class="footer__logo">
-          <img class="footer__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Магазин «Мишка»">
-        </a>
-    <ul class="social__list">
+    <a class="footer__logo">
+      <img class="footer__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Магазин «Мишка»">
+    </a>
+    <ul class="social">
       <li class="social__item social__item--instagram">
-        <a href="#" tabindex="0"><span class="visually-hidden">Instagram</span></a>
+        <a href="#"><span class="visually-hidden">Instagram</span></a>
       </li>
       <li class="social__item social__item--facebook">
-          <a href="#" tabindex="0"><span class="visually-hidden">Facebook</span></a>
+        <a href="#"><span class="visually-hidden">Facebook</span></a>
       </li>
       <li class="social__item social__item--twitter">
-          <a href="#" tabindex="0"><span class="visually-hidden">Twitter</span></a>
+        <a href="#"><span class="visually-hidden">Twitter</span></a>
       </li>
     </ul>
-    <span>Разработано</span>
-    <a class="social__copyright" href="https://htmlacademy.ru/intensive/htmlcss" tabindex="0"><span class="visually-hidden">HTML Academy</span></a>
+    <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано<span class="visually-hidden">HTML Academy</span></a>
   </footer>
 
 </body>
