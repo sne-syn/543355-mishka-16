@@ -6,13 +6,13 @@
 @import "components/card";
 @import "components/modal";
 @import "components/slider";
+@import "components/type";
 
-@import "layout/footer";
-@import "layout/form";
+@import "layout/base";
 @import "layout/header";
 @import "layout/navigation";
+@import "layout/footer";
 
-@import "pages/base";
 @import "pages/catalog";
 @import "pages/form";
 @import "pages/index";
