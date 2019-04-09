@@ -1,0 +1,24 @@
+
+.menu__item {
+  box-sizing: border-box;
+  border-top: 2px solid $color-tertiary;
+  padding-top: 22px;
+  padding-bottom: 25px;
+}
+
+.menu__link {
+  padding-left: 76px;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 1.1px;
+  font-weight: bold;
+  color: $color-secondary;
+
+  &:hover {
+    color: rgba($color-secondary, 0.6);
+  }
+
+  &:active {
+    color: rgba($color-secondary, 0.3);
+  }
+}
