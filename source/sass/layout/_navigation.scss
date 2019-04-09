@@ -1,7 +1,28 @@
-.site-list {
-  width: 320px;
-  margin: 0;
+
+.main-nav__label {
+  display: inline-block;
+  height: 20px;
+  width: 800px;
+  margin-bottom: 20px;
+  border: 1px solid #fff;
+
+  cursor: pointer;
+}
+.main-nav__toggle {
+  display: none;
+}
+
+.main-nav__list {
+  width: 350px;
+  overflow: hidden;
+  max-height: 0;
   padding: 0;
+  margin: 0 auto;
+  -webkit-transition: all 0.3s ease;
+}
+
+.main-nav__toggle[type="checkbox"]:checked + .main-nav__list {
+  max-height: 320px;
 }
 
 .site-list__item {

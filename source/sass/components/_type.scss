@@ -10,15 +10,12 @@
   box-sizing: border-box;
   font-size: 19px;
   line-height: 24px;
-
-  -webkit-transition: all 0.3s ease;;
-  -moz-transition: all 0.3s ease;;
-  -o-transition: all 0.3s ease;;
+  cursor: pointer;
   transition: all 0.3s ease;
 
   // Увеличивается текст при наведении, а должна увеличиваться только кнопка
   &:hover {
-    transform: scaleY(5px);
+    transform: scaleY(1.1);
   }
 }
 
@@ -37,10 +34,10 @@
   line-height: 24px;
   color: $color-white;
 
-  &:hover {
-    color: $color-white;
-    // transform: translateY(5px);
-  }
+  // &:hover {
+  //   color: $color-white;
+  //   // transform: translateY(5px);
+  // }
 
   &:active {
     color: rgba($color-white, 0.4);
