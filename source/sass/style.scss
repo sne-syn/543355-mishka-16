@@ -2,11 +2,6 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
-@import "base/animation";
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
-
 @import "components/button";
 @import "components/card";
 @import "components/modal";
@@ -16,3 +11,8 @@
 @import "layout/form";
 @import "layout/header";
 @import "layout/navigation";
+
+@import "pages/base";
+@import "pages/catalog";
+@import "pages/form";
+@import "pages/index";
