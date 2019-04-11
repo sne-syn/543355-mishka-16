@@ -1,4 +1,14 @@
+.reviews__autor-name {
+  font-size: 17px;
+  font-weight: bold;
+  color: $color-secondary;
+}
+
+.reviews__autor-login {
+  font-size: 17px;
+}
+
 .reviews__btn {
   display: block;
-  width: auto;
+  width: 260px;
 }
