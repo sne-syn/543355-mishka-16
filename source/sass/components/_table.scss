@@ -1,10 +1,12 @@
 .table {
   text-align: left;
+
 }
 
 // Не могу включить бордер в таблице
 .table__row {
   border-color: red;
+  vertical-align: top;
 }
 
 .table__header {
