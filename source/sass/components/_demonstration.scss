@@ -1,13 +1,4 @@
-.card__list {
-  margin: 0;
-  padding: 0;
-}
-
-.card__description{
-  padding: 0 20px;
-}
-
-.card__item {
+.demonstration {
   width: 260px;
   margin-bottom: 30px;
   border: 2px solid $color-tertiary;
@@ -25,16 +16,11 @@
   }
 }
 
-.card__title {
-  font-size: 17px;
-  line-height: 24px;
-  color: $color-secondary;
-
-  &:hover {
-    color: rgba($color-secondary, 0.6)
-  }
-
-  &:active {
-    color: rgba($color-secondary, 0.3)
-  }
+.demonstration .demonstration__title {
+  padding: 0 20px;
 }
+
+.demonstration__description {
+  padding: 0 20px
+}
+

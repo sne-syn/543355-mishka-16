@@ -1,9 +1,9 @@
 .popular-product {
-  padding-left: 30px;
+  padding: 0 20px;
 }
 
 .popular-product__title {
-margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .popular-product__mark {
@@ -16,7 +16,6 @@ margin-bottom: 5px;
 }
 
 .popular-product__description {
-  width: 260px;
   text-align: left;
 }
 
@@ -26,5 +25,4 @@ margin-bottom: 5px;
 
 .popular-product__btn {
   display: block;
-  width: 260px;
 }

@@ -1,8 +1,7 @@
 .heading__primary {
   margin: 0;
   padding: 0;
-  padding-left: 35px;
-  width: 250px;
+  padding: 0 20px;
   font-size: 27px;
   font-weight: bold;
   text-align: center;
@@ -24,4 +23,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: #fcfcfc;
+}
+
+.heading__catalog,
+.heading__form {
+  padding-top: 75px;
+  padding-bottom: 80px;
+  background-color: $color-background;
 }
