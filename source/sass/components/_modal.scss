@@ -1,0 +1,19 @@
+.modal {
+}
+.modal__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.modal__text {
+  text-align: center;
+}
+
+.modal__btn {
+  width: 260px;
+  color: $color-white;
+  background-color: $color-green-light;
+  border: none;
+}
