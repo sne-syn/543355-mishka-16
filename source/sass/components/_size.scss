@@ -13,12 +13,11 @@
   border: 2px solid $color-tertiary;
 
   &:hover {
-    font-weight: normal;
     border: 2px solid rgba(68, 68, 68, 0.3);
   }
 
   &:active {
-    font-weight: normal;
     border: 2px solid $color-green-light;
+    outline: none;
   }
 }

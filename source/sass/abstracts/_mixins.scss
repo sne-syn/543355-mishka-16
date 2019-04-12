@@ -1,0 +1,28 @@
+@mixin indent {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin heading-primary {
+  margin: 0;
+  padding: 0 20px;
+  font-size: 27px;
+  font-weight: bold;
+  text-align: center;
+  color: $color-secondary;
+}
+
+@mixin heading-secondary {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  color: $color-secondary;
+}
+
+@mixin heading-colorblock {
+  padding-top: 75px;
+  padding-bottom: 80px;
+  background-color: $color-background;
+}

@@ -14,11 +14,11 @@
 
   &:hover {
     padding-bottom: 39px;
+    margin-top: -5px;
   }
 
   &:hover .type__link {
     color: $color-white;
-    margin-top: -5px;
   }
 
   &:active .type__link {

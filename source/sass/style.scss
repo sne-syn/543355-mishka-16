@@ -7,7 +7,9 @@
 @import "components/card";
 @import "components/contacts";
 @import "components/demonstration";
-@import "components/heading";
+@import "components/heading-catalog";
+@import "components/heading-index";
+@import "components/heading-form";
 @import "components/menu";
 @import "components/modal";
 @import "components/popular-product";
@@ -22,7 +24,3 @@
 @import "layout/header";
 @import "layout/main-nav";
 @import "layout/footer";
-
-@import "pages/catalog";
-@import "pages/form";
-@import "pages/index";

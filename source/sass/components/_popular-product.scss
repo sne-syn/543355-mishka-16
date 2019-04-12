@@ -3,6 +3,7 @@
 }
 
 .popular-product__title {
+  @include heading-secondary;
   margin-bottom: 5px;
 }
 

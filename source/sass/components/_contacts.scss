@@ -1,3 +1,7 @@
+.contacts__title {
+  @include heading-secondary;
+}
+
 .contacts__email {
   position: relative;
   color: $color-primary;
@@ -18,7 +22,7 @@
   left: 0px;
   width: 185px;
   height: 1px;
-  background-color: $color-primary;
+  background-color: $color-green-light;
 }
 
 .contacts__email:hover::before {
