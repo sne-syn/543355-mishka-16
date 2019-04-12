@@ -1,0 +1,15 @@
+.table {
+  border-collapse: collapse;
+}
+
+.table__row {
+  vertical-align: top;
+}
+
+.table__header {
+  width: 90px;
+}
+
+.table__row--border {
+  border-bottom: 1px solid #ececec;
+}

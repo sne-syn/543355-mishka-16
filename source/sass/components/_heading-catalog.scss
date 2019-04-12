@@ -1,0 +1,8 @@
+.heading-catalog {
+  @include heading-colorblock;
+}
+
+.heading-catalog__text {
+  @include indent;
+  @include heading-primary;
+}

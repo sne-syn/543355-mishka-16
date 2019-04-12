@@ -1,0 +1,23 @@
+.size__item {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.size__btn {
+  width: 80px;
+  min-height: 50px;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  color: $color-primary;
+  border: 2px solid $color-tertiary;
+
+  &:hover {
+    border: 2px solid rgba(68, 68, 68, 0.3);
+  }
+
+  &:active {
+    border: 2px solid $color-green-light;
+    outline: none;
+  }
+}

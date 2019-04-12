@@ -1,0 +1,22 @@
+.reviews__title {
+  @include heading-secondary;
+}
+
+.reviews__list {
+  list-style: none;
+}
+
+.reviews__autor-name {
+  font-size: 17px;
+  font-weight: bold;
+  color: $color-secondary;
+}
+
+.reviews__autor-login {
+  font-size: 17px;
+}
+
+.reviews__btn {
+  display: block;
+  width: 260px;
+}

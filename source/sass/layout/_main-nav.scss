@@ -1,0 +1,29 @@
+.main-nav__label {
+  position: absolute;
+  top: 20px;
+  left: 270px;
+  display: inline-block;
+  height: 20px;
+  width: 110px;
+  margin-bottom: 20px;
+  border: 1px solid #ffffff;
+
+  cursor: pointer;
+}
+
+.main-nav__toggle {
+  display: none;
+}
+
+.main-nav__list {
+  overflow: hidden;
+  max-height: 0;
+  margin: 0 auto;
+  padding: 0 20px;
+  list-style: none;
+  transition: all 0.3s ease;
+}
+
+.main-nav__toggle[type="checkbox"]:checked + .main-nav__list {
+  max-height: 320px;
+}

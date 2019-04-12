@@ -1,0 +1,29 @@
+.popular-product {
+  padding: 0 20px;
+}
+
+.popular-product__title {
+  @include heading-secondary;
+  margin-bottom: 5px;
+}
+
+.popular-product__mark {
+  margin: 0;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $color-green-light;
+}
+
+.popular-product__description {
+  line-height: 24px;
+}
+
+.popular-product__price {
+  text-align: center;
+}
+
+.popular-product__btn {
+  display: block;
+}

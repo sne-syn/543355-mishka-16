@@ -1,0 +1,29 @@
+.modal {
+  margin-bottom: 20px;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+}
+
+.modal__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  color: $color-secondary;
+}
+
+.modal__btn {
+  width: 260px;
+  margin-bottom: 45px;
+  color: $color-white;
+  background-color: $color-green-light;
+  border: none;
+
+  &:hover {
+    background-color: rgba($color-green-light, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($color-green-light, 0.3);
+    outline: none;
+  }
+}
