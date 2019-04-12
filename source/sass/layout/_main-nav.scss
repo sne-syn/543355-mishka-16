@@ -6,7 +6,7 @@
   height: 20px;
   width: 110px;
   margin-bottom: 20px;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
 
   cursor: pointer;
 }
@@ -24,6 +24,6 @@
   transition: all 0.3s ease;
 }
 
-.main-nav__toggle[type="checkbox"]:checked+.main-nav__list {
+.main-nav__toggle[type="checkbox"]:checked + .main-nav__list {
   max-height: 320px;
 }
