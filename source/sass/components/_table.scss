@@ -1,14 +1,16 @@
-.table {
-  text-align: left;
 
+.table {
+ border-collapse: collapse;
 }
 
-// Не могу включить бордер в таблице
 .table__row {
-  border-color: red;
   vertical-align: top;
 }
 
 .table__header {
   width: 90px;
+}
+
+.table__row--border {
+  border-bottom: 1px solid #ececec;
 }

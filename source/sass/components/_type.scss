@@ -2,16 +2,27 @@
 
 }
 .type__item {
-  padding: 27px 20px;
+  padding-top: 35px;
+  padding-bottom: 34px;
+  padding-left: 39px;
   box-sizing: border-box;
   font-size: 19px;
   line-height: 24px;
+  font-weight: bold;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all;
 
-  // Увеличивается текст при наведении, а должна увеличиваться только кнопка
   &:hover {
-    transform: scaleY(1.1);
+    padding-bottom: 39px;
+  }
+
+  &:hover .type__link {
+    color: $color-white;
+    margin-top: -5px;
+  }
+
+  &:active .type__link {
+    color: rgba($color-white, 0.3);
   }
 }
 
@@ -29,13 +40,4 @@
   font-size: 19px;
   line-height: 24px;
   color: $color-white;
-
-  // &:hover {
-  //   color: $color-white;
-  //   // transform: translateY(5px);
-  // }
-
-  &:active {
-    color: rgba($color-white, 0.4);
-  }
 }

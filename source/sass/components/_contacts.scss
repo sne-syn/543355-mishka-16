@@ -11,16 +11,20 @@
   }
 }
 
-.table__cell--email {
-  position: relative;
-}
-
-.table__cell--email::before {
+.contacts__email::before {
   position: absolute;
   content: "";
-  top: 28px;
+  top: 20px;
   left: 0px;
   width: 185px;
   height: 1px;
   background-color: $color-primary;
+}
+
+.contacts__email:hover::before {
+  background-color: rgba(70, 193, 174, 1);
+}
+
+.contacts__email:active::before {
+  background-color: rgba(70, 193, 174, 0.3);
 }
