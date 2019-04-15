@@ -16,14 +16,38 @@
   color: $color-green-light;
 }
 
-.popular-product__description {
+.popular-product__text {
   line-height: 24px;
+  width: 260px;
+}
+
+.popular-product__table {
+  width: 260px;
 }
 
 .popular-product__price {
+  width: 130px;
   text-align: center;
 }
 
 .popular-product__btn {
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+
+  .popular-product__title {
+    display: inline-block;
+  }
+
+  .popular-product__mark {
+    display: inline-block;
+    width: 85px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .popular-product {
+  }
 }

@@ -1,0 +1,23 @@
+.nav-info {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+
+  .nav-info {
+    display: flex;
+    width: 400px;
+    @include indent-reset;
+    list-style: none;
+  }
+
+  .nav-info__item {
+    display: inline-block;
+  }
+
+  .nav-info__link {
+    font-weight: bold;
+    line-height: 24px;
+    color: $color-secondary;
+  }
+}

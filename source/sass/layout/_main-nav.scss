@@ -1,12 +1,15 @@
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .main-nav__label {
   position: absolute;
   top: 20px;
-  left: 270px;
+  left: 100px;
   display: inline-block;
   height: 20px;
   width: 110px;
-  margin-bottom: 20px;
-  border: 1px solid #ffffff;
 
   cursor: pointer;
 }
@@ -16,14 +19,39 @@
 }
 
 .main-nav__list {
+  @include indent-reset;
   overflow: hidden;
   max-height: 0;
-  margin: 0 auto;
-  padding: 0 20px;
   list-style: none;
   transition: all 0.3s ease;
 }
 
 .main-nav__toggle[type="checkbox"]:checked + .main-nav__list {
   max-height: 320px;
+}
+
+@media (min-width: $tablet-width)  {
+  .main-nav {
+    display: block;
+    width: auto;
+    margin: 0;
+  }
+
+  .main-nav__label {
+    display: none;
+  }
+
+  .main-nav__list {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     width: 670px;
+     min-height: 85px;
+  }
+}
+
+@media (min-width: $desktop-width)  {
+  .main-nav__list {
+    width: 1150px;
+ }
 }

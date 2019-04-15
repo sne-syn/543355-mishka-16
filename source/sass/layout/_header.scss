@@ -1,3 +1,33 @@
 .header {
-  display: block;
+  position: relative;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    width: 768px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header__logo {
+    width: 342px;
+    height: 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    width: 1150px;
+  }
+
+  .header__logo {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 100;
+  }
 }

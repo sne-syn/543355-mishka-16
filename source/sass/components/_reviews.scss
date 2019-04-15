@@ -3,7 +3,12 @@
 }
 
 .reviews__list {
+  @include indent-reset;
   list-style: none;
+}
+
+.reviews__text {
+
 }
 
 .reviews__autor-name {
@@ -19,4 +24,19 @@
 .reviews__btn {
   display: block;
   width: 260px;
+}
+
+@media (min-width: $tablet-width)  {
+  .reviews__text {
+    width: 670px;
+  }
+  .reviews__btn {
+    width: 176px;
+  }
+}
+
+@media (min-width: $desktop-width)  {
+  .reviews__text {
+    width: 770px;
+  }
 }

@@ -8,7 +8,7 @@
 }
 
 .about-us__list {
-  @include indent;
+  @include indent-reset;
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
@@ -17,5 +17,21 @@
 }
 
 .about-us__item {
+  width: 300px;
   padding-top: 90px;
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .about-us__columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+
 }

@@ -12,13 +12,20 @@
   font-weight: 700;
 }
 
+
 body {
-  @include indent;
+  @include indent-reset;
   min-width: 320px;
   font-size: 15px;
   line-height: 30px;
   font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
   color: $color-primary;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -31,4 +38,26 @@ a {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+.wrapper {
+  min-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .wrapper {
+  padding-left: 52px;
+  padding-right: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+  padding-left: 52px;
+  padding-right: 52px;
+  }
 }

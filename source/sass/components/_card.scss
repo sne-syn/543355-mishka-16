@@ -1,5 +1,5 @@
 .card__list {
-  @include indent;
+  @include indent-reset;
 }
 
 .card__description {

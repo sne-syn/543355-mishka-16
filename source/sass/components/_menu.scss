@@ -1,8 +1,13 @@
 .menu__item {
   box-sizing: border-box;
-  border-top: 1px solid $color-tertiary;
   padding-top: 22px;
   padding-bottom: 25px;
+  border-top: 1px solid $color-tertiary;
+}
+
+.menu__item--new,
+.menu__item--sale {
+  display: none;
 }
 
 .menu__link {
@@ -18,5 +23,38 @@
 
   &:active {
     color: rgba($color-secondary, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .menu__item {
+    display: flex;
+    @include indent-reset;
+  }
+
+  .menu__item--search {
+    order: -1;
+    width: 85px;
+  }
+
+  .menu__item--bucket {
+    order: -1;
+    width: 320px;
+    border-top: none;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .menu__item--search,
+  .menu__item--bucket {
+    order: 0;
   }
 }
