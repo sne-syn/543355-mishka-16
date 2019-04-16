@@ -1,5 +1,28 @@
+.contacts {
+  width: 320px;
+  padding-left: 15px;
+}
+
 .contacts__title {
-  @include heading-secondary;
+  width: 260px;
+  padding-left: 2px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.contacts__table {
+  margin-bottom: 50px;
+}
+
+.contacts__table-row  .contacts__table-header {
+  width: 75px;
+  padding-left: 3px;
+  padding-bottom: 29px;
+}
+.contacts__direction {
+  @include indent-reset;
+  width: 156px;
 }
 
 .contacts__email {

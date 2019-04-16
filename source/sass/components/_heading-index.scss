@@ -1,16 +1,25 @@
 .heading-index {
+  width: 320px;
   min-height: 380px;
   background-image: url("../../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 720px auto;
+  background-position: 50% -15px;
+  background-size: 500 auto;
   background-color: #fcfcfc;
 }
 
 .heading-index__text {
   @include heading-primary;
   @include indent-reset;
-  width: 250px;
+}
+
+.heading-index__text--wrapper {
+  min-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 74px;
 }
 
 @media (min-width: $tablet-width) {

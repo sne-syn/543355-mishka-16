@@ -1,28 +1,48 @@
+.reviews {
+  width: 360px;
+  margin-bottom: 88px;
+}
+
+.reviews__wrapper {
+  width: 260px;
+  padding-left: 15px;
+}
+
 .reviews__title {
   @include heading-secondary;
+  padding-left: 2px;
+  margin-bottom: 24px;
 }
 
 .reviews__list {
   @include indent-reset;
+  margin-bottom: 30px;
   list-style: none;
 }
 
 .reviews__text {
-
+  padding-left: 3px;
+  margin-bottom: 24px;
 }
 
 .reviews__autor-name {
+  margin-bottom: -16px;
+  padding-left: 4px;
   font-size: 17px;
   font-weight: bold;
   color: $color-secondary;
 }
 
 .reviews__autor-login {
+  padding-left: 4px;
   font-size: 17px;
+  margin-bottom: 24px;
 }
 
 .reviews__btn {
   display: block;
+  margin-left: 5px;
+  padding-left: 20px;
   width: 260px;
 }
 

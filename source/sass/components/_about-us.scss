@@ -1,14 +1,18 @@
 .about-us {
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 }
 
 .about-us__title {
   @include heading-secondary;
+  width: 260px;
+  padding-left: 17px;
 }
 
 .about-us__list {
   @include indent-reset;
+  padding-left: 15px;
+  padding-bottom: 5px;
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
@@ -17,8 +21,29 @@
 }
 
 .about-us__item {
-  width: 300px;
-  padding-top: 90px;
+  width: 255px;
+  padding-top: 84px;
+  padding-left: 3px;
+}
+
+.about-us__item--eco {
+  width: 195px;
+}
+
+.about-us__item--style {
+  width: 220px;
+}
+
+.about-us__item--likes {
+  width: 200px;
+}
+
+.about-us__item--handmade {
+  margin-top: -7px;
+}
+
+.about-us__item--giftbox {
+  width: 240px;
 }
 
 

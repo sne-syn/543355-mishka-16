@@ -1,6 +1,14 @@
+.slider__toggle-box {
+  @include indent-reset;
+  margin-bottom: 38px;
+}
+
 .slider__toggle {
+  @include indent-reset;
+  position: relative;
   display: inline-block;
   vertical-align: top;
-  width: 130px;
+  width: 128px;
   border: 2px solid $color-tertiary;
+  min-height: 51px;
 }
