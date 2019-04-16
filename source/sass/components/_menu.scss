@@ -29,6 +29,7 @@
 @media (min-width: $tablet-width) {
   .menu__item {
     display: flex;
+
     @include indent-reset;
   }
 
@@ -42,7 +43,6 @@
     width: 320px;
     border-top: none;
   }
-
 }
 
 @media (min-width: $desktop-width) {

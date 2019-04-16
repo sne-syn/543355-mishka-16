@@ -1,5 +1,4 @@
 .type {
-  width: 320px;
   margin-top: -96px;
   margin-bottom: 28px;
 }
@@ -53,18 +52,10 @@
     min-width: 670px;
     margin-top: -112px;
   }
-
-  .type__item {
-    width: 332px;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .type {
     min-width: 1050px;
-  }
-
-  .type__item {
-    width: 525px;
   }
 }

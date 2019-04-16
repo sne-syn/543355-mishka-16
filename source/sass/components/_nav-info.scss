@@ -3,10 +3,10 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .nav-info {
     display: flex;
     width: 400px;
+
     @include indent-reset;
     list-style: none;
   }

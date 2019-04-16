@@ -30,7 +30,7 @@
   max-height: 320px;
 }
 
-@media (min-width: $tablet-width)  {
+@media (min-width: $tablet-width) {
   .main-nav {
     display: block;
     width: auto;
@@ -42,16 +42,16 @@
   }
 
   .main-nav__list {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
-     width: 670px;
-     min-height: 85px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 670px;
+    min-height: 85px;
   }
 }
 
-@media (min-width: $desktop-width)  {
+@media (min-width: $desktop-width) {
   .main-nav__list {
     width: 1150px;
- }
+  }
 }

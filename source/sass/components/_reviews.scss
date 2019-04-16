@@ -1,6 +1,10 @@
 .reviews {
   width: 360px;
   margin-bottom: 88px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .reviews__wrapper {
@@ -46,16 +50,17 @@
   width: 260px;
 }
 
-@media (min-width: $tablet-width)  {
+@media (min-width: $tablet-width) {
   .reviews__text {
     width: 670px;
   }
+
   .reviews__btn {
     width: 176px;
   }
 }
 
-@media (min-width: $desktop-width)  {
+@media (min-width: $desktop-width) {
   .reviews__text {
     width: 770px;
   }

@@ -1,6 +1,11 @@
 .about-us {
+  width: 360px;
   margin-top: 50px;
   margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .about-us__title {
@@ -46,17 +51,14 @@
   width: 240px;
 }
 
-
 @media (min-width: $tablet-width) {
-
   .about-us__columns {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-
 }
 
-@media (min-width: $desktop-width) {
+// @media (min-width: $desktop-width) {
 
-}
+// }

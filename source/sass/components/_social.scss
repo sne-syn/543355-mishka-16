@@ -1,4 +1,11 @@
+.social {
+  @include indent-reset;
+  margin-bottom: 45px;
+  padding-left: 50px;
+}
+
 .social__item {
   display: inline-block;
   vertical-align: top;
+  list-style: none;
 }

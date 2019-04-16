@@ -1,8 +1,10 @@
 .popular-product {
-  width: 260px;
-  margin: 0;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 71px;
-  padding: 0 20px;
 }
 
 .popular-product__title {
@@ -32,7 +34,7 @@
   margin-bottom: 25px;
 }
 
-.popular-product__table .table__header  {
+.popular-product__table .table__header {
   padding-left: 0;
   padding-bottom: 8px;
   padding-right: 7px;
@@ -58,7 +60,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .popular-product__title {
     display: inline-block;
   }
@@ -70,7 +71,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .popular-product {
-  }
-}
+// @media (min-width: $desktop-width) {
+//   .popular-product {
+//   }
+// }

@@ -1,19 +1,48 @@
 .modal {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 20px;
   border: 1px solid #c6c6c6;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
 }
 
 .modal__title {
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 15px;
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
+  text-transform: uppercase;
   color: $color-secondary;
+}
+
+.modal__text {
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.modal__list {
+  width: 260px;
+  margin-top: 0;
+  margin-left: 40px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding: 0;
 }
 
 .modal__btn {
   width: 260px;
+  margin: 0 auto;
   margin-bottom: 45px;
+  margin-left: 40px;
   color: $color-white;
   background-color: $color-green-light;
   border: none;
