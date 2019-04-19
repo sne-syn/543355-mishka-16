@@ -56,6 +56,11 @@
 }
 
 @media (min-width: $tablet-width) {
+
+  .popular-product {
+    width: 768px;
+    margin-bottom: 125px;
+  }
   .popular-product__title {
     display: inline-block;
   }
@@ -67,7 +72,9 @@
   }
 }
 
-// @media (min-width: $desktop-width) {
-//   .popular-product {
-//   }
-// }
+@media (min-width: $desktop-width) {
+  .popular-product {
+    width: 1150px;
+    margin-bottom: 165px;
+  }
+}

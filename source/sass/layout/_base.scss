@@ -12,9 +12,9 @@
   font-weight: 700;
 }
 
-// * {
-//   outline: 1px solid green;
-// }
+* {
+  outline: 1px solid $color-green-light;
+}
 
 body {
   @include indent-reset;

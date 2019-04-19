@@ -46,9 +46,18 @@
 }
 
 @media (min-width: $tablet-width) {
+  .about-us {
+    width: 768px;
+}
+
+.about-us__list {
+  width: 333px;
+}
 
 }
 
-// @media (min-width: $desktop-width) {
-
-// }
+@media (min-width: $desktop-width) {
+  .about-us {
+    width: 1150px;
+}
+}

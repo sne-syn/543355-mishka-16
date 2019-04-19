@@ -47,8 +47,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    min-width: 670px;
-    margin-top: -112px;
+    width: 768px;
+    margin-top: -10px;
 
     // &:hover {
     //   padding-bottom: 39px;
@@ -62,6 +62,10 @@
     &:active .type__link {
       color: rgba($color-white, 0.3);
     }
+  }
+
+  .type__link {
+    width: 333px;
   }
 }
 

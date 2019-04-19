@@ -45,6 +45,11 @@
 }
 
 @media (min-width: $tablet-width) {
+
+  .reviews {
+    width: 768px;
+  }
+
   .reviews__text {
     width: 670px;
   }
@@ -55,7 +60,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .reviews {
+    width: 1150px;
+  }
+
   .reviews__text {
-    width: 770px;
+    width: 780px;
   }
 }
