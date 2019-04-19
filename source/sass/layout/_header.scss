@@ -1,13 +1,13 @@
 .header {
   position: relative;
-  // width: 320px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 320px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+.header__single-line {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -21,6 +21,10 @@
     width: 342px;
     height: 46px;
   }
+
+  .header__single-line {
+    display: block;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -33,5 +37,9 @@
     left: 50%;
     top: 0;
     z-index: 100;
+  }
+
+  .header__single-line {
+    display: block;
   }
 }

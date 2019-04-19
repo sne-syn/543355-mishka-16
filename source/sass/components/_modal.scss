@@ -23,10 +23,10 @@
 }
 
 .modal__text {
-  width: 150px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .modal__list {
@@ -54,5 +54,26 @@
   &:active {
     background-color: rgba($color-green-light, 0.3);
     outline: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 567px;
+  }
+
+  .modal__title {
+    width: 350px;
+    text-align: center;
+  }
+
+  .modal__list {
+    width: 350px;
+  }
+
+  .modal__btn {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

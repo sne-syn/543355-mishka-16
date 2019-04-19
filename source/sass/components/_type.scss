@@ -1,23 +1,19 @@
 .type {
+  width: 320px;
   margin-top: -96px;
   margin-bottom: 28px;
 }
 
 .type__item {
+  box-sizing: border-box;
   padding-top: 27px;
   padding-bottom: 28px;
   padding-left: 29px;
-  box-sizing: border-box;
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
   cursor: pointer;
   transition: all;
-
-  &:hover {
-    padding-bottom: 39px;
-    margin-top: -5px;
-  }
 
   &:hover .type__link {
     color: $color-white;
@@ -51,11 +47,37 @@
     justify-content: center;
     min-width: 670px;
     margin-top: -112px;
+
+    // &:hover {
+    //   padding-bottom: 39px;
+    //   margin-top: -5px;
+    // }
+
+    &:hover .type__link {
+      color: $color-white;
+    }
+
+    &:active .type__link {
+      color: rgba($color-white, 0.3);
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .type {
     min-width: 1050px;
+
+    &:hover {
+      padding-bottom: 39px;
+      margin-top: -5px;
+    }
+
+    &:hover .type__link {
+      color: $color-white;
+    }
+
+    &:active .type__link {
+      color: rgba($color-white, 0.3);
+    }
   }
 }
