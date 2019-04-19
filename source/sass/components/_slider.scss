@@ -9,6 +9,7 @@
   display: inline-block;
   vertical-align: top;
   width: 128px;
-  border: 2px solid $color-tertiary;
   min-height: 51px;
+  border: 2px solid $color-tertiary;
+  background-color: $color-white;
 }

@@ -1,4 +1,8 @@
 .demonstration {
+  width: 320px;
+}
+
+.demonstration__content {
   width: 260px;
   margin-bottom: 30px;
   border: 2px solid $color-tertiary;
@@ -14,6 +18,7 @@
 
 .demonstration__title {
   padding: 0 20px;
+  padding-left: 60px;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
@@ -22,4 +27,47 @@
 
 .demonstration__description {
   padding: 0 20px;
+}
+
+.demonstration__btn {
+  width: 191px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .demonstration {
+    width: 768px;
+  }
+
+  .demonstration__content {
+    width: 670px;
+  }
+
+  .demonstration__description {
+    width: 584px;
+  }
+  .demonstration__btn {
+    width: 584px;
+    margin-bottom: 50px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .demonstration {
+    width: 1150px;
+  }
+
+  .demonstration__content {
+    display: flex;
+    flex-direction: column;
+
+    width: 1150px;
+  }
+
+  .demonstration__btn {
+    width: 191px;
+  }
+
 }

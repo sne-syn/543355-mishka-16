@@ -15,17 +15,13 @@
 
 .heading-index__text--wrapper {
   min-width: 250px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-top: 74px;
 }
 
 @media (min-width: $tablet-width) {
   .heading-index {
     min-height: 750px;
-    background-image: url("../../img/hero-tablet@1x.jpg");
+    background-image: url("../img/hero-tablet@1x.jpg");
     background-size: 1178px auto;
   }
 
@@ -37,7 +33,7 @@
 @media (min-width: $desktop-width) {
   .heading-index {
     min-height: 750px;
-    background-image: url("../../img/hero-desktop@1x.jpg");
+    background-image: url("../img/hero-desktop@1x.jpg");
     background-size: 1391px auto;
   }
 

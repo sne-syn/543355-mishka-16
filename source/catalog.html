@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -33,7 +34,7 @@
   <main>
       <div class="heading-catalog"><h1 class="heading-catalog__text">Каталог товаров</h1>
     </div>
-    <section class="card">
+    <section class="card wrapper">
       <h2 class="visually-hidden">Товары</h2>
       <ul class="card__list">
         <li class="card__item">
@@ -51,9 +52,9 @@
                 <th class="card-table__header table__header">вес</th>
                 <td class="card-table__cell table__cell">200 г</td>
               </tr>
-              <tr class="card-table__row table__row table__row">
+              <tr class="card-table__row card-table__row--price table__row">
                 <th class="visually-hidden">Цена</th>
-                <td class="card-table__cell table__cell">1 200 руб.</td>
+                <td class="card-table__cell card-table__cell--price table__cell">1 200 руб.</td>
               </tr>
             </table>
             <a class="card__basket" href="#">
@@ -76,9 +77,9 @@
                 <th class="card-table__header table__header">высота</th>
                 <td class="card-table__cell table__cell">10 см</td>
               </tr>
-              <tr class="card-table__row table__row table__row">
+              <tr class="card-table__row card-table__row--price table__row">
                 <th class="visually-hidden">Цена</th>
-                <td class="card-table__cell table__cell">690 руб.</td>
+                <td class="card-table__cell card-table__cell--price  table__cell">690 руб.</td>
               </tr>
             </table>
             <a class="card__basket" href="#">
@@ -101,9 +102,9 @@
                 <th class="card-table__header table__header">высота</th>
                 <td class="card-table__cell table__cell">30см</td>
               </tr>
-              <tr class="card-table__row table__row table__row">
+              <tr class="card-table__row card-table__row--price table__row table__row">
                 <th class="visually-hidden">Цена</th>
-                <td class="card-table__cell table__cell">1 500 руб.</td>
+                <td class="card-table__cell card-table__cell--price  table__cell">1 500 руб.</td>
               </tr>
             </table>
             <a class="card__basket" href="#">
@@ -113,15 +114,17 @@
         </li>
       </ul>
     </section>
-    <section class="demonstration">
+    <div class="demonstration wrapper">
+    <section class="demonstration__content">
       <h2 class="demonstration__title">Процесс производства</h2>
       <a class="demonstration__video" href="#">
         <img src="http://placehold.it/260x195" alt="Видео с описанием процесса производства товаров">
       </a>
       <p class="demonstration__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
         как появляются наши товары.</p>
-      <a class="btn demonstration__btn" href="#">Сделать заказ</a>
+      <a class="btn demonstration__btn wrapper" href="#">Сделать заказ</a>
     </section>
+    </div>
   </main>
   <footer class="footer">
     <a class="footer__logo">

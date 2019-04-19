@@ -1,5 +1,10 @@
+.card {
+  width: 320px;
+}
+
 .card__list {
   @include indent-reset;
+  list-style: none;
 }
 
 .card__description {
@@ -20,7 +25,12 @@
   }
 }
 
+.card__img {
+  margin-bottom: 30px;
+}
+
 .card__title {
+  margin-bottom: 15px;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
@@ -32,5 +42,81 @@
 
   &:active {
     color: rgba($color-secondary, 0.3);
+  }
+}
+
+.card-table {
+  @include indent-reset;
+  width: 260px;
+  box-sizing: border-box;
+  border: 1px solid green;
+}
+
+.card-table__row {
+  @include indent-reset;
+  width: 260px;
+
+}
+
+.card-table__header {
+  width: 10px;
+  @include indent-reset;
+  display: inline;
+  // border: 1px solid green;
+}
+
+.card-table__cell {
+  width: 10px;
+  @include indent-reset;
+  display: inline;
+  // border: 1px solid green;
+}
+
+.card-table__row--price {
+  margin-top: 50px;
+}
+
+.card-table__cell--price  {
+  display: inline;
+  text-align: left;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .card {
+    width: 768px;
+  }
+  .card__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .card__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 667px;
+    height: 334px;
+  }
+
+  .card__link {
+    width: 333px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card {
+    width: 1150px;
+  }
+  .card__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card__item {
+    width: 315px;
   }
 }
