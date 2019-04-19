@@ -1,19 +1,22 @@
 .footer__wrapper {
   width: 320px;
+  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 .footer {
-  min-height: 160px;
   background-color: $color-background;
 }
 
-
 .footer__copyright {
-  padding-left: 70px;
+  display: block;
+  width: 135px;
+  text-align: center;
   font-size: 19px;
   line-height: 18px;
   font-weight: bold;

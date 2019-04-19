@@ -11,6 +11,7 @@
 .heading-index__text {
   @include heading-primary;
   @include indent-reset;
+  padding-top: 72px;
 }
 
 .heading-index__text--wrapper {

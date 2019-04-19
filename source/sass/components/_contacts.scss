@@ -1,5 +1,8 @@
 .contacts {
-
+  width: 320px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 50px;
 }
 
@@ -7,8 +10,6 @@
   width: 260px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 24px;
@@ -17,11 +18,17 @@
 
 .contacts__table {
   width: 260px;
+  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-bottom: 50px;
+}
+
+.contacts__table {
+  width: 260px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contacts__table-row .contacts__table-header {
@@ -31,8 +38,8 @@
 }
 
 .contacts__direction {
-  @include indent-reset;
   width: 156px;
+  @include indent-reset;
 }
 
 .contacts__email {
@@ -66,12 +73,17 @@
   background-color: rgba(70, 193, 174, 0.3);
 }
 
+.contacts__map {
+  display: block;
+  margin-bottom: 40px;
+}
+
 .contacts__btn {
+  display: block;
   width: 260px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-bottom: 40px;
 }
 
 

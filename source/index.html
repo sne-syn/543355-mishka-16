@@ -9,11 +9,11 @@
 </head>
 
 <body>
-  <header class="header wrapper">
+  <header class="header">
     <p class="header__logo">
       <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
     </p>
-    <nav class="main-nav wrapper">
+    <nav class="main-nav">
       <label class="main-nav__label" for="menu-toggle">Открыть меню</label>
       <input class="main-nav__toggle" type="checkbox" id="menu-toggle">
 
@@ -99,8 +99,8 @@
         </ul>
     </section>
 
-    <section class="reviews">
-      <div class="reviews__wrapper slider">
+    <div class="reviews wrapper">
+    <section class="reviews__block">
         <h2 class="reviews__title">Отзывы</h2>
         <ul class="reviews__list slider__list">
           <li class="reviews__item slider__item">
@@ -118,8 +118,8 @@
               class="visually-hidden">Вперёд</span></button>
         </p>
         <a class="btn reviews__btn" href="#">Написать</a>
-      </div>
     </section>
+  </div>
     <section class="contacts">
       <h2 class="contacts__title">Контакты</h2>
       <table class="contacts__table table">
@@ -165,10 +165,10 @@
         Academy</span></a>
       </div>
   </footer>
-  <section class="modal">
+  <section class="modal wrapper">
     <h2 class="modal__title">Добавить в корзину</h2>
     <p class="modal__text">Выберите размер:</p>
-    <form action="https://echo.htmlacademy.ru" class="form modal__form" method="post">
+    <form action="https://echo.htmlacademy.ru" class="modal__form" method="post">
       <ul class="modal__list size">
         <li class="size__item"><button class="size__btn" type="button">S</button></li>
         <li class="size__item"><button class="size__btn" type="button">M</button></li>
@@ -176,7 +176,6 @@
       </ul>
       <button class="btn modal__btn" type="submit">Добавить</button>
     </form>
-
   </section>
 </body>
 

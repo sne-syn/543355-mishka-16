@@ -1,5 +1,6 @@
 .size {
   display: flex;
+  width: 260px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -28,6 +29,7 @@
 
 @media (min-width: $tablet-width) {
   .size {
+    width: 350px;
     margin-left: auto;
     margin-right: auto;
   }

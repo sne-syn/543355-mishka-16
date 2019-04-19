@@ -59,14 +59,13 @@
 }
 
 .card-table__header {
-  @include indent-reset;
   display: inline;
-
+  @include indent-reset;
 }
 
 .card-table__cell {
-  @include indent-reset;
   display: inline;
+  @include indent-reset;
 }
 
 .card-table__row--price {
@@ -94,10 +93,10 @@
   }
 
   .card__item {
+    width: 667px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 667px;
     min-height: 334px;
   }
 

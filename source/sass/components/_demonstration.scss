@@ -33,8 +33,8 @@
 }
 
 .demonstration__description {
-  box-sizing: border-box;
   width: 191px;
+  box-sizing: border-box;
   margin: 0 auto;
   font-size: 13px;
   line-height: 24px;
@@ -76,7 +76,6 @@
   .demonstration__content {
     display: flex;
     flex-direction: column;
-
     width: 316px;
   }
 

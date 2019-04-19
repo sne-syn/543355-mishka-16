@@ -19,9 +19,9 @@
 }
 
 .popular-product__text {
+  width: 260px;
   @include indent-reset;
   line-height: 24px;
-  width: 260px;
   margin-bottom: 21px;
 }
 

@@ -5,8 +5,8 @@
 }
 
 .about-us__title {
-  @include heading-secondary;
   width: 260px;
+  @include heading-secondary;
 }
 
 .about-us__list {

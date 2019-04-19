@@ -1,7 +1,13 @@
+.menu {
+  width: 320px;;
+}
+
 .menu__item {
+  width: 320px;
   box-sizing: border-box;
   padding-top: 22px;
   padding-bottom: 25px;
+  padding-left: 77px;
   border-top: 1px solid $color-tertiary;
 }
 
