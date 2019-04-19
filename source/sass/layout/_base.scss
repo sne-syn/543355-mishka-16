@@ -12,6 +12,10 @@
   font-weight: 700;
 }
 
+* {
+  outline: 1px solid green;
+}
+
 body {
   @include indent-reset;
   min-width: 320px;

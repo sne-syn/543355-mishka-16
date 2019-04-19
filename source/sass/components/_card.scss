@@ -3,16 +3,14 @@
 }
 
 .card__list {
+  width: 260px;
   @include indent-reset;
   list-style: none;
 }
 
-.card__description {
-  padding: 0 20px;
-}
-
 .card__item {
   width: 260px;
+  box-sizing: border-box;
   margin-bottom: 30px;
   border: 2px solid $color-tertiary;
 
@@ -27,6 +25,11 @@
 
 .card__img {
   margin-bottom: 30px;
+}
+
+
+.card__description {
+  padding: 0 30px;
 }
 
 .card__title {
@@ -46,34 +49,30 @@
 }
 
 .card-table {
-  @include indent-reset;
-  width: 260px;
+  width: 200px;
   box-sizing: border-box;
-  border: 1px solid green;
+  font-size: 13px;
 }
 
-.card-table__row {
-  @include indent-reset;
-  width: 260px;
-
+.card-table__row--inline {
+  display: inline;
 }
 
 .card-table__header {
-  width: 10px;
   @include indent-reset;
   display: inline;
-  // border: 1px solid green;
+
 }
 
 .card-table__cell {
-  width: 10px;
   @include indent-reset;
   display: inline;
-  // border: 1px solid green;
 }
 
 .card-table__row--price {
+  display: block;
   margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .card-table__cell--price  {
