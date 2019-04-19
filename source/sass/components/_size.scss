@@ -1,7 +1,9 @@
-.size__item {
-  display: inline-block;
-  vertical-align: top;
-  padding-right: 4px;
+.size {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
 }
 
 .size__btn {
@@ -22,4 +24,16 @@
     border: 2px solid $color-green-light;
     outline: none;
   }
+}
+
+@media (min-width: $tablet-width) {
+  .size {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .size__btn {
+    width: 110px;
+  }
+
 }

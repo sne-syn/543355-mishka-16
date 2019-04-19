@@ -87,6 +87,7 @@
   .card {
     width: 768px;
   }
+
   .card__list {
     display: flex;
     flex-direction: column;
@@ -98,7 +99,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 667px;
-    height: 334px;
+    min-height: 334px;
   }
 
   .card__link {
@@ -118,5 +119,6 @@
   }
   .card__item {
     width: 315px;
+    min-height: 660px;
   }
 }
