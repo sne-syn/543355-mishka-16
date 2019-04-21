@@ -48,11 +48,17 @@
     flex-direction: row;
     justify-content: center;
     width: 768px;
-    margin-top: -10px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+
+
 
     // &:hover {
-    //   padding-bottom: 39px;
     //   margin-top: -5px;
+    //   padding-bottom: 39px;
     // }
 
     &:hover .type__link {
@@ -64,19 +70,21 @@
     }
   }
 
+  .type__item {
+    width: 335px;
+  }
+
   .type__link {
-    width: 333px;
+    width: 120px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .type {
-    min-width: 1050px;
+    width: 1150px;
 
-    &:hover {
-      margin-top: -5px;
-      padding-bottom: 39px;
-    }
 
     &:hover .type__link {
       color: $color-white;
@@ -85,5 +93,13 @@
     &:active .type__link {
       color: rgba($color-white, 0.3);
     }
+  }
+
+  .type__item {
+    width: 530px;
+  }
+
+  .type__link {
+    width: 125px;
   }
 }

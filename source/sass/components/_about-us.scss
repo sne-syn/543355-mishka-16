@@ -50,8 +50,37 @@
     width: 768px;
 }
 
+.about-us__title {
+  width: 678px;
+  font-size: 43px;
+  line-height: 50px;
+}
+
 .about-us__list {
   width: 333px;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+
+.about-us__item--eco {
+  width: 230px;
+}
+
+.about-us__item--style {
+  width: 260px;
+}
+
+.about-us__item--likes {
+  width: 240px;
+}
+
+.about-us__item--local-support {
+  width: 300px;
+}
+
+.about-us__item--giftbox {
+  width: 280px;
 }
 
 }
@@ -60,4 +89,14 @@
   .about-us {
     width: 1150px;
 }
+
+.about-us__title {
+  font-size: 53px;
+}
+
+.about-us__list {
+  width: 333px;
+
+}
+
 }

@@ -21,12 +21,14 @@
   }
 
   .header__logo {
+    display: block;
     width: 342px;
-    height: 46px;
+    height: auto;
   }
 
   .header__single-line {
     display: block;
+    line-height: 24px;
   }
 }
 
@@ -36,13 +38,14 @@
   }
 
   .header__logo {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    z-index: 100;
+    // position: absolute;
+    // left: 50%;
+    // top: 0;
+    // z-index: 100;
   }
 
-  .header__single-line {
-    display: block;
+  .header__logo-image {
+    width: 148px;
   }
+
 }

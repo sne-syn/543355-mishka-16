@@ -14,3 +14,9 @@
   background-color: $color-white;
   border: 2px solid $color-tertiary;
 }
+
+@media (min-width: $tablet-width) {
+  .slider__toggle {
+    border: none;
+  }
+}

@@ -50,6 +50,15 @@
     width: 768px;
   }
 
+  .reviews__block {
+    width: 670px;
+  }
+
+  .reviews__title {
+    font-size: 43px;
+  line-height: 50px;
+  }
+
   .reviews__text {
     width: 670px;
   }
@@ -62,6 +71,15 @@
 @media (min-width: $desktop-width) {
   .reviews {
     width: 1150px;
+  }
+
+  .reviews__title {
+  font-size: 53px;
+  line-height: 57px;
+  }
+
+  .reviews__block {
+    width: 888px;
   }
 
   .reviews__text {

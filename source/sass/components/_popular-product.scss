@@ -61,14 +61,37 @@
     width: 768px;
     margin-bottom: 125px;
   }
+
   .popular-product__title {
     display: inline-block;
+    font-size: 43px;
+  line-height: 50px;
   }
 
   .popular-product__mark {
     display: inline-block;
     width: 85px;
+    line-height: 17px;
     text-align: center;
+  }
+
+  .popular-product__text {
+    width: 300px;
+    line-height: 30px;
+  }
+
+  .popular-product__table {
+    width: 300px;
+  }
+
+  .popular-product__price {
+    width: 290px;
+    margin-left: 0;
+    font-size: 20px;
+  }
+
+  .popular-product__btn {
+    width: 290px;
   }
 }
 
@@ -76,5 +99,14 @@
   .popular-product {
     width: 1150px;
     margin-bottom: 165px;
+  }
+
+  .popular-product__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .popular-product__mark {
+
   }
 }

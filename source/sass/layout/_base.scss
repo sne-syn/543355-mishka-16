@@ -26,6 +26,12 @@ body {
   color: $color-primary;
 }
 
+@media (min-width: $tablet-width) {
+  body {
+    font-size: 17px;
+  }
+}
+
 img {
   display: block;
   max-width: 100%;

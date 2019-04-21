@@ -11,7 +11,11 @@
 <body>
   <header class="header">
     <p class="header__logo">
-      <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+      </picture>
     </p>
     <nav class="main-nav">
       <label class="main-nav__label" for="menu-toggle">Открыть меню</label>
@@ -19,10 +23,10 @@
 
       <ul class="main-nav__list menu" id="menu">
         <li class="menu__item">
-          <a class="menu__link" href="catalog.html">Каталог товаров</a>
+          <a class="menu__link menu__link--catalog" href="catalog.html">Каталог товаров</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="form.html">Вязание на заказ</a>
+          <a class="menu__link menu__link--order" href="form.html">Вязание на заказ</a>
         </li>
         <li class="menu__item menu__item--search">
           <a class="menu__link" href="#">Поиск по сайту</a>
@@ -84,23 +88,23 @@
 
     <section class="about-us wrapper">
       <h2 class="about-us__title">Коротко о нас:</h2>
-        <ul class="about-us__list">
-          <li class="about-us__item about-us__item--eco">Экологически
-            чистые материалы</li>
-          <li class="about-us__item about-us__item--style">Скандинавский стиль
-            по российской цене</li>
-          <li class="about-us__item about-us__item--likes">Увеличивает лайки
-            на фотографиях</li>
-          <li class="about-us__item about-us__item--handmade">Связано вручную с
-            любовью и умилением</li>
-          <li class="about-us__item about-us__item--local-support">Поддержка отечественного производителя</li>
-          <li class="about-us__item about-us__item--giftbox">Поставляется в
-            подарочной упаковке</li>
-        </ul>
+      <ul class="about-us__list">
+        <li class="about-us__item about-us__item--eco">Экологически
+          чистые материалы</li>
+        <li class="about-us__item about-us__item--style">Скандинавский стиль
+          по российской цене</li>
+        <li class="about-us__item about-us__item--likes">Увеличивает лайки
+          на фотографиях</li>
+        <li class="about-us__item about-us__item--handmade">Связано вручную с
+          любовью и умилением</li>
+        <li class="about-us__item about-us__item--local-support">Поддержка отечественного производителя</li>
+        <li class="about-us__item about-us__item--giftbox">Поставляется в
+          подарочной упаковке</li>
+      </ul>
     </section>
 
     <div class="reviews wrapper">
-    <section class="reviews__block">
+      <section class="reviews__block">
         <h2 class="reviews__title">Отзывы</h2>
         <ul class="reviews__list slider__list">
           <li class="reviews__item slider__item">
@@ -118,8 +122,8 @@
               class="visually-hidden">Вперёд</span></button>
         </p>
         <a class="btn reviews__btn" href="#">Написать</a>
-    </section>
-  </div>
+      </section>
+    </div>
     <section class="contacts">
       <h2 class="contacts__title">Контакты</h2>
       <table class="contacts__table table">
@@ -131,7 +135,7 @@
         <tr class="contacts__table-row table__row">
           <th class="contacts__table-header table__header">адрес:</th>
           <td class="contacts__table-cell table__cell">
-            <p class="contacts__direction">г. Санкт-Петербург, ул. Большая Конюшенная,<br> д. 19/8, офис
+            <p class="contacts__direction">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис
               101</p>
           </td>
         </tr>
@@ -147,23 +151,24 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
-    <a class="footer__logo">
-      <img class="footer__logo-image" src="http://placehold.it/50x10" width="50" height="10" alt="Магазин «Мишка»">
-    </a>
-    <ul class="social">
-      <li class="social__item social__item--instagram">
-        <a href="#"><span class="visually-hiddenj">Instagram</span></a>
-      </li>
-      <li class="social__item social__item--facebook">
-        <a href="#"><span class="visually-hiddenk">Facebook</span></a>
-      </li>
-      <li class="social__item social__item--twitter">
-        <a href="#"><span class="visually-hiddenj">Twitter</span></a>
-      </li>
-    </ul>
-    <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано<span class="visually-hidden">HTML
-        Academy</span></a>
-      </div>
+      <a class="footer__logo">
+        <img class="footer__logo-image" src="img/logo-footer.svg" width="102" height="34" alt="Магазин «Мишка»">
+      </a>
+      <ul class="social">
+        <li class="social__item social__item--instagram">
+          <a href="#"><span class="visually-hiddenj">Instagram</span></a>
+        </li>
+        <li class="social__item social__item--facebook">
+          <a href="#"><span class="visually-hiddenk">Facebook</span></a>
+        </li>
+        <li class="social__item social__item--twitter">
+          <a href="#"><span class="visually-hiddenj">Twitter</span></a>
+        </li>
+      </ul>
+      <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано<span
+          class="visually-hidden">HTML
+          Academy</span></a>
+    </div>
   </footer>
   <section class="modal wrapper">
     <h2 class="modal__title">Добавить в корзину</h2>

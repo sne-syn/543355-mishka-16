@@ -1,7 +1,7 @@
 .heading-index {
   min-height: 380px;
   margin: 0 auto;
-  background-image: url("../../img/hero-mobile@1x.jpg");
+  background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% -18px;
   background-size: 582px auto;
@@ -22,12 +22,15 @@
 @media (min-width: $tablet-width) {
   .heading-index {
     min-height: 750px;
+    margin-top: -57px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-size: 1178px auto;
   }
 
   .heading-index__text {
     width: 510px;
+    font-size: 43px;
+  line-height: 50px;
   }
 }
 
@@ -39,6 +42,8 @@
   }
 
   .heading-index__text {
-    width: 620px;
+    width: 720px;
+    font-size: 53px;
+  line-height: 57px;
   }
 }

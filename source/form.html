@@ -9,7 +9,11 @@
 <body>
     <header class="header">
         <a class="header__logo" href="index.html">
-          <img class="header__logo-image" src="img/logo-mobile.svg" width="100" height="50" alt="Магазин «Мишка»">
+            <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+              </picture>
           </a>
           <nav class="main-nav">
             <label class="main-nav__label" for="menu-toggle">Открыть меню</label>
@@ -118,21 +122,24 @@
     </section>
   </main>
   <footer class="footer">
-      <a class="footer__logo">
-          <img class="footer__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Магазин «Мишка»">
-        </a>
+    <div class="footer__wrapper">
+        <a class="footer__logo">
+            <img class="footer__logo-image" src="img/logo-footer.svg" width="102" height="34" alt="Магазин «Мишка»">
+          </a>
     <ul class="social">
       <li class="social__item social__item--instagram">
-        <a href="#"><span>Instagram</span></a>
+        <a href="#"><span class="visually-hiddenj">Instagram</span></a>
       </li>
       <li class="social__item social__item--facebook">
-          <a href="#"><span>Facebook</span></a>
+        <a href="#"><span class="visually-hiddenk">Facebook</span></a>
       </li>
       <li class="social__item social__item--twitter">
-          <a href="#"><span>Twitter</span></a>
+        <a href="#"><span class="visually-hiddenj">Twitter</span></a>
       </li>
     </ul>
-    <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано<span>HTML Academy</span></a>
+    <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано<span class="visually-hidden">HTML
+        Academy</span></a>
+      </div>
   </footer>
 </body>
 
