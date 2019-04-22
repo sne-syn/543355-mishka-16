@@ -1,4 +1,4 @@
-.slider__toggle-box {
+.slider {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -7,7 +7,7 @@
 
 }
 
-.slider__toggle {
+.slider__btn {
   width: 130px;
   min-height: 51px;
   @include indent-reset;
@@ -16,7 +16,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .slider__toggle {
+  .slider__btn {
     border: none;
   }
 }
