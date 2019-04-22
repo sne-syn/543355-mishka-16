@@ -10,41 +10,46 @@
 
 <body>
   <header class="header">
-    <p class="header__logo">
-      <picture>
-        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-        <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
-      </picture>
-    </p>
-    <nav class="main-nav">
-<input class="main-nav__toggle" type="checkbox" id="menu-toggle">
-        <label class="main-nav__label" for="menu-toggle"><span class="visually-hidden">Открыть меню</span></label>
 
+    <nav class="header__nav main-nav main-nav--opened main-nav--nojs">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
-      <ul class="main-nav__list menu" id="menu">
-        <li class="menu__item">
-          <a class="menu__link menu__link--catalog" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link menu__link--order" href="form.html">Вязание на заказ</a>
-        </li>
-        <li class="menu__item menu__item--search">
-          <a class="menu__link" href="#">Поиск по сайту</a>
-        </li>
-        <li class="menu__item menu__item--bucket">
-          <a class="menu__link" href="#">Корзина: пока пуста</a>
-        </li>
-      </ul>
+      <div class="main-nav__wrapper menu">
+          <ul class="main-nav__list menu__product">
+          <li class="header__logo">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+              </picture>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link menu__link--catalog" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--order" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list menu__user">
+            <li class="menu__item menu__item--search">
+              <a class="menu__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="menu__item menu__item--bucket">
+              <a class="menu__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list menu__offer">
+              <li class="menu__item menu__item--new">
+                <a class="menu__link" href="#">Новые поступления</a>
+              </li>
+              <li class="menu__item menu__item--sale">
+                <a class="menu__link" href="#">Распродажа</a>
+              </li>
+            </ul>
+      </div>
     </nav>
-    <ul class="nav-info">
-      <li class="nav-info__item nav-info__item--new">
-        <a class="nav-info__link" href="#">Новые поступления</a>
-      </li>
-      <li class="nav-info__item nav-info__item--sale">
-        <a class="nav-info__link" href="#">Распродажа</a>
-      </li>
-    </ul>
+
     <p class="header__single-line">Бесплатная доставка по России</p>
   </header>
   <main>
@@ -90,18 +95,30 @@
     <section class="about-us wrapper">
       <h2 class="about-us__title">Коротко о нас:</h2>
       <ul class="about-us__list">
-          <li class="about-us__item about-us__item--eco"><p>Экологически
-            чистые материалы</p></li>
-          <li class="about-us__item about-us__item--style"><p>Скандинавский стиль
-            по российской цене</p></li>
-          <li class="about-us__item about-us__item--likes"><p>Увеличивает лайки
-            на фотографиях</p></li>
-          <li class="about-us__item about-us__item--handmade"><p>Связано вручную с
-            любовью и умилением</p></li>
-          <li class="about-us__item about-us__item--local-support"><p>Поддержка отечественного производителя</p></li>
-          <li class="about-us__item about-us__item--giftbox"><p>Поставляется в
-            подарочной упаковке</p></li>
-        </ul>
+        <li class="about-us__item about-us__item--eco">
+          <p>Экологически
+            чистые материалы</p>
+        </li>
+        <li class="about-us__item about-us__item--style">
+          <p>Скандинавский стиль
+            по российской цене</p>
+        </li>
+        <li class="about-us__item about-us__item--likes">
+          <p>Увеличивает лайки
+            на фотографиях</p>
+        </li>
+        <li class="about-us__item about-us__item--handmade">
+          <p>Связано вручную с
+            любовью и умилением</p>
+        </li>
+        <li class="about-us__item about-us__item--local-support">
+          <p>Поддержка отечественного производителя</p>
+        </li>
+        <li class="about-us__item about-us__item--giftbox">
+          <p>Поставляется в
+            подарочной упаковке</p>
+        </li>
+      </ul>
     </section>
 
     <div class="reviews wrapper">

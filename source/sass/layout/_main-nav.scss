@@ -1,72 +1,90 @@
 .main-nav {
+  position: relative;
+
   width: 320px;
-  position: relative;
-}
-
-// Маленькая ширина для клика
-
-.main-nav__label {
-  position: relative;
-  top: 0;
-  left: 0;
-  cursor: pointer;
-
-  &,
-  &::before,
-  &::after {
-    display: inline-block;
-    vertical-align: middle;
-    width: 20px;
-    height: 2px;
-    background-color: #221f1f;
-  }
-
-  &::before,
-  &::after {
-    position: absolute;
-    left: 0;
-    content: "";
-    transition: all 0.2s;
-  }
-
-  &::before {
-    top: -6px;
-}
-
-&::after {
-    top: 6px;
-}
-
-}
-
-.main-nav__toggle[type="checkbox"]:checked + .main-nav__label {
-  background-color: transparent;
-}
-
-.main-nav__toggle[type="checkbox"]:checked + .main-nav__label::before {
-  top: 0;
-  transform: rotate(135deg);
-}
-
-.main-nav__toggle[type="checkbox"]:checked + .main-nav__label::after {
-  top: 0;
-  transform: rotate(-135deg);
+  min-height: 51px;
+  margin: 0 auto;
 }
 
 .main-nav__toggle {
-  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+
+  display: block;
+  width: 21px;
+  height: 20px;
+
+  cursor: pointer;
+  border: none;
+
+  &:hover,
+  &:active {
+  }
 }
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 15px;
+  left: 17px;
+
+  width: 20px;
+  height: 2px;
+
+  background-color: #221f1f;
+  box-shadow: 0 8px 0 0 #221f1f, 0 16px 0 0 #221f1f;
+}
+
 
 .main-nav__list {
-  @include indent-reset;
-  overflow: hidden;
-  max-height: 0;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
-  transition: all 0.3s ease;
+
 }
 
-.main-nav__toggle[type="checkbox"]:checked ~ .main-nav__list {
-  max-height: 320px;
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: 0;
+
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 24px;
+    left: 18px;
+
+    width: 20px;
+    height: 2px;
+
+    background-color: #221f1f;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .menu {
+    display: none;
+  }
+
 }
 
 @media (min-width: $tablet-width) {
@@ -76,7 +94,8 @@
     margin: 0;
   }
 
-  .main-nav__label {
+  .main-nav__label,
+  .main-nav__toggle {
     display: none;
   }
 
@@ -87,6 +106,7 @@
     width: 670px;
     min-height: 85px;
   }
+
 }
 
 @media (min-width: $desktop-width) {

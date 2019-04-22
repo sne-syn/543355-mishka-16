@@ -9,6 +9,14 @@
   margin-right: auto;
 }
 
+.header__logo {
+
+}
+
+.header__nav {
+
+}
+
 .header__single-line {
   display: none;
 }
@@ -21,9 +29,17 @@
   }
 
   .header__logo {
-    display: block;
-    width: 342px;
-    height: auto;
+    box-sizing: border-box;
+    width: 370px;
+    margin: 0;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .header__logo-image {
+    width: 115px;
+    height: 47px;
   }
 
   .header__single-line {
@@ -38,14 +54,11 @@
   }
 
   .header__logo {
-    // position: absolute;
-    // left: 50%;
-    // top: 0;
-    // z-index: 100;
   }
 
   .header__logo-image {
     width: 148px;
+    height: 73px;
   }
 
 }
