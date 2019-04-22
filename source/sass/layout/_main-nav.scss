@@ -1,16 +1,56 @@
 .main-nav {
   width: 320px;
+  position: relative;
 }
 
+// Маленькая ширина для клика
+
 .main-nav__label {
-  position: absolute;
-  top: 20px;
-  left: 209px;
-  display: inline-block;
-  vertical-align: middle;
-  height: 20px;
-  width: 110px;
+  position: relative;
+  top: 0;
+  left: 0;
   cursor: pointer;
+
+  &,
+  &::before,
+  &::after {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 2px;
+    background-color: #221f1f;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    left: 0;
+    content: "";
+    transition: all 0.2s;
+  }
+
+  &::before {
+    top: -6px;
+}
+
+&::after {
+    top: 6px;
+}
+
+}
+
+.main-nav__toggle[type="checkbox"]:checked + .main-nav__label {
+  background-color: transparent;
+}
+
+.main-nav__toggle[type="checkbox"]:checked + .main-nav__label::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.main-nav__toggle[type="checkbox"]:checked + .main-nav__label::after {
+  top: 0;
+  transform: rotate(-135deg);
 }
 
 .main-nav__toggle {
@@ -25,7 +65,7 @@
   transition: all 0.3s ease;
 }
 
-.main-nav__toggle[type="checkbox"]:checked + .main-nav__list {
+.main-nav__toggle[type="checkbox"]:checked ~ .main-nav__list {
   max-height: 320px;
 }
 
