@@ -16,6 +16,10 @@
   border-top: 1px solid $color-tertiary;
 }
 
+.menu__item--main-page {
+  padding-left: 113px;
+}
+
 .menu__offer {
   display: none;
 }
@@ -34,6 +38,10 @@
   &:active {
     color: rgba($color-secondary, 0.3);
   }
+}
+
+.menu__link:hover .header__logo {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
