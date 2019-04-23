@@ -16,6 +16,14 @@
   padding-left: 110px;
 }
 
+.header__logo--link:hover {
+  opacity: 0.6;
+}
+
+.header__logo--link:active {
+  opacity: 0.3;
+}
+
 .header__single-line {
   display: none;
 }
@@ -50,14 +58,6 @@
     padding-left: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
-  }
-
-  .header__logo--link:hover {
-    opacity: 0.6;
-  }
-
-  .header__logo--link:active {
-    opacity: 0.3;
   }
 
   .header__logo-image {

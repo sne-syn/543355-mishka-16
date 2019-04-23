@@ -29,6 +29,22 @@
   }
 }
 
+.user-menu__icon-search,
+.user-menu__icon-basket {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.user-menu__item--search:hover .user-menu__icon-search,
+.user-menu__item--basket:hover .user-menu__icon-basket  {
+  fill: $color-green-light;
+}
+
+.user-menu__item--search:active .user-menu__icon-search,
+.user-menu__item--basket:active .user-menu__icon-basket  {
+  fill: rgba($color-green-light, 0.3);
+}
+
+
 @media (min-width: $tablet-width) {
   .user-menu {
     order: 1;
