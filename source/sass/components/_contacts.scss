@@ -35,6 +35,7 @@
 
 .contacts__direction {
   width: 156px;
+
   @include indent-reset;
 }
 
@@ -129,5 +130,4 @@
   .contacts__map {
     width: 525px;
   }
-
 }

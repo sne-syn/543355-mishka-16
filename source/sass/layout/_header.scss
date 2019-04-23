@@ -9,13 +9,11 @@
   margin-right: auto;
 }
 
-
 .header__logo {
   display: block;
   padding-top: 20px;
   padding-bottom: 25px;
   padding-left: 110px;
-
 }
 
 .header__single-line {
@@ -35,7 +33,7 @@
   }
 
   .header__container::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 88px;
     right: 0;
@@ -52,6 +50,14 @@
     padding-left: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+
+  .header__logo--link:hover {
+    opacity: 0.6;
+  }
+
+  .header__logo--link:active {
+    opacity: 0.3;
   }
 
   .header__logo-image {
@@ -82,7 +88,7 @@
   }
 
   .header__container::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 88px;
     right: 0;

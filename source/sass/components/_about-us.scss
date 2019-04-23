@@ -6,6 +6,7 @@
 
 .about-us__title {
   width: 260px;
+
   @include heading-secondary;
 }
 
@@ -44,8 +45,6 @@
 .about-us__item--handmade {
   order: 1;
 }
-
-.about-us__item--local-support {}
 
 .about-us__item--giftbox {
   width: 250px;
@@ -97,7 +96,7 @@
     order: 5;
   }
 
-  .about-us__item--eco p{
+  .about-us__item--eco p {
     width: 230px;
   }
 
@@ -120,7 +119,6 @@
   .about-us__item--giftbox p {
     width: 280px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -134,7 +132,5 @@
 
   .about-us__list {
     width: 660px;
-
   }
-
 }

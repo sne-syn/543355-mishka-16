@@ -4,6 +4,7 @@
 
 .card__list {
   width: 260px;
+
   @include indent-reset;
   list-style: none;
 }
@@ -60,11 +61,13 @@
 
 .card-table__header {
   display: inline;
+
   @include indent-reset;
 }
 
 .card-table__cell {
   display: inline;
+
   @include indent-reset;
 }
 
@@ -74,7 +77,7 @@
   margin-bottom: 20px;
 }
 
-.card-table__cell--price  {
+.card-table__cell--price {
   display: inline;
   text-align: left;
   line-height: 24px;
@@ -109,12 +112,14 @@
   .card {
     width: 1150px;
   }
+
   .card__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   .card__item {
     width: 315px;
     min-height: 660px;

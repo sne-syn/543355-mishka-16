@@ -61,12 +61,12 @@
   .demonstration__description {
     width: 584px;
   }
+
   .demonstration__btn {
     width: 584px;
     margin-bottom: 50px;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .demonstration {
@@ -82,5 +82,4 @@
   .demonstration__btn {
     width: 191px;
   }
-
 }

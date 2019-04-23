@@ -1,5 +1,6 @@
 .user-menu {
   width: 320px;
+
   @include indent-reset;
 }
 
@@ -29,7 +30,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .user-menu {
     order: 1;
     display: flex;

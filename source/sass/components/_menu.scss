@@ -1,5 +1,6 @@
 .menu {
   width: 320px;
+
   @include indent-reset;
 }
 
@@ -58,8 +59,8 @@
     padding-right: 14px;
   }
 
- .menu__item--new,
- .menu__item--sale{
+  .menu__item--new,
+  .menu__item--sale {
     display: none;
   }
 
@@ -67,7 +68,6 @@
   .menu__item--order a {
     font-size: 15px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -111,7 +111,7 @@
   }
 
   .menu__item--catalog,
-  .menu__item--order  {
+  .menu__item--order {
     order: 0;
   }
 
@@ -126,7 +126,7 @@
   }
 
   .menu__link--order .menu__link,
-  .menu__link--catalog .menu__link{
+  .menu__link--catalog .menu__link {
     font-size: 17px;
   }
 }
