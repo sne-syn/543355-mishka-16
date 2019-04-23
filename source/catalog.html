@@ -7,50 +7,44 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <nav class="main-nav main-nav--opened main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+  <header class="header">
+    <div class="header__container">
+      <a class="header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+          </picture>
+        </a>
 
-          <div class="main-nav__wrapper menu">
-              <ul class="main-nav__list menu__product">
-              <li class="menu__item menu__item--main-page header__logo">
-                  <a class="header__logo-link" href="index.html">
-                  <picture>
-                    <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-                    <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                    <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
-                  </picture>
-                  </a>
-                </li>
-
-                <li class="menu__item">
-                  <a class="menu__link menu__link--catalog" href="catalog.html">Каталог товаров</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link menu__link--order" href="form.html">Вязание на заказ</a>
-                </li>
-              </ul>
-              <ul class="main-nav__list menu__user">
-                <li class="menu__item menu__item--search">
-                  <a class="menu__link" href="#">Поиск по сайту</a>
-                </li>
-                <li class="menu__item menu__item--bucket">
-                  <a class="menu__link" href="#">Корзина: пока пуста</a>
-                </li>
-              </ul>
-              <ul class="main-nav__list menu__offer">
-                  <li class="menu__item menu__item--new">
-                    <a class="menu__link" href="#">Новые поступления</a>
-                  </li>
-                  <li class="menu__item menu__item--sale">
-                    <a class="menu__link" href="#">Распродажа</a>
-                  </li>
-                </ul>
-          </div>
-        </nav>
-
-        <p class="header__single-line">Бесплатная доставка по России</p>
-      </header>
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="menu">
+        <li class="menu__item menu__item--catalog">
+          <a class="menu__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="menu__item menu__item--order">
+          <a class="menu__link " href="form.html">Вязание на заказ</a>
+        </li>
+        <li class="menu__item menu__item--new">
+          <a class="menu__link" href="#">Новые поступления</a>
+        </li>
+        <li class="menu__item menu__item--sale">
+          <a class="menu__link" href="#">Распродажа</a>
+        </li>
+      </ul>
+      </nav>
+      <ul class="user-menu">
+        <li class="user-menu__item user-menu__item--search">
+          <a class="user-menu__link" href="#">Поиск по сайту</a>
+        </li>
+        <li class="user-menu__item user-menu__item--basket">
+          <a class="user-menu__link" href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+    </div>
+    <p class="header__single-line">Бесплатная доставка по России</p>
+  </header>
   <main>
       <div class="heading-catalog"><h1 class="heading-catalog__text">Каталог товаров</h1>
     </div>

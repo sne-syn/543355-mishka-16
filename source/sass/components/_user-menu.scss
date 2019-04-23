@@ -16,7 +16,6 @@
 .user-menu__link {
   font-size: 17px;
   line-height: 24px;
-  letter-spacing: 1.1px;
   font-weight: bold;
   color: $color-secondary;
 
@@ -36,17 +35,14 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 400px;
-  }
-
-  .user-menu__item {
-   display: inline-flex;
+    width: 390px;
   }
 
   .user-menu__item--search {
     width: 85px;
-    height: 85px;
-    background-color: lightblue;
+    height: 88px;
+    border-right: 1px solid #ececec;
+    border-left: 1px solid #ececec;
   }
 
   .user-menu__item--search .user-menu__link {
@@ -58,11 +54,21 @@
     width: 300px;
     box-sizing: border-box;
     padding-left: 80px;
+    padding-top: 29px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .user-menu {
     order: 5;
+    width: 400px;
+  }
+
+  .user-menu__item--basket {
+    order: 2;
+    width: 300px;
+    box-sizing: border-box;
+    padding-left: 80px;
+    padding-top: 29px;
   }
 }
