@@ -1,14 +1,26 @@
+.menu {
+  width: 320px;
+
+  @include indent-reset;
+}
+
 .menu__item {
+  width: 320px;
   box-sizing: border-box;
-  border-top: 1px solid $color-tertiary;
-  padding-top: 22px;
+  padding-top: 24px;
   padding-bottom: 25px;
+  padding-left: 75px;
+  list-style: none;
+}
+
+.menu__item--new,
+.menu__item--sale {
+  display: none;
 }
 
 .menu__link {
   font-size: 17px;
   line-height: 24px;
-  letter-spacing: 1.1px;
   font-weight: bold;
   color: $color-secondary;
 
@@ -18,5 +30,103 @@
 
   &:active {
     color: rgba($color-secondary, 0.3);
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 370px;
+  }
+
+  .menu__item {
+    text-align: right;
+    width: 185px;
+    padding-left: 0;
+    padding-top: 14px;
+  }
+
+  .menu__item--catalog {
+    order: 3;
+    padding-right: 2px;
+  }
+
+  .menu__item--order {
+    order: 4;
+    padding-right: 14px;
+  }
+
+  .menu__item--new,
+  .menu__item--sale {
+    display: none;
+  }
+
+  .menu__item--catalog a,
+  .menu__item--order a {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu {
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .menu__item {
+    width: 224px;
+    padding-left: 50px;
+    padding-top: 28px;
+    padding-bottom: 30px;
+    text-align: left;
+    border: none;
+  }
+
+  .menu__item--sale,
+  .menu__item--new {
+    display: block;
+    padding-top: 15px;
+    font-size: 15px;
+    border: none;
+  }
+
+  .menu__item--new {
+    width: 234px;
+  }
+
+  .menu__item--sale {
+    width: 215px;
+    padding-left: 33px;
+  }
+
+  .menu__item--sale a,
+  .menu__item--new a {
+    font-size: 15px;
+  }
+
+  .menu__item--catalog,
+  .menu__item--order {
+    order: 0;
+  }
+
+  .menu__item--catalog {
+    width: 234px;
+    border-right: 1px solid #ececec;
+  }
+
+  .menu__item--order {
+    width: 215px;
+    padding-left: 33px;
+  }
+
+  .menu__link--order .menu__link,
+  .menu__link--catalog .menu__link {
+    font-size: 17px;
   }
 }

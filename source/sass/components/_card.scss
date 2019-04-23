@@ -1,13 +1,17 @@
-.card__list {
-  @include indent;
+.card {
+  width: 320px;
 }
 
-.card__description {
-  padding: 0 20px;
+.card__list {
+  width: 260px;
+
+  @include indent-reset;
+  list-style: none;
 }
 
 .card__item {
   width: 260px;
+  box-sizing: border-box;
   margin-bottom: 30px;
   border: 2px solid $color-tertiary;
 
@@ -20,7 +24,17 @@
   }
 }
 
+.card__img {
+  margin-bottom: 30px;
+}
+
+
+.card__description {
+  padding: 0 30px;
+}
+
 .card__title {
+  margin-bottom: 15px;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
@@ -32,5 +46,82 @@
 
   &:active {
     color: rgba($color-secondary, 0.3);
+  }
+}
+
+.card-table {
+  width: 200px;
+  box-sizing: border-box;
+  font-size: 13px;
+}
+
+.card-table__row--inline {
+  display: inline;
+}
+
+.card-table__header {
+  display: inline;
+
+  @include indent-reset;
+}
+
+.card-table__cell {
+  display: inline;
+
+  @include indent-reset;
+}
+
+.card-table__row--price {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.card-table__cell--price {
+  display: inline;
+  text-align: left;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .card {
+    width: 768px;
+  }
+
+  .card__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .card__item {
+    width: 667px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 334px;
+  }
+
+  .card__link {
+    width: 333px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card {
+    width: 1150px;
+  }
+
+  .card__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card__item {
+    width: 315px;
+    min-height: 660px;
   }
 }

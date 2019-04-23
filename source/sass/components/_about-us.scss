@@ -1,14 +1,18 @@
 .about-us {
+  width: 320px;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 }
 
 .about-us__title {
+  width: 260px;
+
   @include heading-secondary;
 }
 
 .about-us__list {
-  @include indent;
+  @include indent-reset;
+  padding-bottom: 5px;
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
@@ -17,5 +21,116 @@
 }
 
 .about-us__item {
-  padding-top: 90px;
+  width: 255px;
+  padding-top: 84px;
+  padding-left: 3px;
+}
+
+.about-us__item p {
+  @include indent-reset;
+}
+
+.about-us__item--eco {
+  width: 195px;
+}
+
+.about-us__item--style {
+  width: 220px;
+}
+
+.about-us__item--likes {
+  width: 200px;
+}
+
+.about-us__item--handmade {
+  order: 1;
+}
+
+.about-us__item--giftbox {
+  width: 250px;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    width: 768px;
+  }
+
+  .about-us__title {
+    width: 678px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .about-us__item {
+    width: 300px;
+    display: flex;
+  }
+
+  .about-us__item--handmade {
+    order: 1;
+  }
+
+  .about-us__item--style {
+    order: 2;
+  }
+
+  .about-us__item--local-support {
+    order: 3;
+  }
+
+  .about-us__item--likes {
+    order: 4;
+  }
+
+  .about-us__item--giftbox {
+    order: 5;
+  }
+
+  .about-us__item--eco p {
+    width: 230px;
+  }
+
+  .about-us__item--style p {
+    width: 260px;
+  }
+
+  .about-us__item--likes p {
+    width: 240px;
+  }
+
+  .about-us__item--handmade p {
+    margin-top: 0;
+  }
+
+  .about-us__item--local-support p {
+    width: 300px;
+  }
+
+  .about-us__item--giftbox p {
+    width: 280px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    width: 1150px;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+  }
+
+  .about-us__list {
+    width: 660px;
+  }
 }

@@ -3,6 +3,6 @@
 }
 
 .heading-form__text {
-  @include indent;
+  @include indent-reset;
   @include heading-primary;
 }
