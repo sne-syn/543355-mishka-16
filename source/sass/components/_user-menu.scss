@@ -7,7 +7,7 @@
 .user-menu__item {
   width: 320px;
   box-sizing: border-box;
-  padding-top: 22px;
+  padding-top: 23px;
   padding-bottom: 25px;
   padding-left: 75px;
   list-style: none;
@@ -29,8 +29,16 @@
   }
 }
 
+.user-menu__item--search,
+.user-menu__item--basket {
+  position: relative;
+}
+
 .user-menu__icon-search,
 .user-menu__icon-basket {
+  position: absolute;
+  top: 30px;
+  left: 32px;
   fill: rgba(0, 0, 0, 0.3);
 }
 
