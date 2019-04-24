@@ -4,7 +4,7 @@
 
 .demonstration__content {
   width: 260px;
-  margin-bottom: 30px;
+  margin-bottom: 62px;
   border: 2px solid $color-tertiary;
 
   &:hover {
@@ -36,6 +36,7 @@
   width: 191px;
   box-sizing: border-box;
   margin: 0 auto;
+  margin-bottom: 28px;
   font-size: 13px;
   line-height: 24px;
 }
@@ -60,6 +61,8 @@
 
   .demonstration__description {
     width: 584px;
+    font-size: 15px;
+    line-height: 30px;
   }
 
   .demonstration__btn {
@@ -74,12 +77,31 @@
   }
 
   .demonstration__content {
+    width: 1050px;
     display: flex;
-    flex-direction: column;
-    width: 316px;
+    flex-direction: row;
+    // align-items: center;
+  }
+
+  .demonstration__title {
+    display: flex;
+    width: 155px;
+    padding-left: 30px;
+  }
+
+  .demonstration__description {
+    display: flex;
+
+    width: 280px;
+  }
+
+  .demonstration__video {
+
+    order: -1;
   }
 
   .demonstration__btn {
+    display: flex;
     width: 191px;
   }
 }

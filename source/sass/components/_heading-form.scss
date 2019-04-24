@@ -6,3 +6,15 @@
   @include indent-reset;
   @include heading-primary;
 }
+
+@media (min-width: $tablet-width) {
+  .heading-form__text {
+    @include heading-primary--tablet;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .heading-form__text {
+    @include heading-primary--desktop;
+  }
+}

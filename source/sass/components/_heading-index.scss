@@ -36,8 +36,7 @@
 
   .heading-index__text {
     width: 510px;
-    font-size: 43px;
-    line-height: 50px;
+    @include heading-primary--tablet;
   }
 }
 
@@ -54,7 +53,6 @@
 
   .heading-index__text {
     width: 720px;
-    font-size: 53px;
-    line-height: 57px;
+    @include heading-primary--desktop;
   }
 }

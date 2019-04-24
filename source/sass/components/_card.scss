@@ -25,16 +25,15 @@
 }
 
 .card__img {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 
 .card__description {
-  padding: 0 30px;
+  padding: 0 25px;
 }
 
 .card__title {
-  margin-bottom: 15px;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
@@ -50,7 +49,7 @@
 }
 
 .card-table {
-  width: 200px;
+  width: 205px;
   box-sizing: border-box;
   font-size: 13px;
 }
@@ -74,8 +73,9 @@
 .card-table__row--price {
   position: relative;
   display: block;
-  margin-top: 50px;
+  margin-top: 42px;
   margin-bottom: 20px;
+  letter-spacing: 1.1px;
 }
 
 .card-table__row--price::before {
@@ -114,6 +114,12 @@
     min-height: 334px;
   }
 
+  .card__title {
+    display: block;
+    width: 240px;
+    font-size: 20px;
+  }
+
   .card__link {
     width: 333px;
   }
@@ -129,6 +135,7 @@
   }
 
   .card__list {
+    width: 1050px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -139,6 +146,7 @@
     width: 315px;
     min-height: 660px;
   }
+
   .card-table__row--price::before {
     width: 250px;
   }

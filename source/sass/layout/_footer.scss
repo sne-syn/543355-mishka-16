@@ -18,6 +18,7 @@
 }
 
 .footer__copyright {
+  position: relative;
   display: block;
   width: 135px;
   text-align: center;
@@ -25,6 +26,16 @@
   line-height: 18px;
   font-weight: bold;
   color: $color-secondary;
+}
+
+.footer__copyright::before {
+  position: absolute;
+  content: "";
+  top: -20px;
+  left: 0;
+  width: 250px;
+  height: 1px;
+  background-color: #e5e5e5;
 }
 
 @media (min-width: $tablet-width) {
@@ -41,6 +52,10 @@
 
   .footer__logo {
     display: block;
+  }
+
+  .footer__copyright::before {
+    display: none;
   }
 }
 
