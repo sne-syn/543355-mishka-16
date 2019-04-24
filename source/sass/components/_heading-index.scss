@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-position: 50% -18px;
   background-size: 582px auto;
-  background-color: #fcfcfc;
+  background-color: #f9f9f9;
 }
 
 .heading-index__text {
@@ -22,7 +22,6 @@
 @media (min-width: $tablet-width) {
   .heading-index {
     min-height: 750px;
-    // margin-top: -57px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-size: 1178px auto;
   }

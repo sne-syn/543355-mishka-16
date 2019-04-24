@@ -5,6 +5,7 @@
 }
 
 .menu__item {
+  position: relative;
   width: 320px;
   box-sizing: border-box;
   padding-top: 24px;
@@ -12,6 +13,16 @@
   padding-left: 75px;
   list-style: none;
 }
+
+.menu__item::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: -230px;
+  width: 768px;
+  height: 1px;
+  background-color: #ececec;
+  }
 
 .menu__item--new,
 .menu__item--sale {
@@ -47,6 +58,9 @@
     width: 185px;
     padding-left: 0;
     padding-top: 14px;
+  }
+  .menu__item::after {
+    display: none;
   }
 
   .menu__item--catalog {
