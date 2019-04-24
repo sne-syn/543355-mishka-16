@@ -24,7 +24,7 @@
   left: -230px;
   width: 768px;
   height: 1px;
-  background-color: #ececec;
+  background-color: $color-tertiary;
   }
 
 .header__logo--link:hover {
@@ -58,7 +58,7 @@
     right: -200px;
     width: 1150px;
     height: 1px;
-    background-color: #e7e7e7;
+    background-color: $color-tertiary;
   }
 
   .header__logo {
@@ -98,7 +98,7 @@
   .header__container {
     position: relative;
     display: flex;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: flex-start;
   }
 
@@ -109,7 +109,7 @@
     right: -500px;
     width: 3050px;
     height: 1px;
-    background-color: #e7e7e7;
+    background-color: $color-tertiary;
   }
 
   .header__logo {

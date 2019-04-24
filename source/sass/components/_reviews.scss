@@ -47,6 +47,14 @@
 @media (min-width: $tablet-width) {
   .reviews {
     width: 768px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 -18px;
+    background-size: 350px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .reviews__block {
@@ -70,6 +78,7 @@
 @media (min-width: $desktop-width) {
   .reviews {
     width: 1150px;
+    background-position: 0 -18px;
   }
 
   .reviews__title {

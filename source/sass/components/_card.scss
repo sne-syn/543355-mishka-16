@@ -72,9 +72,20 @@
 }
 
 .card-table__row--price {
+  position: relative;
   display: block;
   margin-top: 50px;
   margin-bottom: 20px;
+}
+
+.card-table__row--price::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 205px;
+  height: 1px;
+  background-color: $color-tertiary;
 }
 
 .card-table__cell--price {
@@ -98,13 +109,17 @@
   .card__item {
     width: 667px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     min-height: 334px;
   }
 
   .card__link {
     width: 333px;
+  }
+
+  .card-table__row--price::before {
+    width: 270px;
   }
 }
 
@@ -123,5 +138,8 @@
   .card__item {
     width: 315px;
     min-height: 660px;
+  }
+  .card-table__row--price::before {
+    width: 250px;
   }
 }
