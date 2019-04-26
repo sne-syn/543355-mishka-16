@@ -36,6 +36,7 @@
 
   .heading-index__text {
     width: 510px;
+
     @include heading-primary--tablet;
   }
 }
@@ -53,6 +54,7 @@
 
   .heading-index__text {
     width: 720px;
+
     @include heading-primary--desktop;
   }
 }

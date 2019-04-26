@@ -22,7 +22,7 @@
   width: 768px;
   height: 1px;
   background-color: #ececec;
-  }
+}
 
 .menu__item--new,
 .menu__item--sale {
@@ -59,6 +59,7 @@
     padding-left: 0;
     padding-top: 14px;
   }
+
   .menu__item::after {
     display: none;
   }

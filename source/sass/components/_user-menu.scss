@@ -15,13 +15,13 @@
 }
 
 .user-menu__item::after {
-position: absolute;
-content: "";
-bottom: 0;
-left: -230px;
-width: 768px;
-height: 1px;
-background-color: #ececec;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: -230px;
+  width: 768px;
+  height: 1px;
+  background-color: #ececec;
 }
 
 .user-menu__link {
@@ -53,12 +53,12 @@ background-color: #ececec;
 }
 
 .user-menu__item--search:hover .user-menu__icon-search,
-.user-menu__item--basket:hover .user-menu__icon-basket  {
+.user-menu__item--basket:hover .user-menu__icon-basket {
   fill: $color-green-light;
 }
 
 .user-menu__item--search:active .user-menu__icon-search,
-.user-menu__item--basket:active .user-menu__icon-basket  {
+.user-menu__item--basket:active .user-menu__icon-basket {
   fill: rgba($color-green-light, 0.3);
 }
 
