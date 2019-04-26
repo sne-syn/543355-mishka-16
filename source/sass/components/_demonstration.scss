@@ -79,29 +79,23 @@
   .demonstration__content {
     width: 1050px;
     display: flex;
-    flex-direction: row;
-    // align-items: center;
+    align-items: center;
   }
 
   .demonstration__title {
-    display: flex;
     width: 155px;
     padding-left: 30px;
   }
 
   .demonstration__description {
-    display: flex;
-
     width: 280px;
   }
 
   .demonstration__video {
-
     order: -1;
   }
 
   .demonstration__btn {
-    display: flex;
     width: 191px;
   }
 }

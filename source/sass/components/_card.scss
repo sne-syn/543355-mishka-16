@@ -25,6 +25,8 @@
 }
 
 .card__img {
+  width: 260px;
+  height: 195px;
   margin-bottom: 26px;
 }
 
@@ -111,21 +113,32 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 334px;
+  }
+
+  .card__img {
+    width: 334px;
+    height: 334px;
   }
 
   .card__title {
     display: block;
     width: 240px;
+    margin-bottom: 5px;
+    padding-top: 23px;
     font-size: 20px;
   }
 
-  .card__link {
-    width: 333px;
+  .card-table {
+    font-size: 15px;
   }
 
   .card-table__row--price::before {
     width: 270px;
+  }
+
+  .card-table__cell--price {
+    font-size: 17px;
+    line-height: 24px;
   }
 }
 
