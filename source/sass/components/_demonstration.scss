@@ -56,6 +56,8 @@
   }
 
   .demonstration__content {
+    display: flex;
+    flex-direction: column;
     width: 670px;
   }
 
@@ -63,6 +65,10 @@
     width: 584px;
     font-size: 15px;
     line-height: 30px;
+  }
+
+  .demonstration__video {
+    order: -1;
   }
 
   .demonstration__btn {
@@ -77,25 +83,30 @@
   }
 
   .demonstration__content {
-    width: 1050px;
+    position: relative;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    min-height: 455px;
   }
 
   .demonstration__title {
     width: 155px;
-    padding-left: 30px;
+    margin-left: 657px;
   }
 
   .demonstration__description {
     width: 280px;
+    margin-left: 750px;
   }
 
   .demonstration__video {
+    position: absolute;
+    left: 0;
     order: -1;
   }
 
   .demonstration__btn {
     width: 191px;
+    margin-left: 750px;
   }
 }

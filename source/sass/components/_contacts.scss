@@ -149,6 +149,7 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
+    position: relative;
     width: 1150px;
   }
 
@@ -170,9 +171,21 @@
 
   .contacts__table {
     width: 305px;
+    margin-left: 175px;
   }
 
+  .contacts__table-row--direction {
+    margin-left: 0;
+}
+
   .contacts__map {
+    position: absolute;
+    top: -50px;
+    right: 0;
     width: 525px;
+  }
+
+  .contacts__btn {
+    margin-left: 175px;
   }
 }

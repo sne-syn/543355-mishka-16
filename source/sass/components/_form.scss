@@ -1,0 +1,35 @@
+.form__fieldset {
+  @include indent-reset;
+
+  border: none;
+}
+
+.form__legend {
+  position: relative;
+
+  @include indent-reset;
+
+  margin-bottom: 27px;
+  letter-spacing: 2.1px;
+  color: $color-green-light;
+  text-transform: uppercase;
+}
+
+.form__legend::before {
+  position: absolute;
+  content: "";
+  top: 15px;
+  left: 61px;
+  width: 200px;
+  height: 1px;
+  background-color: $color-green-light;
+}
+
+.form__radio {
+  margin-bottom: 10px;
+}
+
+.form__checkbox {
+  margin-bottom: -8px;
+}
+
