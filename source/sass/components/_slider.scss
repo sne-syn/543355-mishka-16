@@ -21,6 +21,7 @@
   .slider {
     position: relative;
   }
+
   .slider__btn {
     width: 85px;
     // border: none;
@@ -38,6 +39,7 @@
     right: -48px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .slider__btn {
     border: none;
