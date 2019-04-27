@@ -50,29 +50,29 @@
   }
 }
 
-.card-table {
+.card__table {
   width: 205px;
   box-sizing: border-box;
   font-size: 13px;
 }
 
-.card-table__row--inline {
+.card__table-row--inline {
   display: inline;
 }
 
-.card-table__header {
-  display: inline;
-
-  @include indent-reset;
-}
-
-.card-table__cell {
+.card__table-header {
   display: inline;
 
   @include indent-reset;
 }
 
-.card-table__row--price {
+.card__table-cell {
+  display: inline;
+
+  @include indent-reset;
+}
+
+.card__table-row--price {
   position: relative;
   display: block;
   margin-top: 42px;
@@ -80,7 +80,7 @@
   letter-spacing: 1.1px;
 }
 
-.card-table__row--price::before {
+.card__table-row--price::before {
   position: absolute;
   content: "";
   top: 0;
@@ -90,7 +90,7 @@
   background-color: $color-tertiary;
 }
 
-.card-table__cell--price {
+.card__table-cell--price {
   display: inline;
   text-align: left;
   line-height: 24px;
@@ -128,15 +128,15 @@
     font-size: 20px;
   }
 
-  .card-table {
+  .card__table {
     font-size: 15px;
   }
 
-  .card-table__row--price::before {
+  .card__table-row--price::before {
     width: 270px;
   }
 
-  .card-table__cell--price {
+  .card__table-cell--price {
     font-size: 17px;
     line-height: 24px;
   }
@@ -160,7 +160,7 @@
     min-height: 660px;
   }
 
-  .card-table__row--price::before {
+  .card__table-row--price::before {
     width: 250px;
   }
 }

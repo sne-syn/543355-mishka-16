@@ -60,7 +60,7 @@
   .popular-product {
     position: relative;
     width: 768px;
-    margin-bottom: 125px;
+    margin-bottom: 118px;
   }
 
   .popular-product__title {
@@ -123,8 +123,9 @@
 @media (min-width: $desktop-width) {
   .popular-product {
     width: 1150px;
-    margin-bottom: 165px;
+
   }
+
 
   .popular-product__title {
     width: 530px;
