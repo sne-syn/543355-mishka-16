@@ -4,14 +4,13 @@
 
 .individual-order__intro {
   width: 260px;
-  @include indent-reset;
 
+  @include indent-reset;
   margin-top: 23px;
   margin-bottom: 16px;
   font-size: 13px;
   line-height: 24px;
 }
-
 
 @media (min-width: $tablet-width) {
   .individual-order {
@@ -21,6 +20,6 @@
   .individual-order__intro {
     width: 680px;
     font-size: 17px;
-    line-height: 30px
+    line-height: 30px;
   }
 }
