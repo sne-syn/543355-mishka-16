@@ -86,12 +86,36 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
+
     width: 768px;
   }
 
   .contacts__title {
+    position: relative;
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .contacts__title::before {
+    position: absolute;
+    content: "";
+    top: -3px;
+    right: 43px;
+    width: 4px;
+    height: 80px;
+    background-color: #221f1f;
+  }
+
+  .contacts__title::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 0 20px 39px;
+    border-color: transparent transparent transparent #62d1ba;
   }
 
   .contacts__table {
@@ -119,8 +143,17 @@
   }
 
   .contacts__title {
+    margin-left: 175px;
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .contacts__title::before {
+    left: 0;
+  }
+
+  .contacts__title::after {
+    left: 0;
   }
 
   .contacts__table {
