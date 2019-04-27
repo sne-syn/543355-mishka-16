@@ -127,12 +127,42 @@
   }
 
   .popular-product__title {
+    width: 530px;
+    margin-left: 171px;
+    margin-top: 126px;
+    margin-bottom: 49px;
     font-size: 53px;
     line-height: 57px;
+    z-index: 100;
+  }
+
+  .popular-product__mark {
+    top: 15px;
+    left: 89px;
+  }
+
+  .popular-product__text {
+    width: 300px;
+    margin-left: 175px;
+    margin-bottom: 49px;
+  }
+
+  .popular-product__table {
+    margin-left: 176px;
+    margin-bottom: 109px;
+  }
+
+  .popular-product__price {
+    margin-left: 176px;
+  }
+
+  .popular-product__btn {
+    display: block;
+    margin-left: 176px;
   }
 
   .popular-product__image {
-    top: 0;
+    top: -52px;
     right: 50px;
   }
 }
