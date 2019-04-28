@@ -113,12 +113,12 @@
           <legend class="user-data__legend form__legend">ФИО</legend>
           <div class="user-data__field">
             <label class="user-data__name" for="name">Имя:
-              <input id="name" name="user" placeholder="Введите ваше имя" type="text">
+              <input id="name" name="user" placeholder="Введите ваше имя*" type="text">
             </label>
           </div>
           <div class="user-data__field">
             <label class="user-data__surname" for="surname">Фамилия:
-              <input id="surname" name="user" placeholder="Укажите фамилию" type="text">
+              <input id="surname" name="user" placeholder="Укажите фамилию*" type="text">
             </label>
           </div>
           <div class="user-data__field">
@@ -126,20 +126,20 @@
               <input id="patronymic" name="user" placeholder="Отчество, если желаете" type="text">
             </label>
           </div>
-          <div class="user-data__field">
-                <label class="user-data__number form__legend" for="number">тел<input id="number" name="number" placeholder="+7 XXX XX XX" type="tel"></label>
+          <div class="user-data__field user-data__field--contacts">
+                <label class="user-data__number form__legend" for="number">тел<input id="number" name="number" placeholder="+7 XXX XXX XX XX*" type="tel"></label>
           </div>
-          <div class="user-data__field">
-            <label class="user-data__email form__legend" for="email">e-mail<input id="email" name="email" placeholder="Ваш Email"
+          <div class="user-data__field user-data__field--contacts">
+            <label class="user-data__email form__legend" for="email">e-mail<input id="email" name="email" placeholder="Ваш Email*"
                 type="email"></label>
           </div>
           <label class="user-data__text form__legend" for="comment">доп
-            <textarea id="comment" name="comment" placeholder="Опишите все ваши пожелания к заказу" rows="10"></textarea>
+            <textarea class="user-data__comment-area" id="comment" name="comment" placeholder="Опишите все ваши пожелания к заказу" rows="6"></textarea>
           </label>
           </fieldset>
         </div>
-        <small>Поля обязательны для заполнения</small>
-        <button class="btn individual-order__btn" type="submit">Отправить</button>
+        <small class="form__small-note">*Поля обязательны для заполнения</small>
+        <button class="btn individual-order__btn" type="submit">Отправить заказ</button>
         </form>
     </section>
   </main>

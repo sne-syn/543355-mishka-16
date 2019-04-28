@@ -9,8 +9,9 @@
 
   @include indent-reset;
 
-  margin-bottom: 27px;
+  margin-bottom: 28px;
   letter-spacing: 2.1px;
+  font-weight: bold;
   color: $color-green-light;
   text-transform: uppercase;
 }
@@ -19,8 +20,8 @@
   position: absolute;
   content: "";
   top: 15px;
-  left: 61px;
-  width: 200px;
+  left: 62px;
+  width: 199px;
   height: 1px;
   background-color: $color-green-light;
 }
@@ -32,3 +33,10 @@
 .form__checkbox {
   margin-bottom: -8px;
 }
+
+.form__small-note {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+

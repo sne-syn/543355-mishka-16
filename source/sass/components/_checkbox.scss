@@ -3,10 +3,51 @@
 }
 
 .checkbox__field {
+  position: relative;
   display: block;
   margin-bottom: 43px;
   padding-left: 62px;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
+}
+
+.checkbox__field input[type="checkbox"]+.checkbox__indication {
+  position: absolute;
+  top: -11px;
+  left: 1px;
+  width: 36px;
+  height: 35px;
+  border: 2px solid $color-primary;
+}
+
+.checkbox__field input[type="checkbox"]:hover+.checkbox__indication {
+  border: 2px solid $color-green-light;
+}
+
+.checkbox__field input[type="checkbox"]:active+.checkbox__indication {
+  border: 2px solid rgba($color-primary, 0.3);
+}
+
+.checkbox__field input[type="checkbox"]:checked+.checkbox__indication::before,
+.checkbox__field input[type="checkbox"]:checked+.checkbox__indication::after {
+  position: absolute;
+  content: "";
+  background-color: $color-primary;
+}
+
+.checkbox__field input[type="checkbox"]:checked+.checkbox__indication::before {
+  top: 21px;
+  left: 6px;
+  width: 9px;
+  height: 2px;
+  transform: rotate(45deg);
+}
+
+.checkbox__field input[type="checkbox"]:checked+.checkbox__indication::after {
+  top: 17px;
+  left: 10px;
+  width: 22px;
+  height: 2px;
+  transform: rotate(-45deg);
 }

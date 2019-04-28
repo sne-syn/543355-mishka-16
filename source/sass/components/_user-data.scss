@@ -1,7 +1,97 @@
+.user-data {
+  margin-bottom: 8px;
+}
+
+.user-data__legend {
+  margin-bottom: 22px;
+}
+
 .user-data__field {
   display: block;
-  margin-bottom: 43px;
+  margin-bottom: 22px;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
+}
+
+.user-data__field input {
+  display: block;
+  width: 258px;
+  margin-left: 1px;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  font-size: 17px;
+  color: $color-primary;
+  line-height: 18px;
+  border: none;
+  border-bottom: 2px solid $color-secondary;
+  outline: none;
+}
+
+.user-data__field input:hover,
+.user-data__field input:active {
+  border-bottom: 2px solid $color-green-light;
+
+}
+
+.user-data__field input::placeholder {
+  color: rgba($color-primary, 0.3);
+}
+
+.user-data__field input:-webkit-autofill,
+.user-data__field input:-webkit-autofill:hover,
+.user-data__field input:-webkit-autofill:focus,
+.user-data__field input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+.user-data__field--contacts {
+  margin-top: 31px;
+
+}
+
+.user-data__number,
+.user-data__email {
+  letter-spacing: 0.2px;
+}
+
+.user-data__number.form__legend::before {
+  top: 12px;
+}
+
+.user-data__email.form__legend::before {
+  top: 12px;
+  left: 82px;
+  width: 179px;
+}
+
+.user-data__field--contacts input {
+  padding-top: 21px;
+  padding-bottom: 17px;
+}
+
+.user-data__text {
+  margin-top: 3px;
+}
+
+.user-data__text.form__legend::before {
+  top: 12px;
+}
+
+.user-data__comment-area {
+  display: block;
+  box-sizing: border-box;
+  width: 260px;
+  min-height: 142px;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-left: 15px;
+  font-size: 17px;
+  line-height: 18px;
+  border: 2px solid $color-secondary;
+}
+
+.user-data__comment-area::placeholder {
+  color: rgba($color-primary, 0.3);
+  letter-spacing: 0.4px;
 }
