@@ -31,7 +31,6 @@
 .user-data__field input:hover,
 .user-data__field input:active {
   border-bottom: 2px solid $color-green-light;
-
 }
 
 .user-data__field input::placeholder {
@@ -42,12 +41,11 @@
 .user-data__field input:-webkit-autofill:hover,
 .user-data__field input:-webkit-autofill:focus,
 .user-data__field input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px white inset;
+  box-shadow: 0 0 0 30px white inset;
 }
 
 .user-data__field--contacts {
   margin-top: 31px;
-
 }
 
 .user-data__number,

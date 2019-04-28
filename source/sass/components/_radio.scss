@@ -9,37 +9,37 @@
 }
 
 .radio__button {
-	position: relative;
-	margin: 0;
-	padding: 0;
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
-.radio__field input[type="radio"]+.radio__button {
-	position: absolute;
+.radio__field input[type="radio"] + .radio__button {
+  position: absolute;
   top: -9px;
   left: 2px;
   width: 35px;
   height: 35px;
-	border: 2px solid $color-primary;
-	border-radius: 50%;
+  border: 2px solid $color-primary;
+  border-radius: 50%;
 }
 
-.radio__field input[type="radio"]:hover+.radio__button {
+.radio__field input[type="radio"]:hover + .radio__button {
   border: 2px solid $color-green-light;
 }
 
-.radio__field input[type="radio"]:active+.radio__button {
+.radio__field input[type="radio"]:active + .radio__button {
   border: 2px solid rgba($color-primary, 0.3);
 }
 
-.radio__field input[type="radio"]:checked+.radio__button::before {
-	content: "";
-	position: absolute;
+.radio__field input[type="radio"]:checked + .radio__button::before {
+  content: "";
+  position: absolute;
   top: 11px;
   left: 10px;
   width: 12px;
   height: 12px;
-	background-color: $color-green-light;
-	border: 1px solid $color-green-light;
-	border-radius: 50%;
+  background-color: $color-green-light;
+  border: 1px solid $color-green-light;
+  border-radius: 50%;
 }
