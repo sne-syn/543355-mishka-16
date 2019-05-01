@@ -1,40 +1,73 @@
-.form__fieldset {
-  @include indent-reset;
+// .form__fieldset {
+//   @include indent-reset;
 
-  border: none;
-}
+//   border: none;
+// }
 
-.form__legend {
-  position: relative;
+// .form__legend {
+//   position: relative;
 
-  @include indent-reset;
+//   @include indent-reset;
 
-  margin-bottom: 28px;
-  letter-spacing: 2.1px;
-  font-weight: bold;
-  color: $color-green-light;
-  text-transform: uppercase;
-}
+//   margin-bottom: 28px;
+//   letter-spacing: 2.1px;
+//   font-weight: bold;
+//   color: $color-green-light;
+//   text-transform: uppercase;
+// }
 
-.form__legend::before {
-  position: absolute;
-  content: "";
-  top: 15px;
-  left: 62px;
-  width: 199px;
-  height: 1px;
-  background-color: $color-green-light;
-}
+// .form__legend::before {
+//   position: absolute;
+//   content: "";
+//   top: 15px;
+//   left: 62px;
+//   width: 199px;
+//   height: 1px;
+//   background-color: $color-green-light;
+// }
 
-.form__radio {
-  margin-bottom: 10px;
-}
+// .form__list {
+//   @include indent-reset;
+//   list-style: none;
+// }
 
-.form__checkbox {
-  margin-bottom: -8px;
-}
+// .form__list.radio__list {
+//   margin-bottom: 10px;
+// }
 
-.form__small-note {
-  font-size: 14px;
-  line-height: 16px;
-}
+// .form__checkbox {
+//   margin-bottom: -8px;
+// }
+
+// .form__small-note {
+//   font-size: 14px;
+//   line-height: 16px;
+// }
+
+// @media (min-width: $tablet-width) {
+
+//   .form {
+//     width: 720px;
+//   }
+//   .form__legend::before {
+//     display: none;
+//   }
+
+//   // .form__block {
+//   //   display: flex;
+//   //   flex-direction: row;
+//   // }
+
+//   .form__legend {
+//     width: 175px;
+//     display: inline-block;
+//   }
+
+//   .form__items {
+//     display: inline-block;
+//   }
+
+//   .form__field {
+//     // width: 350px;
+//   }
+// }

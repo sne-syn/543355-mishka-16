@@ -1,14 +1,11 @@
-.individual-order {
+.individual-order .wrapper {
   width: 320px;
   color: $color-secondary;
 }
 
 .individual-order__intro {
   width: 260px;
-
-  @include indent-reset;
   margin-top: 23px;
-  margin-bottom: 16px;
   font-size: 13px;
   line-height: 24px;
 }
@@ -19,13 +16,24 @@
 }
 
 @media (min-width: $tablet-width) {
-  .individual-order {
-    width: 768px;
+  .individual-order .wrapper{
+    width:  768px;
+  }
+
+  .individual-order__intro {
+    width: 620px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .individual-order .wrapper{
+    width:  1150px;
   }
 
   .individual-order__intro {
     width: 680px;
-    font-size: 17px;
-    line-height: 30px;
   }
 }
