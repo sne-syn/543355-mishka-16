@@ -77,7 +77,7 @@
       <form action="https://echo.htmlacademy.ru" class="form individual-order__form" method="post">
         <div class="radio">
         <fieldset class="radio__fieldset form__fieldset wrapper">
-          <legend class="radio__legend form__legend">Тип</legend>
+          <h3 class="radio__legend form__legend">Тип</h3>
           <ul class="radio__list form__list">
             <li class="radio__item radio__item--accessory">
               <label class="radio__field form__field" for="accessory">
@@ -96,8 +96,9 @@
       </div>
       <div class="checkbox">
         <fieldset class="checkbox__fieldset form__fieldset wrapper">
-          <legend class="checkbox__legend form__legend">Цвет</legend>
-          <ul class="checkbox__list form__list">
+          <h3 class="checkbox__legend form__legend">Цвет</h3>
+          <div class="form__list">
+          <ul class="checkbox__list">
             <li class="checkbox__item checkbox__item--white">
               <label class="checkbox__field form__field" for="white">
                 <input checked class="visually-hidden" id="white" name="colors" type="checkbox">
@@ -135,47 +136,51 @@
               </label>
             </li>
           </ul>
-          </div>
+        </div>
         </fieldset>
       </div>
       <div class="user-data">
         <fieldset class="user-data__fieldset form__fieldset wrapper">
-          <legend class="user-data__legend form__legend">ФИО</legend>
+          <h3 class="user-data__legend form__legend">ФИО</h3>
           <ul class="user-data__list form__list">
-          <li class="user-data__item form__field">
+          <li class="user-data__field form__field">
             <label class="user-data__name" for="name">Имя:
               <input id="name" name="user" placeholder="Введите ваше имя*" type="text">
             </label>
           </li>
-          <li class="user-data__item form__field">
+          <li class="user-data__field form__field">
             <label class="user-data__surname" for="surname">Фамилия:
               <input id="surname" name="user" placeholder="Укажите фамилию*" type="text">
             </label>
           </li>
-          <li class="user-data__item form__field">
+          <li class="user-data__field form__field">
             <label class="user-data__patronymic" for="patronymic">Отчество:
               <input id="patronymic" name="user" placeholder="Отчество, если желаете" type="text">
             </label>
           </li>
           </ul>
           </fieldset>
-          <ul class="user-data__list user-data__contacts form__list">
-          <li class="user-data__item user-data__item--contacts form__field">
+          <ul class="user-data__list user-data__contacts form__list wrapper">
+          <li class="user-data__field user-data__field--contacts form__field">
             <label class="user-data__number form__legend" for="number">тел<input id="number" name="number"
                 placeholder="+7 XXX XXX XX XX*" type="tel"></label>
           </li>
-          <li class="user-data__item user-data__item--contacts form__field">
+          <li class="user-data__field user-data__field--contacts form__field">
             <label class="user-data__email form__legend" for="email">e-mail<input id="email" name="email"
                 placeholder="Ваш Email*" type="email"></label>
           </li>
           </ul>
-          <label class="user-data__text form__legend wrapper" for="comment">доп
-            <textarea class="user-data__comment-area" id="comment" name="comment"
+          <div class="user-data__text wrapper">
+          <label class="user-data__comment form__legend " for="comment">доп
+            <textarea class="user-data__textarea" id="comment" name="comment"
               placeholder="Опишите все ваши пожелания к заказу" rows="6"></textarea>
           </label>
+        </div>
       </div>
-        <small class="form__small-note">*Поля обязательны для заполнения</small>
+      <div class="form__lastline-group wrapper">
+        <p class="form__small-note">*Поля обязательны для заполнения</p>
         <button class="btn individual-order__btn" type="submit">Отправить заказ</button>
+      </div>
       </form>
     </section>
   </main>

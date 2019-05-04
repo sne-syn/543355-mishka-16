@@ -1,73 +1,96 @@
-// .form__fieldset {
-//   @include indent-reset;
+.form__fieldset {
+  @include indent-reset;
 
-//   border: none;
-// }
+  border: none;
+}
 
-// .form__legend {
-//   position: relative;
+.form__legend {
+  position: relative;
 
-//   @include indent-reset;
+  @include indent-reset;
 
-//   margin-bottom: 28px;
-//   letter-spacing: 2.1px;
-//   font-weight: bold;
-//   color: $color-green-light;
-//   text-transform: uppercase;
-// }
+  margin-bottom: 28px;
+  letter-spacing: 2.1px;
+  font-weight: bold;
+  color: $color-green-light;
+  text-transform: uppercase;
+}
 
-// .form__legend::before {
-//   position: absolute;
-//   content: "";
-//   top: 15px;
-//   left: 62px;
-//   width: 199px;
-//   height: 1px;
-//   background-color: $color-green-light;
-// }
+.form__legend::before {
+  position: absolute;
+  content: "";
+  top: 15px;
+  left: 62px;
+  width: 199px;
+  height: 1px;
+  background-color: $color-green-light;
+}
 
-// .form__list {
-//   @include indent-reset;
-//   list-style: none;
-// }
+.form__list {
+  @include indent-reset;
+  list-style: none;
+}
 
-// .form__list.radio__list {
-//   margin-bottom: 10px;
-// }
+.form__list.radio__list {
+  margin-bottom: -7px;
+}
 
-// .form__checkbox {
-//   margin-bottom: -8px;
-// }
+.form__small-note {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+}
 
-// .form__small-note {
-//   font-size: 14px;
-//   line-height: 16px;
-// }
+@media (min-width: $tablet-width) {
 
-// @media (min-width: $tablet-width) {
+  .form {
+    margin-top: 75px;
+    padding-left: 5px;
+  }
 
-//   .form {
-//     width: 720px;
-//   }
-//   .form__legend::before {
-//     display: none;
-//   }
+  .form__legend::before {
+    display: none;
+  }
 
-//   // .form__block {
-//   //   display: flex;
-//   //   flex-direction: row;
-//   // }
+  .form__fieldset {
+    width: 620px;
+  }
 
-//   .form__legend {
-//     width: 175px;
-//     display: inline-block;
-//   }
+  .form__legend {
+    width: 160px;
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: 0;
+    font-size: 17px;
+    line-height: 16px;
+  }
 
-//   .form__items {
-//     display: inline-block;
-//   }
+  .form__field {
+    font-size: 19px;
+    line-height: 18px;
+    letter-spacing: 1px;  }
 
-//   .form__field {
-//     // width: 350px;
-//   }
-// }
+  .form__list {
+    width: 500px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .form__lastline-group.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 768px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 46px;
+  }
+
+  .form__small-note {
+    width: 304px;
+    align-self: baseline;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
