@@ -64,7 +64,7 @@
 
 @media (min-width: $tablet-width) {
   .checkbox {
-    padding-top: 64px;
+    padding-top: 67px;
     padding-bottom: 20px;
     background-color: $color-background;
   }
@@ -104,8 +104,4 @@
     width: 28px;
     height: 2px;
   }
-
-  // .checkbox__field.form__field {
-  //   display: flex;
-  // }
 }

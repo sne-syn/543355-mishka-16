@@ -39,6 +39,7 @@
   display: block;
   font-size: 14px;
   line-height: 16px;
+  color: $color-primary;
 }
 
 .form__btn.btn {
@@ -50,14 +51,11 @@
 @media (min-width: $tablet-width) {
 
   .form {
-    margin-top: 75px;
+    margin-top: 72px;
   }
 
   .form__legend::before {
     display: none;
-  }
-
-  .form__fieldset {
   }
 
   .form__legend {

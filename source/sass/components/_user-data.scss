@@ -107,11 +107,17 @@
 
 @media (min-width: $tablet-width) {
   .user-data {
-    padding-top: 48px;
+    padding-top: 47px;
   }
 
   .user-data--color {
+    padding-top: 51px;
+    padding-bottom: 33px;
     background-color: $color-background;
+  }
+
+  .user-data .wrapper {
+    padding-right: 48px;
   }
 
   .user-data__legend {
@@ -176,5 +182,31 @@
   .user-data__email input {
     width: 499px;
     margin-left: 106px;
+  }
+
+  .user-data__textblock {
+    margin-top: 52px;
+    margin-bottom: 44px;
+  }
+
+  .user-data__text {
+    margin-bottom: 46px;
+  }
+
+  .user-data__comment.form__legend {
+    display: inline-block;
+    vertical-align: top;
+    width: 161px;
+    margin-top: 17px;
+  }
+
+  .user-data__textarea {
+    display: inline-block;
+    vertical-align: top;
+    width: 500px;
+    margin-top: 0;
+    padding-top: 13px;
+    padding-left: 15px;
+    font-size: 19px;
   }
 }
