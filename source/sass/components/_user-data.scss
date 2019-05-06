@@ -107,6 +107,74 @@
 
 @media (min-width: $tablet-width) {
   .user-data {
-    padding-top: 65px;
+    padding-top: 48px;
+  }
+
+  .user-data--color {
+    background-color: $color-background;
+  }
+
+  .user-data__legend {
+    margin-top: 19px;
+  }
+
+  .user-data__field {
+    margin-bottom: 20px;
+  }
+
+  .user-data__field .user-data__name input{
+    width: 426px;
+    margin-left: 21px;
+  }
+
+  .user-data__surname input{
+    margin-left: 25px;
+  }
+
+  .user-data__patronymic input{
+    margin-left: 24px;
+  }
+
+  .user-data__fieldset {
+    margin-bottom: 26px;
+  }
+  .user-data__field input {
+    display: inline-block;
+    vertical-align: middle;
+    width: 371px;
+    padding-left: 16px;
+    font-size: 19px;
+    letter-spacing: 0.5px;
+  }
+
+  .user-data__contacts.form__list {
+    display: block;
+  }
+
+  .user-data__contacts .form__legend {
+    width: 665px;
+    margin-bottom: 0;
+  }
+
+  .user-data__field--contacts {
+    margin-bottom: 22px;
+  }
+
+  .user-data__field--contacts input{
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 16px;
+    padding-bottom: 14px;
+    background-color: #f1f1f1;
+  }
+
+  .user-data__number input {
+    width: 498px;
+    margin-left: 134px;
+  }
+
+  .user-data__email input {
+    width: 499px;
+    margin-left: 106px;
   }
 }

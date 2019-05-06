@@ -41,11 +41,16 @@
   line-height: 16px;
 }
 
+.form__btn.btn {
+  width: 260px;
+  margin-top: 31px;
+  margin-bottom: 55px;
+}
+
 @media (min-width: $tablet-width) {
 
   .form {
     margin-top: 75px;
-    padding-left: 5px;
   }
 
   .form__legend::before {
@@ -53,7 +58,6 @@
   }
 
   .form__fieldset {
-    width: 620px;
   }
 
   .form__legend {
@@ -65,26 +69,22 @@
     line-height: 16px;
   }
 
-  .form__field {
-    font-size: 19px;
-    line-height: 18px;
-    letter-spacing: 1px;  }
-
   .form__list {
     width: 500px;
     display: inline-block;
     vertical-align: middle;
   }
 
-  .form__lastline-group.wrapper{
+  .form__field {
+    font-size: 19px;
+    line-height: 18px;
+    letter-spacing: 1px;
+  }
+
+  .form__submit {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 768px;
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 46px;
   }
 
   .form__small-note {
@@ -92,5 +92,12 @@
     align-self: baseline;
     font-size: 17px;
     line-height: 30px;
+  }
+
+  .form__btn.btn {
+    order:-1;
+    width: 230px;
+    margin: 0;
+    line-height: 16px;
   }
 }

@@ -11,14 +11,10 @@
   line-height: 24px;
 }
 
-.individual-order__btn.btn {
-  width: 260px;
-  margin-top: 31px;
-  margin-bottom: 55px;
-}
+
 
 @media (min-width: $tablet-width) {
-  .individual-order .wrapper{
+  .individual-order .wrapper {
     width:  768px;
   }
 
@@ -29,17 +25,10 @@
     font-size: 17px;
     line-height: 30px;
   }
-
-  .individual-order__btn.btn {
-    order:-1;
-    width: 230px;
-    margin: 0;
-    line-height: 16px;
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .individual-order .wrapper{
+  .individual-order .wrapper {
     width:  1150px;
   }
 
