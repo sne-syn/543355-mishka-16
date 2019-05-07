@@ -21,7 +21,7 @@
 .radio__field input[type="radio"] + .radio__button {
   position: absolute;
   top: -10px;
-  left: 0px;
+  left: 0;
   width: 35px;
   height: 35px;
   border: 2px solid $color-primary;
@@ -51,13 +51,13 @@
 @media (min-width: $tablet-width) {
   .radio__fieldset {
     margin-bottom: 17px;
-    
   }
 
   .radio__field {
     margin-bottom: 58px;
     padding-left: 82px;
   }
+
   .radio__field input[type="radio"] + .radio__button {
     top: -17px;
     left: 2px;
@@ -70,5 +70,11 @@
     left: 12px;
     width: 19px;
     height: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .radio__legend.form__legend {
+    width: 105px;
   }
 }

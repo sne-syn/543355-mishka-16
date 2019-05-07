@@ -144,43 +144,42 @@
             <h3 class="user-data__legend form__legend">ФИО</h3>
             <ul class="form__list">
               <li class="user-data__field form__field">
-                <label class="user-data__name" for="name">Имя:
-                  <input id="name" name="user" placeholder="Введите ваше имя*" type="text">
-                </label>
+                <label class="user-data__name" for="name">Имя:</label>
+                <input class="user-data__input" id="name" name="user" placeholder="Введите ваше имя*" type="text">
               </li>
               <li class="user-data__field form__field">
-                <label class="user-data__surname" for="surname">Фамилия:
-                  <input id="surname" name="user" placeholder="Укажите фамилию*" type="text">
-                </label>
+                <label class="user-data__surname" for="surname">Фамилия:</label>
+                <input class="user-data__input" id="surname" name="user" placeholder="Укажите фамилию*" type="text">
               </li>
               <li class="user-data__field form__field">
-                <label class="user-data__patronymic" for="patronymic">Отчество:
-                  <input id="patronymic" name="user" placeholder="Отчество, если желаете" type="text">
-                </label>
+                <label class="user-data__patronymic" for="patronymic">Отчество:</label>
+                <input class="user-data__input" id="patronymic" name="user" placeholder="Отчество, если желаете"
+                  type="text">
               </li>
             </ul>
           </fieldset>
         </div>
-        <div class="user-data user-data--color">
-          <ul class="user-data__contacts form__list wrapper">
+        <div class="user-data user-data--communicate">
+          <ul class="form__list wrapper">
             <li class="user-data__field user-data__field--contacts form__field">
-              <label class="user-data__number form__legend" for="number">тел<input id="number" name="number"
-                  placeholder="+7 XXX XXX XX XX*" type="tel"></label>
+              <label class="user-data__number form__legend" for="number">тел</label>
+              <input class="user-data__input" id="number" name="number" placeholder="+7 XXX XXX XX XX*" type="tel">
             </li>
             <li class="user-data__field user-data__field--contacts form__field">
-              <label class="user-data__email form__legend" for="email">e-mail<input id="email" name="email"
-                  placeholder="Ваш Email*" type="email"></label>
+              <label class="user-data__email form__legend" for="email">e-mail</label>
+              <input class="user-data__input" id="email" name="email" placeholder="Ваш Email*" type="email">
             </li>
           </ul>
         </div>
-        <div class="user-data__textblock">
+        <div class="user-data user-data--suggestion">
           <div class="user-data__text wrapper">
             <label class="user-data__comment form__legend" for="comment">доп</label>
-              <textarea class="user-data__textarea" id="comment" name="comment"
-                placeholder="Опишите все ваши пожелания к заказу" rows="6"></textarea>
+            <textarea class="user-data__textarea" id="comment" name="comment"
+              placeholder="Опишите все ваши пожелания к заказу" rows="6"></textarea>
           </div>
-
-          <div class="form__submit wrapper">
+        </div>
+        <div class="form__submit">
+          <div class="form__submit--wrapper">
             <p class="form__small-note">*Поля обязательны для заполнения</p>
             <button class="btn form__btn" type="submit">Отправить заказ</button>
           </div>

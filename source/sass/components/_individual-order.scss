@@ -11,11 +11,9 @@
   line-height: 24px;
 }
 
-
-
 @media (min-width: $tablet-width) {
   .individual-order .wrapper {
-    width:  768px;
+    width: 768px;
     padding-left: 52px;
     padding-right: 48px;
   }
@@ -29,12 +27,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .individual-order {
+    margin-top: 150px;
+  }
+
   .individual-order .wrapper {
-    width:  1150px;
+    width: 1150px;
+    padding-left: 115px;
   }
 
   .individual-order__intro {
     width: 680px;
+    padding-left: 110px;
   }
-
 }

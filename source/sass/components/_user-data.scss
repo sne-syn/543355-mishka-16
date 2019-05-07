@@ -13,11 +13,10 @@
 .user-data__field {
   margin-bottom: 22px;
   font-size: 17px;
-  line-height: 18px;
   font-weight: bold;
 }
 
-.user-data__field input {
+.user-data__input {
   display: block;
   width: 260px;
   box-sizing: border-box;
@@ -31,20 +30,20 @@
   outline: none;
 }
 
-.user-data__field input:hover,
-.user-data__field input:active,
-.user-data__field input:focus {
+.user-data__input:hover,
+.user-data__input:active,
+.user-data__input:focus {
   border-bottom: 2px solid $color-green-light;
 }
 
-.user-data__field input::placeholder {
+.user-data__input::placeholder {
   color: rgba($color-primary, 0.3);
 }
 
-.user-data__field input:-webkit-autofill,
-.user-data__field input:-webkit-autofill:hover,
-.user-data__field input:-webkit-autofill:focus,
-.user-data__field input:-webkit-autofill:active {
+.user-data__input:-webkit-autofill,
+.user-data__input:-webkit-autofill:hover,
+.user-data__input:-webkit-autofill:focus,
+.user-data__input:-webkit-autofill:active {
   box-shadow: 0 0 0 30px white inset;
 }
 
@@ -63,17 +62,17 @@
   width: 179px;
 }
 
-.user-data__field--contacts  {
+.user-data__field--contacts {
   margin-bottom: 32px;
 }
 
-.user-data__number input,
-.user-data__email input {
+.user-data__number .user-data__input,
+.user-data__email .user-data__input {
   padding-top: 21px;
   padding-bottom: 17px;
 }
 
-.user-data__contacts {
+.user-data--communicate .form__list {
   margin-bottom: -8px;
 }
 
@@ -96,7 +95,7 @@
 }
 
 .user-data__textarea:hover,
-.user-data__textarea:active{
+.user-data__textarea:active {
   border: 2px solid $color-green-light;
 }
 
@@ -110,9 +109,10 @@
     padding-top: 47px;
   }
 
-  .user-data--color {
+  .user-data--communicate {
+    margin-bottom: 0;
     padding-top: 51px;
-    padding-bottom: 33px;
+    padding-bottom: 35px;
     background-color: $color-background;
   }
 
@@ -121,72 +121,82 @@
   }
 
   .user-data__legend {
+    width: 163px;
     margin-top: 19px;
   }
 
   .user-data__field {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 
-  .user-data__field .user-data__name input{
-    width: 426px;
+  .user-data__input {
+    display: inline-block;
+    vertical-align: middle;
+    width: 371px;
+    margin-left: 19px;
+    padding-left: 18px;
+    padding-bottom: 15px;
+    font-size: 19px;
+    letter-spacing: 0.5px;
+  }
+
+  .user-data__name + .user-data__input {
+    width: 427px;
+    margin-left: 19px;
+  }
+
+  .user-data__surname + .user-data__input,
+  .user-data__patronymic + .user-data__input {
+    width: 375px;
     margin-left: 21px;
-  }
-
-  .user-data__surname input{
-    margin-left: 25px;
-  }
-
-  .user-data__patronymic input{
-    margin-left: 24px;
   }
 
   .user-data__fieldset {
     margin-bottom: 26px;
   }
-  .user-data__field input {
-    display: inline-block;
-    vertical-align: middle;
-    width: 371px;
-    padding-left: 16px;
-    font-size: 19px;
-    letter-spacing: 0.5px;
-  }
 
-  .user-data__contacts.form__list {
+  .user-data--communicate .form__list {
     display: block;
   }
 
-  .user-data__contacts .form__legend {
-    width: 665px;
-    margin-bottom: 0;
-  }
-
   .user-data__field--contacts {
-    margin-bottom: 22px;
+    margin-bottom: 13px;
   }
 
-  .user-data__field--contacts input{
+  .user-data__field--contacts .user-data__input {
     display: inline-block;
     vertical-align: middle;
+    width: 500px;
+    margin-left: 0;
     padding-top: 16px;
     padding-bottom: 14px;
     background-color: #f1f1f1;
   }
 
-  .user-data__number input {
+  .user-data__number.form__legend,
+  .user-data__email.form__legend {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 160px;
+  }
+
+  .user-data__number .user-data__input {
+    display: inline-block;
+    vertical-align: middle;
     width: 498px;
     margin-left: 134px;
   }
 
-  .user-data__email input {
+  .user-data__email .user-data__input {
+    display: inline-block;
+    vertical-align: middle;
     width: 499px;
     margin-left: 106px;
   }
 
-  .user-data__textblock {
-    margin-top: 52px;
-    margin-bottom: 44px;
+  .user-data--suggestion {
+    margin-top: 7px;
+    margin-bottom: 51px;
   }
 
   .user-data__text {
@@ -203,10 +213,76 @@
   .user-data__textarea {
     display: inline-block;
     vertical-align: top;
-    width: 500px;
+    width: 502px;
     margin-top: 0;
     padding-top: 13px;
     padding-left: 15px;
     font-size: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-data__fieldset {
+    margin-bottom: 29px;
+  }
+
+  .user-data__legend {
+    width: 110px;
+  }
+
+  .user-data__input {
+    width: 570px;
+    padding-bottom: 16px;
+  }
+
+  .user-data__name + .user-data__input {
+    width: 626px;
+  }
+
+  .user-data__surname + .user-data__input,
+  .user-data__patronymic + .user-data__input {
+    width: 574px;
+    padding-bottom: 15px;
+  }
+
+  .user-data--communicate {
+    padding-top: 47px;
+  }
+
+  .user-data__number + .user-data__input,
+  .user-data__email + .user-data__input {
+    width: 700px;
+  }
+
+  .user-data__email .user-data__input {
+    width: 498px;
+    margin-left: 53px;
+    padding-top: 12px;
+  }
+
+  .user-data--communicate .form__legend {
+    margin-bottom: 0;
+  }
+
+  .user-data__field--contacts {
+    margin-bottom: 22px;
+  }
+
+  .user-data__number.form__legend,
+  .user-data__email.form__legend {
+    width: 107px;
+  }
+
+  .user-data--suggestion {
+    margin-top: 4px;
+    margin-bottom: 47px;
+  }
+
+  .user-data__comment.form__legend {
+    width: 108px;
+  }
+
+  .user-data__textarea {
+    width: 700px;
   }
 }
