@@ -1,4 +1,4 @@
-.radio__fieldset {
+.radio {
   margin-bottom: 19px;
 }
 
@@ -49,8 +49,15 @@
 }
 
 @media (min-width: $tablet-width) {
-  .radio__fieldset {
+  .radio {
+    padding-top: 18px;
     margin-bottom: 17px;
+  }
+
+  .radio__block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .radio__field {
@@ -75,6 +82,10 @@
 
 @media (min-width: $desktop-width) {
   .radio__legend.form__legend {
-    width: 105px;
+    width: 108px;
+  }
+
+  .radio__item {
+    width: 340px;
   }
 }

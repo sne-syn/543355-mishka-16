@@ -75,8 +75,9 @@
           и мы свяжемся с вами, чтобы уточнить детали.</p>
       </div>
       <form action="https://echo.htmlacademy.ru" class="form individual-order__form" method="post">
-        <div class="radio">
-          <fieldset class="radio__fieldset form__fieldset wrapper">
+
+        <fieldset class="radio form__fieldset">
+          <div class="radio__block wrapper">
             <h3 class="radio__legend form__legend">Тип</h3>
             <ul class="radio__list form__list">
               <li class="radio__item radio__item--accessory">
@@ -92,55 +93,55 @@
                 </label>
               </li>
             </ul>
-          </fieldset>
-        </div>
-        <div class="checkbox">
-          <fieldset class="checkbox__fieldset form__fieldset wrapper">
+          </div>
+        </fieldset>
+
+        <fieldset class="checkbox form__fieldset">
+          <div class="checkbox__block wrapper">
             <h3 class="checkbox__legend form__legend">Цвет</h3>
-            <div class="form__list">
-              <ul class="checkbox__list">
-                <li class="checkbox__item checkbox__item--white">
-                  <label class="checkbox__field form__field" for="white">
-                    <input checked class="visually-hidden" id="white" name="colors" type="checkbox">
-                    <span class="checkbox__indication"></span> Белый
-                  </label>
-                </li>
-                <li class="checkbox__item checkbox__item--grey">
-                  <label class="checkbox__field form__field" for="grey">
-                    <input checked class="visually-hidden" id="grey" name="colors" type="checkbox">
-                    <span class="checkbox__indication"></span> Серый
-                  </label>
-                </li>
-                <li class="checkbox__item checkbox__item--tiffany">
-                  <label class="checkbox__field form__field" for="tiffany">
-                    <input class="visually-hidden" id="tiffany" name="colors" type="checkbox">
-                    <span class="checkbox__indication"></span> «Тиффани»
-                  </label>
-                </li>
-                <li class="checkbox__item checkbox__item--black">
-                  <label class="checkbox__field form__field" for="black">
-                    <input class="visually-hidden" id="black" name="colors" type="checkbox">
-                    <span class="checkbox__indication"></span> Черный
-                  </label>
-                </li>
-                <li class="checkbox__item checkbox__item--pink">
-                  <label class="checkbox__field form__field" for="rose">
-                    <input class="visually-hidden" id="rose" name="colors" type="checkbox">
-                    <span class="checkbox__indication"></span> Розовый
-                  </label>
-                </li>
-                <li class="checkbox__item checkbox__item--orange">
-                  <label class="checkbox__field form__field" for="orange">
-                    <input class="visually-hidden" id="orange" name="colors" type="checkbox">
-                    <span class="checkbox__indication"></span> Оранжевый
-                  </label>
-                </li>
-              </ul>
-            </div>
-          </fieldset>
-        </div>
-        <div class="user-data">
-          <fieldset class="user-data__fieldset form__fieldset wrapper">
+            <ul class="checkbox__list form__list">
+              <li class="checkbox__item checkbox__item--white">
+                <label class="checkbox__field form__field" for="white">
+                  <input checked class="visually-hidden" id="white" name="colors" type="checkbox">
+                  <span class="checkbox__indication"></span> Белый
+                </label>
+              </li>
+              <li class="checkbox__item checkbox__item--grey">
+                <label class="checkbox__field form__field" for="grey">
+                  <input checked class="visually-hidden" id="grey" name="colors" type="checkbox">
+                  <span class="checkbox__indication"></span> Серый
+                </label>
+              </li>
+              <li class="checkbox__item checkbox__item--tiffany">
+                <label class="checkbox__field form__field" for="tiffany">
+                  <input class="visually-hidden" id="tiffany" name="colors" type="checkbox">
+                  <span class="checkbox__indication"></span> «Тиффани»
+                </label>
+              </li>
+              <li class="checkbox__item checkbox__item--black">
+                <label class="checkbox__field form__field" for="black">
+                  <input class="visually-hidden" id="black" name="colors" type="checkbox">
+                  <span class="checkbox__indication"></span> Черный
+                </label>
+              </li>
+              <li class="checkbox__item checkbox__item--pink">
+                <label class="checkbox__field form__field" for="rose">
+                  <input class="visually-hidden" id="rose" name="colors" type="checkbox">
+                  <span class="checkbox__indication"></span> Розовый
+                </label>
+              </li>
+              <li class="checkbox__item checkbox__item--orange">
+                <label class="checkbox__field form__field" for="orange">
+                  <input class="visually-hidden" id="orange" name="colors" type="checkbox">
+                  <span class="checkbox__indication"></span> Оранжевый
+                </label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+
+        <fieldset class="user-data form__fieldset ">
+          <div class="user-data__block wrapper">
             <h3 class="user-data__legend form__legend">ФИО</h3>
             <ul class="form__list">
               <li class="user-data__field form__field">
@@ -157,8 +158,9 @@
                   type="text">
               </li>
             </ul>
-          </fieldset>
-        </div>
+          </div>
+
+        </fieldset>
         <div class="user-data user-data--communicate">
           <ul class="form__list wrapper">
             <li class="user-data__field user-data__field--contacts form__field">

@@ -59,6 +59,7 @@
 @media (min-width: $tablet-width) {
   .form {
     margin-top: 72px;
+    margin-bottom: 51px;
   }
 
   .form__legend::before {
@@ -66,18 +67,10 @@
   }
 
   .form__legend {
-    width: 160px;
-    display: inline-block;
-    vertical-align: top;
+    width: 166px;
     letter-spacing: 0;
     font-size: 17px;
     line-height: 16px;
-  }
-
-  .form__list {
-    width: 500px;
-    display: inline-block;
-    vertical-align: middle;
   }
 
   .form__field {
@@ -112,7 +105,7 @@
 
 @media (min-width: $desktop-width) {
   .form {
-    margin-top: 75px;
+    margin-top: 55px;
     margin-bottom: 50px;
   }
 
@@ -126,7 +119,7 @@
 
   .form__submit-wrapper {
     width: 1150px;
-    padding-left: 227px;
-    padding-right: 221px;
+    padding-left: 224px;
+    padding-right: 224px;
   }
 }

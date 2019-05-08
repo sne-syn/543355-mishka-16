@@ -1,15 +1,9 @@
-.checkbox__fieldset.form__fieldset {
+.checkbox.form__fieldset {
   margin-bottom: -9px;
 }
 
 .checkbox__legend.form__legend {
   margin-bottom: 30px;
-}
-
-.checkbox__list {
-  @include indent-reset;
-
-  list-style: none;
 }
 
 .checkbox__field {
@@ -63,16 +57,23 @@
 }
 
 @media (min-width: $tablet-width) {
-  .checkbox {
+  .checkbox.form__fieldset {
     padding-top: 65px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     background-color: $color-background;
+  }
+
+  .checkbox__block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .checkbox__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 500px;
   }
 
   .checkbox__item {
@@ -108,7 +109,7 @@
 
 
 @media (min-width: $desktop-width) {
-  .checkbox {
+  .checkbox.checkbox.form__fieldset {
     padding-top: 65px;
   }
 
@@ -122,6 +123,6 @@
   }
 
   .checkbox__item {
-    margin-right: 24px;
+    margin-right: 25px;
   }
 }
