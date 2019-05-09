@@ -1,9 +1,32 @@
-.modal {
+.modal--fixed-overlay {
+  position: fixed;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color-white, 0.9);
+}
+
+.modal__position {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -160px;
+  margin-top: -175px;
+}
+
+.modal__wrapper {
   width: 320px;
-  margin-bottom: 20px;
+  background-color: $color-white;
   border: 1px solid #c6c6c6;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
 }
+
+.modal {
+  display: none;
+}
+
 
 .modal__title {
   width: 150px;
@@ -34,7 +57,7 @@
 }
 
 .modal__btn {
-  width: 260px;
+  width: 258px;
   margin: 0 auto;
   margin-bottom: 45px;
   color: $color-white;
@@ -52,7 +75,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .modal {
+  .modal__position {
+    margin-left: -280px;
+  }
+
+  .modal__wrapper {
     width: 567px;
   }
 

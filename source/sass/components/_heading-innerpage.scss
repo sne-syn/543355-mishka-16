@@ -9,12 +9,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .heading-innerpage {
+    margin-top: -70px;
+  }
+
   .heading-innerpage__text {
     @include heading-primary--tablet;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .heading-innerpage {
+    margin-top: -75px;
+  }
+
   .heading-innerpage__text {
     @include heading-primary--desktop;
   }

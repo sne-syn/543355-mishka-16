@@ -205,7 +205,9 @@
           Academy</span></a>
     </div>
   </footer>
-  <section class="modal wrapper">
+  <section class="modal modal--fixed-overlay">
+  <div class="modal__position">
+    <div class="modal__wrapper wrapper">
     <h2 class="modal__title">Добавить в корзину</h2>
     <p class="modal__text">Выберите размер:</p>
     <form action="https://echo.htmlacademy.ru" class="modal__form" method="post">
@@ -216,7 +218,21 @@
       </ul>
       <button class="btn modal__btn" type="submit">Добавить</button>
     </form>
-  </section>
+  </div>
+  </div>
+</section>
+
+<!--
+  <script>
+    var link = document.querySelector(".popular-product__btn");
+    var popup = document.querySelector(".modal");
+
+    link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal--show");
+});
+  </script> -->
+
 </body>
 
 </html>
