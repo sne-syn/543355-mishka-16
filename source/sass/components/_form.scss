@@ -1,6 +1,11 @@
+.form__btn--error {
+  animation: shake 0.6s;
+}
+
 .form__fieldset {
   @include indent-reset;
-
+  font-size: 17px;
+  line-height: 16px;
   border: none;
 }
 
@@ -10,7 +15,6 @@
   @include indent-reset;
 
   margin-bottom: 28px;
-  letter-spacing: 2.1px;
   font-weight: bold;
   color: $color-green-light;
   text-transform: uppercase;
@@ -24,6 +28,11 @@
   width: 199px;
   height: 1px;
   background-color: $color-green-light;
+}
+
+.form__field {
+  font-size: 17px;
+  line-height: 18px;
 }
 
 .form__list {
@@ -122,5 +131,27 @@
     width: 1150px;
     padding-left: 224px;
     padding-right: 224px;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }

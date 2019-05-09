@@ -1,20 +1,21 @@
-.heading-form {
+.heading-innerpage {
   @include heading-colorblock;
+  margin-bottom: 80px;
 }
 
-.heading-form__text {
+.heading-innerpage__text {
   @include indent-reset;
   @include heading-primary;
 }
 
 @media (min-width: $tablet-width) {
-  .heading-form__text {
+  .heading-innerpage__text {
     @include heading-primary--tablet;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .heading-form__text {
+  .heading-innerpage__text {
     @include heading-primary--desktop;
   }
 }

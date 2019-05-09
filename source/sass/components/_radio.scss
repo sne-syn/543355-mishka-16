@@ -28,7 +28,8 @@
   border-radius: 50%;
 }
 
-.radio__field input[type="radio"]:hover + .radio__button {
+.radio__field input[type="radio"]:hover + .radio__button,
+.radio__field input[type="radio"]:focus + .radio__button {
   border: 2px solid $color-green-light;
 }
 
