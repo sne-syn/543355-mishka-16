@@ -1,7 +1,5 @@
 .main-nav {
   position: relative;
-  width: 320px;
-  margin: 0 auto;
 }
 
 .main-nav__toggle {
@@ -73,7 +71,7 @@
   .main-nav {
     order: 2;
     display: block;
-    width: auto;
+    // width: auto;
     margin: 0;
   }
 
@@ -85,10 +83,10 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     order: -1;
-    width: 450px;
+    // width: 450px;
   }
 
   .main-nav__list {
-    width: 1150px;
+    // width: 1150px;
   }
 }
