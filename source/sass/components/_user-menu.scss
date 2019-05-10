@@ -5,13 +5,23 @@
 }
 
 .user-menu__item {
+  position: relative;
   width: 320px;
   box-sizing: border-box;
   padding-top: 23px;
   padding-bottom: 25px;
   padding-left: 75px;
   list-style: none;
-  border-top: 1px solid $color-tertiary;
+}
+
+.user-menu__item::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: -230px;
+  width: 768px;
+  height: 1px;
+  background-color: #ececec;
 }
 
 .user-menu__link {
@@ -43,12 +53,12 @@
 }
 
 .user-menu__item--search:hover .user-menu__icon-search,
-.user-menu__item--basket:hover .user-menu__icon-basket  {
+.user-menu__item--basket:hover .user-menu__icon-basket {
   fill: $color-green-light;
 }
 
 .user-menu__item--search:active .user-menu__icon-search,
-.user-menu__item--basket:active .user-menu__icon-basket  {
+.user-menu__item--basket:active .user-menu__icon-basket {
   fill: rgba($color-green-light, 0.3);
 }
 
@@ -60,6 +70,10 @@
     flex-wrap: wrap;
     flex-direction: row;
     width: 390px;
+  }
+
+  .user-menu__item::after {
+    display: none;
   }
 
   .user-menu__item--search {

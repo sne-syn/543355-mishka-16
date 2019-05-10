@@ -12,9 +12,9 @@
   font-weight: 700;
 }
 
-// * {
-//   outline: 1px solid $color-green-light;
-// }
+* {
+  outline: 1px solid $color-green-light;
+}
 
 body {
   @include indent-reset;
@@ -42,6 +42,7 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden,
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;

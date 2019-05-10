@@ -12,6 +12,16 @@
   color: $color-secondary;
 }
 
+@mixin heading-primary--tablet {
+  font-size: 43px;
+  line-height: 50px;
+}
+
+@mixin heading-primary--desktop {
+  font-size: 53px;
+  line-height: 57px;
+}
+
 @mixin heading-secondary {
   margin: 0;
   padding: 0;
@@ -22,7 +32,7 @@
 }
 
 @mixin heading-colorblock {
-  padding-top: 75px;
-  padding-bottom: 80px;
+  padding-top: 72px;
+  padding-bottom: 75px;
   background-color: $color-background;
 }

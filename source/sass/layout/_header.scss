@@ -10,10 +10,21 @@
 }
 
 .header__logo {
+  position: relative;
   display: block;
   padding-top: 18px;
   padding-bottom: 22px;
   padding-left: 117px;
+}
+
+.header__logo::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: -230px;
+  width: 768px;
+  height: 1px;
+  background-color: $color-tertiary;
 }
 
 .header__logo--link:hover {
@@ -44,10 +55,10 @@
     content: "";
     position: absolute;
     top: 88px;
-    right: 0;
-    width: 768px;
+    right: -200px;
+    width: 1150px;
     height: 1px;
-    background-color: #e7e7e7;
+    background-color: $color-tertiary;
   }
 
   .header__logo {
@@ -58,6 +69,10 @@
     padding-left: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+
+  .header__logo::after {
+    display: none;
   }
 
   .header__logo-image {
@@ -83,7 +98,7 @@
   .header__container {
     position: relative;
     display: flex;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: flex-start;
   }
 
@@ -91,10 +106,10 @@
     content: "";
     position: absolute;
     top: 88px;
-    right: 0;
-    width: 1150px;
+    right: -500px;
+    width: 3050px;
     height: 1px;
-    background-color: #e7e7e7;
+    background-color: $color-tertiary;
   }
 
   .header__logo {

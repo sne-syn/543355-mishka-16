@@ -51,6 +51,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .wrapper.about-us {
+    padding-left: 46px;
+  }
+
   .about-us {
     width: 768px;
   }
@@ -64,9 +68,7 @@
   .about-us__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-
-
+    justify-content: flex-start;
     font-size: 20px;
     line-height: 22px;
   }
@@ -74,10 +76,18 @@
   .about-us__item {
     width: 300px;
     display: flex;
+    margin-right: 32px;
+    padding-top: 111px;
+    padding-left: 3px;
+  }
+
+  .about-us__item--eco {
+    padding-top: 103px;
   }
 
   .about-us__item--handmade {
     order: 1;
+    padding-top: 103px;
   }
 
   .about-us__item--style {
@@ -127,10 +137,11 @@
   }
 
   .about-us__title {
+    margin-left: 175px;
     font-size: 53px;
   }
 
   .about-us__list {
-    width: 660px;
+    margin-left: 175px;
   }
 }

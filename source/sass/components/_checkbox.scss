@@ -1,0 +1,129 @@
+.checkbox.form__fieldset {
+  margin-bottom: -9px;
+}
+
+.checkbox__legend.form__legend {
+  margin-bottom: 30px;
+}
+
+.checkbox__field {
+  position: relative;
+  display: block;
+  margin-bottom: 43px;
+  padding-left: 62px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.checkbox__field input[type="checkbox"] + .checkbox__indication {
+  position: absolute;
+  top: -11px;
+  left: 1px;
+  width: 36px;
+  height: 35px;
+  border: 2px solid $color-primary;
+}
+
+.checkbox__field input[type="checkbox"]:hover + .checkbox__indication,
+.checkbox__field input[type="checkbox"]:focus + .checkbox__indication {
+  border: 2px solid $color-green-light;
+}
+
+.checkbox__field input[type="checkbox"]:active + .checkbox__indication {
+  border: 2px solid rgba($color-primary, 0.3);
+}
+
+.checkbox__field input[type="checkbox"]:checked + .checkbox__indication::before,
+.checkbox__field input[type="checkbox"]:checked + .checkbox__indication::after {
+  position: absolute;
+  content: "";
+  background-color: $color-primary;
+}
+
+.checkbox__field input[type="checkbox"]:checked + .checkbox__indication::before {
+  top: 21px;
+  left: 6px;
+  width: 9px;
+  height: 2px;
+  transform: rotate(45deg);
+}
+
+.checkbox__field input[type="checkbox"]:checked + .checkbox__indication::after {
+  top: 17px;
+  left: 10px;
+  width: 22px;
+  height: 2px;
+  transform: rotate(-45deg);
+}
+
+@media (min-width: $tablet-width) {
+  .checkbox.form__fieldset {
+    padding-top: 65px;
+    padding-bottom: 10px;
+    background-color: $color-background;
+  }
+
+  .checkbox__block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .checkbox__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 500px;
+  }
+
+  .checkbox__item {
+    width: 238px;
+  }
+
+  .checkbox__field {
+    margin-bottom: 58px;
+    padding-left: 82px;
+  }
+
+  .checkbox__field input[type="checkbox"] + .checkbox__indication {
+    top: -16px;
+    left: 1px;
+    width: 50px;
+    height: 48px;
+  }
+
+  .checkbox__field input[type="checkbox"]:checked + .checkbox__indication::before {
+    top: 28px;
+    left: 7px;
+    width: 16px;
+    height: 2px;
+  }
+
+  .checkbox__field input[type="checkbox"]:checked + .checkbox__indication::after {
+    top: 24px;
+    left: 16px;
+    width: 28px;
+    height: 2px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .checkbox.form__fieldset {
+    padding-top: 65px;
+  }
+
+  .checkbox__legend.form__legend {
+    width: 111px;
+    margin-left: -4px;
+  }
+
+  .checkbox__list {
+    justify-content: flex-start;
+  }
+
+  .checkbox__item {
+    margin-right: 25px;
+  }
+}

@@ -1,8 +1,0 @@
-.heading-form {
-  @include heading-colorblock;
-}
-
-.heading-form__text {
-  @include indent-reset;
-  @include heading-primary;
-}

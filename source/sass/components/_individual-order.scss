@@ -1,0 +1,44 @@
+.individual-order .wrapper {
+  width: 320px;
+  color: $color-secondary;
+}
+
+.individual-order__entry .individual-order__intro {
+  width: 260px;
+  margin-top: 23px;
+  margin-bottom: 17px;
+  font-size: 13px;
+  line-height: 24px;
+  color: $color-primary;
+}
+
+@media (min-width: $tablet-width) {
+  .individual-order .wrapper {
+    width: 768px;
+    padding-left: 52px;
+    padding-right: 48px;
+  }
+
+  .individual-order__entry .individual-order__intro {
+    width: 620px;
+    margin-top: 72px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .individual-order {
+    margin-top: 150px;
+  }
+
+  .individual-order .wrapper {
+    width: 1150px;
+    padding-left: 115px;
+  }
+
+  .individual-order__entry .individual-order__intro {
+    width: 680px;
+    padding-left: 110px;
+  }
+}

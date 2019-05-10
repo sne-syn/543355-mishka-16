@@ -25,16 +25,17 @@
 }
 
 .card__img {
-  margin-bottom: 30px;
+  width: 260px;
+  height: 195px;
+  margin-bottom: 26px;
 }
 
 
 .card__description {
-  padding: 0 30px;
+  padding: 0 25px;
 }
 
 .card__title {
-  margin-bottom: 15px;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
@@ -49,35 +50,47 @@
   }
 }
 
-.card-table {
-  width: 200px;
+.card__table {
+  width: 205px;
   box-sizing: border-box;
   font-size: 13px;
 }
 
-.card-table__row--inline {
+.card__table-row--inline {
   display: inline;
 }
 
-.card-table__header {
-  display: inline;
-
-  @include indent-reset;
-}
-
-.card-table__cell {
+.card__table-header {
   display: inline;
 
   @include indent-reset;
 }
 
-.card-table__row--price {
+.card__table-cell {
+  display: inline;
+
+  @include indent-reset;
+}
+
+.card__table-row--price {
+  position: relative;
   display: block;
-  margin-top: 50px;
+  margin-top: 42px;
   margin-bottom: 20px;
+  letter-spacing: 1.1px;
 }
 
-.card-table__cell--price {
+.card__table-row--price::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 205px;
+  height: 1px;
+  background-color: $color-tertiary;
+}
+
+.card__table-cell--price {
   display: inline;
   text-align: left;
   line-height: 24px;
@@ -98,13 +111,34 @@
   .card__item {
     width: 667px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    min-height: 334px;
   }
 
-  .card__link {
-    width: 333px;
+  .card__img {
+    width: 334px;
+    height: 334px;
+  }
+
+  .card__title {
+    display: block;
+    width: 240px;
+    margin-bottom: 5px;
+    padding-top: 23px;
+    font-size: 20px;
+  }
+
+  .card__table {
+    font-size: 15px;
+  }
+
+  .card__table-row--price::before {
+    width: 270px;
+  }
+
+  .card__table-cell--price {
+    font-size: 17px;
+    line-height: 24px;
   }
 }
 
@@ -114,6 +148,7 @@
   }
 
   .card__list {
+    width: 1050px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -123,5 +158,9 @@
   .card__item {
     width: 315px;
     min-height: 660px;
+  }
+
+  .card__table-row--price::before {
+    width: 250px;
   }
 }

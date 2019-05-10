@@ -1,9 +1,0 @@
-.heading-catalog {
-  @include heading-colorblock;
-  margin-bottom: 30px;
-}
-
-.heading-catalog__text {
-  @include indent-reset;
-  @include heading-primary;
-}
