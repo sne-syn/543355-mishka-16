@@ -12,11 +12,13 @@
   font-weight: 700;
 }
 
-* {
-  outline: 1px solid $color-green-light;
-}
+// * {
+//   outline: 1px solid $color-green-light;
+// }
 
 body {
+  position: relative;
+
   @include indent-reset;
   min-width: 320px;
   font-size: 15px;
