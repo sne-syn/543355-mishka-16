@@ -1,11 +1,16 @@
-.modal--fixed-overlay {
-  position: fixed;
-  overflow: auto;
+body {
+  position: relative;
+}
+
+.modal__overlay {
+  position: absolute;
+  // overflow: auto;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba($color-white, 0.9);
+  z-index: 100;
 }
 
 .modal__position {
@@ -14,6 +19,7 @@
   top: 50%;
   margin-left: -160px;
   margin-top: -175px;
+  z-index: 200;
 }
 
 .modal__wrapper {
@@ -24,7 +30,7 @@
 }
 
 .modal {
-  display: none;
+  // display: none;
 }
 
 .modal__title {
