@@ -4,7 +4,7 @@ body {
 
 .modal__overlay {
   position: absolute;
-  // overflow: auto;
+  overflow: auto;
   left: 0;
   top: 0;
   width: 100%;
@@ -30,7 +30,11 @@ body {
 }
 
 .modal {
-  // display: none;
+  display: none;
+}
+
+.modal--show {
+  display: block;
 }
 
 .modal__title {

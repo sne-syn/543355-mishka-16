@@ -224,17 +224,21 @@
   <div class="modal__overlay"></div>
 </section>
 
-
-<!--
   <script>
     var link = document.querySelector(".popular-product__btn");
     var popup = document.querySelector(".modal");
+    var close = popup.querySelector(".modal__overlay");
 
     link.addEventListener("click", function (evt) {
       evt.preventDefault();
       popup.classList.add("modal--show");
 });
-  </script> -->
+close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal--show");
+  });
+
+  </script>
 
 </body>
 

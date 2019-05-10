@@ -163,7 +163,7 @@
               </tr>
             </table>
             <a class="card__basket" href="#">
-              <span class="visually-hidden">Добавить в корзину</span>
+              <span class="visually-hiddefn">Добавить в корзину</span>
             </a>
           </div>
         </li>
@@ -210,22 +210,39 @@
           Academy</span></a>
     </div>
   </footer>
-  <section class="modal modal--fixed-overlay">
-      <div class="modal__position">
-        <div class="modal__wrapper wrapper">
-        <h2 class="modal__title">Добавить в корзину</h2>
-        <p class="modal__text">Выберите размер:</p>
-        <form action="https://echo.htmlacademy.ru" class="modal__form" method="post">
-          <ul class="modal__list size">
-            <li class="size__item"><button class="size__btn" type="button">S</button></li>
-            <li class="size__item"><button class="size__btn" type="button">M</button></li>
-            <li class="size__item"><button class="size__btn" type="button">L</button></li>
-          </ul>
-          <button class="btn modal__btn" type="submit">Добавить</button>
-        </form>
-      </div>
-      </div>
-    </section>
+  <section class="modal">
+    <div class="modal__position">
+      <div class="modal__wrapper wrapper">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <form action="https://echo.htmlacademy.ru" class="modal__form" method="post">
+        <ul class="modal__list size">
+          <li class="size__item"><button class="size__btn" type="button">S</button></li>
+          <li class="size__item"><button class="size__btn" type="button">M</button></li>
+          <li class="size__item"><button class="size__btn" type="button">L</button></li>
+        </ul>
+        <button class="btn modal__btn" type="submit">Добавить</button>
+      </form>
+    </div>
+    </div>
+    <div class="modal__overlay"></div>
+  </section>
+
+    <script>
+      var link = document.querySelector(".card__basket");
+      var popup = document.querySelector(".modal");
+      var close = popup.querySelector(".modal__overlay");
+
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal--show");
+  });
+  close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.remove("modal--show");
+    });
+
+    </script>
 </body>
 
 </html>
