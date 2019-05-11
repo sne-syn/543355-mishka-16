@@ -62,7 +62,8 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .main-nav--closed .menu__item {
+  .main-nav--closed .menu__item,
+  .main-nav--closed .user-menu__item {
     display: none;
   }
 }
