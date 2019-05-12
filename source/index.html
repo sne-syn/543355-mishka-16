@@ -8,7 +8,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="no-js">
+<body>
 
   <svg style="display:none">
     <symbol viewBox="-0.8 -0.8 18 18" id="icon-search">
@@ -30,7 +30,7 @@
           <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
         </picture>
       </div>
-      <nav class="main-nav main-nav--nojs main-nav--opened">
+      <nav class="main-nav main-nav--nojs main-nav--closed">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="menu">
           <li class="menu__item menu__item--catalog">
@@ -175,12 +175,17 @@
         </tr>
       </table>
       <a class="contacts__map" href="img/map-desktop@1x.jpg">
-        <picture>
+        <!-- <picture>
           <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
           <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x"
             alt="Магазин расположен по адресу ул. Большая Конюшенная, д. 19/8, офис 101">
-        </picture>
+        </picture> -->
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3123.6232949494943!2d30.318946075469157!3d59.9388370122233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2ses!4v1557654965874!5m2!1sru!2ses"
+            frameborder="0"></iframe>
+
       </a>
       <a class="btn contacts__btn" href="#">Напишите нам</a>
     </section>
@@ -250,15 +255,13 @@
 
 
 
-    // var button = document.querySelector(".main-nav__toggle");
-    // var nav = document.querySelector(".main-nav");
+    var button = document.querySelector(".main-nav__toggle");
+    var nav = document.querySelector(".main-nav--closed");
 
-    // button.addEventListener("click", function (evt) {
-    //   evt.preventDefault();
-    //   nav.classList.remove("main-nav--opened");
-    //   nav.offsetWidth = nav.offsetWidth;
-    //   nav.classList.add("main-nav--closed");
-    // });
+    button.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      nav.classList.toggle("main-nav--opened");
+    });
 
   </script>
 
