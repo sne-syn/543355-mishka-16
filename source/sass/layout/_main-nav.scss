@@ -74,31 +74,32 @@
 }
 
 @media (min-width: $tablet-width) {
-//   .main-nav {
-//     order: 2;
-//     display: block;
-//     width: auto;
-//     margin: 0;
-//   }
+  .main-nav {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
 
-//   .main-nav__wrapper {
-//     max-width: 1050px;
-//     margin: 0 auto;
-//   }
+  // .main-nav__wrapper .menu__item,
+  // .main-nav__wrapper .user-menu__item {
+  //   display: block;
+  // }
 
-//   .main-nav__toggle {
-//     display: none;
-//   }
+  .main-nav__toggle {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  // .main-nav {
-  //   order: -1;
-  //   width: 450px;
-  // }
+  .main-nav {
+    order: -1;
+    // flex-direction: row;
+    // justify-content: space-between;
+  }
 
-  // .main-nav__list {
-  //   width: 1150px;
-  // }
+  .main-nav__list {
+    width: 1150px;
+  }
 
 }

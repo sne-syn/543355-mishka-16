@@ -43,36 +43,32 @@
 
 @media (min-width: $tablet-width) {
   .header {
-    width: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 
-  .header__container {
-    width: 86%;
+ .header__container {
+    width: 100%;
     margin: 0 auto;
   }
 
-//   .header__container {
-//     position: relative;
-//     display: flex;
-//     flex-wrap: wrap;
-//     flex-direction: row;
-//   }
-
-//   .header::after {
-//     content: "";
-//     position: absolute;
-//     top: 88px;
-//     left: 0;
-//     width: 100%;
-//     height: 1px;
-//     background-color: $color-tertiary;
-//   }
+  .header::after {
+    content: "";
+    position: absolute;
+    top: 88px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $color-tertiary;
+  }
 
   .header__logo {
     order: 0;
+    width: 371px;
     box-sizing: border-box;
-    width: 48%;
-    margin: 0;
+    // margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -86,51 +82,57 @@
     height: 47px;
   }
 
-  .header__single-line {
-    // position: absolute;
-    // bottom: 13px;
-    // right: 48px;
-    display: block;
-    font-size: 15px;
-    line-height: 24px;
+  .header__logo picture {
+    align-self: flex-start;
+    padding: 0;
   }
+
+  // .header__single-line {
+  //   // position: absolute;
+  //   // bottom: 13px;
+  //   // right: 48px;
+  //   display: block;
+  //   font-size: 15px;
+  //   line-height: 24px;
+  // }
 }
 
 @media (min-width: $desktop-width) {
 
-  .header {
+  // .header {
+  //   width: 1150px;
+
+  // }
+
+  .header__container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     width: 1150px;
     margin: 0 auto;
   }
 
-  // .header__container {
-  //   position: relative;
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   justify-content: flex-start;
-  //   width: 1150px;
-  // }
+  .header__container::after {
+    top: 88px;
+    height: 1px;
+  }
 
-  // .header__container::after {
-  //   top: 88px;
-  //   height: 1px;
-  // }
+  .header__logo {
+    width: 300px;
+    padding: 0;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
 
-  // .header__logo {
-  //   width: 300px;
-  //   padding: 0;
-  //   padding-top: 7px;
-  //   padding-bottom: 7px;
-  // }
+  .header__logo-image {
+    width: 148px;
+    height: 73px;
+  }
 
-  // .header__logo-image {
-  //   width: 148px;
-  //   height: 73px;
-  // }
-
-  // .header__single-line {
-  //   right: 0;
-  //   bottom: 19px;
-  //   width: 281px;
-  // }
+  .header__single-line {
+    right: 0;
+    bottom: 19px;
+    width: 281px;
+  }
 }

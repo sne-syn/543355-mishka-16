@@ -15,12 +15,9 @@
 .heading-index__text {
   @include heading-primary;
   @include indent-reset;
-  padding-top: 72px;
-}
 
-.heading-index__text--wrapper {
-  min-width: 250px;
-  padding-top: 74px;
+  width: 320px;
+  padding-top: 72px;
 }
 
 @media (min-width: $tablet-width) {
