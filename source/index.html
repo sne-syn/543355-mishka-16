@@ -32,6 +32,7 @@
       </div>
       <nav class="main-nav main-nav--nojs main-nav--closed">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
         <ul class="menu">
           <li class="menu__item menu__item--catalog">
             <a class="menu__link" href="catalog.html">Каталог товаров</a>
@@ -59,6 +60,7 @@
               </svg>Корзина: пока пуста</a>
           </li>
         </ul>
+      </div>
       </nav>
       <p class="header__single-line">Бесплатная доставка по России</p>
     </div>
@@ -255,10 +257,10 @@
 
 
 
-    var button = document.querySelector(".main-nav__toggle");
+    var buttonMenu = document.querySelector(".main-nav__toggle");
     var nav = document.querySelector(".main-nav--closed");
 
-    button.addEventListener("click", function (evt) {
+    buttonMenu.addEventListener("click", function (evt) {
       evt.preventDefault();
       nav.classList.toggle("main-nav--opened");
     });

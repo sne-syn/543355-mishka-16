@@ -1,7 +1,3 @@
-body {
-  position: relative;
-}
-
 .modal__overlay {
   position: absolute;
   overflow: auto;
@@ -105,5 +101,27 @@ body {
     width: 350px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }

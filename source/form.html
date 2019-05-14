@@ -31,6 +31,7 @@
       </a>
       <nav class="main-nav main-nav--nojps main-nav--closed">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
         <ul class="menu">
           <li class="menu__item menu__item--catalog">
             <a class="menu__link" href="catalog.html">Каталог товаров</a>
@@ -58,6 +59,7 @@
               </svg>Корзина: пока пуста</a>
           </li>
         </ul>
+      </div>
       </nav>
       <p class="header__single-line">Бесплатная доставка по России</p>
     </div>
@@ -74,7 +76,7 @@
           заказа
           и мы свяжемся с вами, чтобы уточнить детали.</p>
       </div>
-      <form class="form individual-order__form" action="https://echo.htmlacademy.ru"  method="post">
+      <form class="form individual-order__form" action="https://echo.htmlacademy.ru" method="post">
 
         <fieldset class="radio form__fieldset">
           <div class="radio__block wrapper">
@@ -164,7 +166,7 @@
         <div class="user-data user-data--communicate">
           <ul class="form__list wrapper">
             <li class="user-data__field user-data__field--contacts form__field">
-              <label class="user-data__number form__legend" for="number">тел</label>
+              <label class="user-data__number form__legend " for="number">тел</label>
               <input class="user-data__input" id="number" name="number" placeholder="+7 XXX XXX XX XX*" type="tel">
             </li>
             <li class="user-data__field user-data__field--contacts form__field">
@@ -210,6 +212,37 @@
           Academy</span></a>
     </div>
   </footer>
+
+  <script>
+    var buttonMenu = document.querySelector(".main-nav__toggle");
+    var nav = document.querySelector(".main-nav--closed");
+
+    buttonMenu.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      nav.classList.toggle("main-nav--opened");
+    });
+
+    var form = document.querySelector("form");
+    var name = form.querySelector("[name=name]");
+    var surname = form.querySelector("[name=surname]");
+    var number = form.querySelector("[name=number]");
+    var email = form.querySelector("[name=email]");
+    var buttonSubmit = form.querySelector(".form__btn");
+    var errorMessage = form.querySelector(".form__small-note")
+
+    form.addEventListener("submit", function (evt) {
+      if (!name.value || !surname.value || !number.value || !email.value) {
+        evt.preventDefault();
+        errorMessage.classList.add("form__small-note--error")
+        buttonSubmit.classList.remove("form__btn--error");
+        buttonSubmit.offsetWidth = buttonSubmit.offsetWidth;
+        buttonSubmit.classList.add("form__btn--error");
+      } else {
+        console.log("Ваш заказ принят");
+      }
+  });
+
+  </script>
 </body>
 
 </html>
