@@ -57,10 +57,6 @@
   }
 }
 
-// .main-nav--nojs .main-nav__toggle {
-//   display: none;
-// }
-
 @media (max-width: $mobile-width-only) {
   .main-nav--closed .menu__item,
   .main-nav--closed .user-menu__item {
@@ -80,11 +76,6 @@
     flex-direction: column;
     margin: 0;
   }
-
-  // .main-nav__wrapper .menu__item,
-  // .main-nav__wrapper .user-menu__item {
-  //   display: block;
-  // }
 
   .main-nav__toggle {
     display: none;

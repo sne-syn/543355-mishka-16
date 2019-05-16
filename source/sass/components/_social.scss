@@ -12,3 +12,30 @@
 .social__item {
   list-style: none;
 }
+
+.social__name {
+  font-size: 0;
+}
+
+.social__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+}
+
+.social__item--instagram {
+	background-image: url("../img/icon-insta.svg");
+	background-repeat: no-repeat;
+}
+
+.social__item--facebook {
+	background-image: url("../img/icon-fb.svg");
+	background-repeat: no-repeat;
+}
+
+.social__item--twitter {
+	background-image: url("../img/icon-twitter.svg");
+	background-repeat: no-repeat;
+}

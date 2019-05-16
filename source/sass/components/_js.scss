@@ -1,0 +1,14 @@
+@media (max-width: $mobile-width-only) {
+  .js .main-nav__toggle {
+    display: block;
+  }
+
+  .no-js .main-nav__toggle {
+    display: none;
+  }
+
+  .no-js li.menu__item,
+  .no-js li.user-menu__item {
+    display: block;
+  }
+}

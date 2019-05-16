@@ -141,15 +141,15 @@
             <ul class="form__list">
               <li class="user-data__field form__field">
                 <label class="user-data__name" for="name">Имя:</label>
-                <input class="user-data__input" id="name" name="user" placeholder="Введите ваше имя*" type="text">
+                <input class="user-data__input" id="name" name="user-name" placeholder="Введите ваше имя*" type="text">
               </li>
               <li class="user-data__field form__field">
                 <label class="user-data__surname" for="surname">Фамилия:</label>
-                <input class="user-data__input" id="surname" name="user" placeholder="Укажите фамилию*" type="text">
+                <input class="user-data__input" id="surname" name="user-surname" placeholder="Укажите фамилию*" type="text">
               </li>
               <li class="user-data__field form__field">
                 <label class="user-data__patronymic" for="patronymic">Отчество:</label>
-                <input class="user-data__input" id="patronymic" name="user" placeholder="Отчество, если желаете"
+                <input class="user-data__input" id="patronymic" name="user-patronymic" placeholder="Отчество, если желаете"
                   type="text">
               </li>
             </ul>
@@ -191,18 +191,18 @@
       </a>
       <ul class="social">
         <li class="social__item social__item--instagram">
-          <a href="#"><span class="visually-hiddenj">Instagram</span></a>
+          <a href="#"><span class="social__name">Instagram</span></a>
         </li>
         <li class="social__item social__item--facebook">
-          <a href="#"><span class="visually-hiddenk">Facebook</span></a>
+          <a href="#"><span class="social__name">Facebook</span></a>
         </li>
         <li class="social__item social__item--twitter">
-          <a href="#"><span class="visually-hiddenj">Twitter</span></a>
+          <a href="#"><span class="social__name">Twitter</span></a>
         </li>
       </ul>
-      <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано<span
-          class="visually-hidden">HTML
-          Academy</span></a>
+      <p class="footer__copyright">Разработано<a
+          class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><span class="footer__copyright-name">HTML Academy</span>
+          </a></p>
     </div>
   </footer>
 
@@ -216,15 +216,15 @@
     });
 
     var form = document.querySelector("form");
-    var name = form.querySelector("[name=name]");
-    var surname = form.querySelector("[name=surname]");
+    var userName = form.querySelector("[name=user-name]");
+    var surname = form.querySelector("[name=user-surname]");
     var number = form.querySelector("[name=number]");
     var email = form.querySelector("[name=email]");
     var buttonSubmit = form.querySelector(".form__btn");
     var errorMessage = form.querySelector(".form__small-note")
 
     form.addEventListener("submit", function (evt) {
-      if (!name.value || !surname.value || !number.value || !email.value) {
+      if (!userName.value || !surname.value || !number.value || !email.value) {
         evt.preventDefault();
         errorMessage.classList.add("form__small-note--error")
         buttonSubmit.classList.remove("form__btn--error");
