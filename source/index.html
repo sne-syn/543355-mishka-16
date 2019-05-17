@@ -23,9 +23,9 @@
           <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
         </picture>
       </div>
+
       <nav class="main-nav main-nav--nojs main-nav--closed">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <!-- <div class="main-nav__wrapper"> -->
         <ul class="menu">
           <li class="menu__item menu__item--catalog">
             <a class="menu__link" href="catalog.html">Каталог товаров</a>
@@ -40,24 +40,22 @@
             <a class="menu__link" href="#">Распродажа</a>
           </li>
         </ul>
-
-        <ul class="user-menu">
-          <li class="user-menu__item user-menu__item--search">
-            <a class="user-menu__link" href="#"><svg class="user-menu__icon-search" width="18" height="18">
-                <use xlink:href="#icon-search"></use>
-              </svg>Поиск по сайту</a>
-          </li>
-          <li class="user-menu__item user-menu__item--basket">
-            <a class="user-menu__link" href="#"><svg class="user-menu__icon-basket" width="21" height="19">
-                <use xlink:href="#icon-cart"></use>
-              </svg>Корзина: пока пуста</a>
-          </li>
-        </ul>
-        <!-- </div> -->
       </nav>
+      <ul class="user-menu user-menu--nojs user-menu--closed">
+        <li class="user-menu__item user-menu__item--search">
+          <a class="user-menu__link" href="#"><svg class="user-menu__icon-search" width="18" height="18">
+              <use xlink:href="#icon-search"></use>
+            </svg>Поиск по сайту</a>
+        </li>
+        <li class="user-menu__item user-menu__item--cart">
+          <a class="user-menu__link" href="#"><svg class="user-menu__icon-cart" width="21" height="19">
+              <use xlink:href="#icon-cart"></use>
+            </svg>Корзина: пока пуста</a>
+        </li>
+      </ul>
+
       <p class="header__single-line">Бесплатная доставка по России</p>
     </div>
-
   </header>
   <main>
 
@@ -176,7 +174,7 @@
           <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x"
             alt="Магазин расположен по адресу ул. Большая Конюшенная, д. 19/8, офис 101">
         </picture>
-<!-- <iframe
+        <!-- <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3123.6232949494943!2d30.318946075469157!3d59.9388370122233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2ses!4v1557654965874!5m2!1sru!2ses"></iframe> -->
 
       </a>
@@ -200,9 +198,9 @@
           <a href="#"><span class="social__name">Twitter</span></a>
         </li>
       </ul>
-      <p class="footer__copyright">Разработано<a
-          class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><span class="footer__copyright-name">HTML Academy</span>
-          </a></p>
+      <p class="footer__copyright">Разработано<a class="footer__copyright-link"
+          href="https://htmlacademy.ru/intensive/adaptive"><span class="footer__copyright-name">HTML Academy</span>
+        </a></p>
     </div>
   </footer>
   <section class="modal">
@@ -251,10 +249,12 @@
 
     var buttonMenu = document.querySelector(".main-nav__toggle");
     var nav = document.querySelector(".main-nav--closed");
+    var userMenu = document.querySelector(".user-menu--closed");
 
     buttonMenu.addEventListener("click", function (evt) {
       evt.preventDefault();
       nav.classList.toggle("main-nav--opened");
+      userMenu.classList.toggle("user-menu--opened");
     });
 
   </script>

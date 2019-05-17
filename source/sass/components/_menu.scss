@@ -50,12 +50,13 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 100px;
+    justify-content: center;
+    width: 370px;
   }
 
   .menu__item {
     display: block;
-    padding-top: 14px;
+    padding-top: 18px;
   }
 
   .menu__link {
@@ -81,6 +82,13 @@
     font-size: 15px;
   }
 
+  .menu__item--catalog a {
+    padding-right: 4px;
+  }
+
+  .menu__item--order a {
+    padding-right: 15px;
+  }
 }
 
 @media (min-width: $desktop-width) {
