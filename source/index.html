@@ -64,13 +64,18 @@
     </div>
     <div class="type">
       <div class="type__item type__item--interior">
-        <div class="type__box"><a class="type__link" href="#">Предметы интерьера</a></div>
+        <div class="type__box"><a class="type__link" href="#">Предметы интерьера<svg class="type__icon--interior" width="60" height="60">
+            <use xlink:href="#icon-interior"></use>
+          </svg></a></div>
       </div>
       <div class="type__item type__item--toys">
-        <div class="type__box"><a class="type__link" href="#">Детские игрушки</a></div>
+        <div class="type__box"><a class="type__link" href="#">Детские игрушки<svg class="type__icon--toy" width="60" height="60">
+            <use xlink:href="#icon-toy"></use>
+          </svg></a></div>
       </div>
     </div>
-    <section class="popular-product wrapper">
+    <div class="popular-product">
+    <section class="popular-product__section wrapper">
       <h2 class="popular-product__title">Вязаные корзинки</h2>
       <p class="popular-product__mark">Товар недели</p>
       <p class="popular-product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и
@@ -100,6 +105,7 @@
       <p class="popular-product__price">Цена: 990 руб.</p>
       <a class="btn popular-product__btn" href="#">Заказать</a>
     </section>
+  </div>
 
     <section class="about-us wrapper">
       <h2 class="about-us__title">Коротко о нас:</h2>
@@ -142,12 +148,16 @@
             <p class="reviews__autor-login">@misssssiskras</p>
           </li>
         </ul>
-        <p class="slider">
+        <div class="slider">
           <button class="slider__btn slider__btn--back" type="button"><span
-              class="visually-hidden">Назад</span></button>
+              class="slider__btn--text"><svg class="slider__btn--left" width="60" height="60">
+                  <use xlink:href="#icon-left-arrow"></use>
+                </svg>Назад</span></button>
           <button class="slider__btn slider__btn--forward" type="button"><span
-              class="visually-hidden">Вперёд</span></button>
-        </p>
+              class="slider__btn--text"><svg class="slider__btn--right" width="60" height="60">
+                  <use xlink:href="#icon-right-arrow"></use>
+                </svg>Вперёд</span></button>
+        </div>
         <a class="btn reviews__btn" href="#">Написать</a>
       </section>
     </div>
@@ -155,7 +165,7 @@
       <h2 class="contacts__title">Контакты</h2>
       <table class="contacts__table table">
         <tr class="contacts__table-row table__row">
-          <th class="contacts__table-header table__header">e-mail</th>
+          <th class="contacts__table-header table__header">e-mail:</th>
           <td class="contacts__table-cell table__cell"><a class="contacts__email"
               href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
         </tr>
@@ -168,14 +178,15 @@
         </tr>
       </table>
       <a class="contacts__map" href="img/map-desktop@2x.jpg">
-        <picture>
-          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-          <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x"
-            alt="Магазин расположен по адресу ул. Большая Конюшенная, д. 19/8, офис 101">
-        </picture>
-        <!-- <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3123.6232949494943!2d30.318946075469157!3d59.9388370122233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2ses!4v1557654965874!5m2!1sru!2ses"></iframe> -->
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3123.6232949494943!2d30.318946075469157!3d59.9388370122233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2ses!4v1557654965874!5m2!1sru!2ses"></iframe>
+          <picture>
+              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x"
+                alt="Магазин расположен по адресу ул. Большая Конюшенная, д. 19/8, офис 101">
+            </picture>
 
       </a>
       <a class="btn contacts__btn" href="#">Напишите нам</a>
@@ -189,17 +200,25 @@
       </div>
       <ul class="social">
         <li class="social__item social__item--instagram">
-          <a href="#"><span class="social__name">Instagram</span></a>
+          <a href="#"><span class="social__name"><svg class="social__item__icon" width="32" height="32">
+              <use xlink:href="#icon-insta"></use>
+            </svg>Instagram</span></a>
         </li>
         <li class="social__item social__item--facebook">
-          <a href="#"><span class="social__name">Facebook</span></a>
+          <a href="#"><span class="social__name"><svg class="social__item__icon" width="32" height="32">
+              <use xlink:href="#icon-fb"></use>
+            </svg>Facebook</span></a>
         </li>
         <li class="social__item social__item--twitter">
-          <a href="#"><span class="social__name">Twitter</span></a>
+          <a href="#"><span class="social__name"><svg class="social__item__icon" width="32" height="32">
+              <use xlink:href="#icon-twitter"></use>
+            </svg>Twitter</span></a>
         </li>
       </ul>
       <p class="footer__copyright">Разработано<a class="footer__copyright-link"
-          href="https://htmlacademy.ru/intensive/adaptive"><span class="footer__copyright-name">HTML Academy</span>
+          href="https://htmlacademy.ru/intensive/adaptive"><span class="footer__copyright-name"><svg class="footer__copyright-icon" width="27" height="34">
+              <use xlink:href="#logo-htmlacademy"></use>
+            </svg>HTML Academy</span>
         </a></p>
     </div>
   </footer>
@@ -220,44 +239,8 @@
     </div>
     <div class="modal__overlay"></div>
   </section>
-
-  <script>
-    var link = document.querySelector(".popular-product__btn");
-    var popup = document.querySelector(".modal");
-    var close = popup.querySelector(".modal__overlay");
-
-    link.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.add("modal--show");
-    });
-    close.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.remove("modal--show");
-    });
-
-    window.addEventListener("keydown", function (evt) {
-      if (evt.keyCode === 27) {
-        evt.preventDefault();
-        if (popup.classList.contains("modal--show")) {
-          popup.classList.remove("modal--show");
-        }
-      }
-    });
-
-    var body = document.querySelector("body");
-    body.classList.replace("no-js", "js");
-
-    var buttonMenu = document.querySelector(".main-nav__toggle");
-    var nav = document.querySelector(".main-nav--closed");
-    var userMenu = document.querySelector(".user-menu--closed");
-
-    buttonMenu.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      nav.classList.toggle("main-nav--opened");
-      userMenu.classList.toggle("user-menu--opened");
-    });
-
-  </script>
+  <script src="js/scripts.js">
+	</script>
 
 </body>
 

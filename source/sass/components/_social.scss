@@ -21,21 +21,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 32px;
+
+}
+
+.social__item__icon {
+  width: 32px;
 	height: 32px;
-}
-
-.social__item--instagram {
-	background-image: url("../img/icon-insta.svg");
-	background-repeat: no-repeat;
-}
-
-.social__item--facebook {
-	background-image: url("../img/icon-fb.svg");
-	background-repeat: no-repeat;
-}
-
-.social__item--twitter {
-	background-image: url("../img/icon-twitter.svg");
-	background-repeat: no-repeat;
 }

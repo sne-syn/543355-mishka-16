@@ -24,36 +24,36 @@
         </picture>
       </a>
 
-      <nav class="main-nav main-nav--nojps main-nav--closed">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="menu">
-          <li class="menu__item menu__item--catalog">
-            <a class="menu__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="menu__item menu__item--order">
-            <a class="menu__link " href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="menu__item menu__item--new">
-            <a class="menu__link" href="#">Новые поступления</a>
-          </li>
-          <li class="menu__item menu__item--sale">
-            <a class="menu__link" href="#">Распродажа</a>
-          </li>
-        </ul>
 
-        <ul class="user-menu">
+      <nav class="main-nav main-nav--nojs main-nav--closed">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="menu">
+            <li class="menu__item menu__item--catalog">
+              <a class="menu__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="menu__item menu__item--order">
+              <a class="menu__link " href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="menu__item menu__item--new">
+              <a class="menu__link" href="#">Новые поступления</a>
+            </li>
+            <li class="menu__item menu__item--sale">
+              <a class="menu__link" href="#">Распродажа</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="user-menu user-menu--nojs user-menu--closed">
           <li class="user-menu__item user-menu__item--search">
             <a class="user-menu__link" href="#"><svg class="user-menu__icon-search" width="18" height="18">
                 <use xlink:href="#icon-search"></use>
               </svg>Поиск по сайту</a>
           </li>
-          <li class="user-menu__item user-menu__item--basket">
-            <a class="user-menu__link" href="#"><svg class="user-menu__icon-basket" width="21" height="19">
+          <li class="user-menu__item user-menu__item--cart">
+            <a class="user-menu__link" href="#"><svg class="user-menu__icon-cart" width="21" height="19">
                 <use xlink:href="#icon-cart"></use>
               </svg>Корзина: пока пуста</a>
           </li>
         </ul>
-      </nav>
       <p class="header__single-line">Бесплатная доставка по России</p>
     </div>
   </header>
@@ -185,16 +185,22 @@
         <img class="footer__logo-image" src="img/logo-footer.svg" width="102" height="34" alt="Магазин «Мишка»">
       </a>
       <ul class="social">
-        <li class="social__item social__item--instagram">
-          <a href="#"><span class="social__name">Instagram</span></a>
-        </li>
-        <li class="social__item social__item--facebook">
-          <a href="#"><span class="social__name">Facebook</span></a>
-        </li>
-        <li class="social__item social__item--twitter">
-          <a href="#"><span class="social__name">Twitter</span></a>
-        </li>
-      </ul>
+          <li class="social__item social__item--instagram">
+            <a href="#"><span class="social__name"><svg class="social__item__icon" width="32" height="32">
+                <use xlink:href="#icon-insta"></use>
+              </svg>Instagram</span></a>
+          </li>
+          <li class="social__item social__item--facebook">
+            <a href="#"><span class="social__name"><svg class="social__item__icon" width="32" height="32">
+                <use xlink:href="#icon-fb"></use>
+              </svg>Facebook</span></a>
+          </li>
+          <li class="social__item social__item--twitter">
+            <a href="#"><span class="social__name"><svg class="social__item__icon" width="32" height="32">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>Twitter</span></a>
+          </li>
+        </ul>
       <p class="footer__copyright">Разработано<a
           class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><span class="footer__copyright-name">HTML Academy</span>
           </a></p>
@@ -217,40 +223,9 @@
     </div>
     <div class="modal__overlay"></div>
   </section>
+  <script src="js/scripts.js">
+	</script>
 
-  <script>
-    var link = document.querySelector(".card__basket");
-    var popup = document.querySelector(".modal");
-    var close = popup.querySelector(".modal__overlay");
-
-    link.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.add("modal--show");
-    });
-    close.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.remove("modal--show");
-    });
-
-    window.addEventListener("keydown", function (evt) {
-      if (evt.keyCode === 27) {
-        evt.preventDefault();
-        if (popup.classList.contains("modal--show")) {
-          popup.classList.remove("modal--show");
-        }
-      }
-    });
-
-
-    var buttonMenu = document.querySelector(".main-nav__toggle");
-    var nav = document.querySelector(".main-nav--closed");
-
-    buttonMenu.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      nav.classList.toggle("main-nav--opened");
-    });
-
-  </script>
 </body>
 
 </html>

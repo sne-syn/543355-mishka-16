@@ -21,9 +21,21 @@
 }
 
 .about-us__item {
+  position: relative;
   width: 255px;
   padding-top: 84px;
   padding-left: 3px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 26px;
+    left: 0;
+    width: 60px;
+    height: 40px;
+    background-repeat: no-repeat;
+    // filter: invert(76%) sepia(12%) saturate(1346%) hue-rotate(118deg) brightness(96%) contrast(90%);
+  }
 }
 
 .about-us__item p {
@@ -32,22 +44,50 @@
 
 .about-us__item--eco {
   width: 195px;
+
+  &::before {
+    background-image: url("../img/icon-feature-flower.svg");
+  }
 }
 
 .about-us__item--style {
   width: 220px;
+
+  &::before {
+    background-image: url("../img/icon-feature-money.svg");
+  }
 }
 
 .about-us__item--likes {
   width: 200px;
+
+  &::before {
+    background-image: url("../img/icon-feature-heart.svg");
+  }
+}
+
+.about-us__item--local-support {
+  order: 1;
+
+  &::before {
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
 }
 
 .about-us__item--handmade {
   order: 1;
+
+  &::before {
+    background-image: url("../img/icon-feature-ball.svg");
+  }
 }
 
 .about-us__item--giftbox {
   width: 250px;
+
+  &::before {
+    background-image: url("../img/icon-feature-gift.svg");
+  }
 }
 
 @media (min-width: $tablet-width) {

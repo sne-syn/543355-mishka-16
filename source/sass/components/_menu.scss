@@ -1,4 +1,5 @@
 .menu {
+  z-index: 200;
   @include indent-reset;
 }
 
@@ -114,19 +115,18 @@
   .menu__item--sale,
   .menu__item--new {
     display: block;
+    width: 225px;
+    box-sizing: border-box;
     padding-top: 15px;
-    font-size: 15px;
     border: none;
   }
 
   .menu__item--new {
-    width: 234px;
-    // padding-left: 50px;
+    padding-left: 25px;
   }
 
   .menu__item--sale {
-    width: 215px;
-    // padding-left: 33px;
+    padding-left: 20px;
   }
 
   .menu__item--sale a,
@@ -140,16 +140,24 @@
   }
 
   .menu__item--catalog {
+    width: 194px;
+    box-sizing: border-box;
+    padding-left: 10px;
     border-right: 1px solid #ececec;
   }
 
-  .menu__link--order .menu__link,
-  .menu__link--catalog .menu__link {
+  .menu__item--order {
+    box-sizing: border-box;
+    padding-left: 36px;
+  }
+
+  .menu__item--order a,
+  .menu__item--catalog a {
     font-size: 17px;
   }
 
   .menu .menu__link {
-    width: 230px;
+    width: 180px;
     margin: 0 auto;
     text-align: left;
   }

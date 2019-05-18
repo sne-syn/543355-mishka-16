@@ -6,6 +6,7 @@
 }
 
 .type__item {
+  z-index: 2;
   box-sizing: border-box;
   padding-top: 27px;
   padding-bottom: 28px;
@@ -40,6 +41,7 @@
 }
 
 .type__link {
+  position: relative;
   display: block;
   width: 120px;
   font-size: 19px;
@@ -47,28 +49,33 @@
   color: $color-white;
 }
 
+.type__link svg {
+  position: absolute;
+  right: -150px;
+  top: 0;
+  fill: rgba($color-secondary, 0.2);
+
+  &:hover svg,
+  &:focus svg {
+    fill: rgba($color-secondary, 0.3);
+  }
+
+  &:active svg {
+    fill: rgba($color-secondary, 0.1);
+  }
+}
+
 @media (min-width: $tablet-width) {
   .type {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    // width: 768px;
+    width: 768px;
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
-
-    // &:hover {
-    //   margin-top: -5px;
-    //   padding-bottom: 39px;
-    // }
-
-    &:hover .type__link {
-      color: $color-white;
-    }
-
-    &:active .type__link {
-      color: rgba($color-white, 0.3);
-    }
+    margin-top: -125px;
+    margin-bottom: 50px;
   }
 
   .type__box {
@@ -77,20 +84,14 @@
   }
 
   .type__item {
+    box-sizing: border-box;
     width: 335px;
-  }
+    padding-bottom: 30px;
 
-  .type__link {
-    width: 120px;
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .type {
-    width: 1150px;
-
+    &:hover {
+      margin-top: -5px;
+      padding-bottom: 35px;
+    }
 
     &:hover .type__link {
       color: $color-white;
@@ -99,6 +100,20 @@
     &:active .type__link {
       color: rgba($color-white, 0.3);
     }
+  }
+
+  .type__link {
+    width: 120px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .type {
+    width: 1150px;
+    margin: 5px auto 50px;
   }
 
   .type__item {

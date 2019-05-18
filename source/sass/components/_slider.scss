@@ -15,6 +15,21 @@
   @include indent-reset;
   background-color: transparent;
   border: 2px solid $color-tertiary;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+    outline: none;
+  }
+}
+
+.slider__btn--text {
+  font-size: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -24,7 +39,7 @@
 
   .slider__btn {
     width: 85px;
-    // border: none;
+    border: none;
   }
 
   .slider__btn--back {
@@ -43,5 +58,13 @@
 @media (min-width: $desktop-width) {
   .slider__btn {
     border: none;
+  }
+
+  .slider__btn--forward {
+    right: -220px;
+  }
+
+  .slider__btn--back {
+    right: -110px;
   }
 }
