@@ -84,11 +84,12 @@
 @media (min-width: $desktop-width) {
   .reviews {
     width: 1150px;
-    background-position: 38px 20px;
+    background-position: 51px 20px;
   }
 
   .reviews__title {
-    margin-left: 175px;
+    margin-left: 170px;
+    margin-bottom: 47px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -100,14 +101,16 @@
   .reviews__text {
     width: 780px;
     margin-left: 175px;
+    margin-bottom: 37px;
   }
 
   .reviews__autor-name,
   .reviews__autor-login {
-    margin-left: 175px;
+    margin-left: 172px;
   }
 
   .reviews__btn {
-    top: 95px;
+    top: 98px;
+    right: 48px;
   }
 }

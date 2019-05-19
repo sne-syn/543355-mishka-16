@@ -102,7 +102,8 @@
 
   .menu__item {
     width: 225px;
-    padding-top: 28px;
+    box-sizing: border-box;
+    padding-top: 30px;
     padding-bottom: 30px;
     border: none;
   }
@@ -110,23 +111,17 @@
   .menu .menu__item.menu__item--new,
   .menu .menu__item.menu__item--sale {
     display: block;
-  }
-
-  .menu__item--sale,
-  .menu__item--new {
-    display: block;
-    width: 225px;
-    box-sizing: border-box;
+    width: 222px;
     padding-top: 15px;
     border: none;
   }
 
   .menu__item--new {
-    padding-left: 25px;
+    padding-left: 5px;
   }
 
   .menu__item--sale {
-    padding-left: 20px;
+    padding-left: 0;
   }
 
   .menu__item--sale a,
@@ -141,14 +136,13 @@
 
   .menu__item--catalog {
     width: 194px;
-    box-sizing: border-box;
-    padding-left: 10px;
+    padding-left: 3px;
+    padding-bottom: 36px;
     border-right: 1px solid #ececec;
   }
 
   .menu__item--order {
-    box-sizing: border-box;
-    padding-left: 36px;
+    padding-left: 24px;
   }
 
   .menu__item--order a,

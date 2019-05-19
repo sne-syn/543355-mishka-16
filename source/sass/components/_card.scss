@@ -97,6 +97,10 @@
   font-weight: bold;
 }
 
+.card__basket-text {
+  font-size: 0;
+}
+
 @media (min-width: $tablet-width) {
   .card {
     width: 768px;

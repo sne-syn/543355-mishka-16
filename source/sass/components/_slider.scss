@@ -58,13 +58,14 @@
 @media (min-width: $desktop-width) {
   .slider__btn {
     border: none;
+    top: -85px;
   }
 
   .slider__btn--forward {
-    right: -220px;
+    right: -160px;
   }
 
   .slider__btn--back {
-    right: -110px;
+    right: -73px;
   }
 }

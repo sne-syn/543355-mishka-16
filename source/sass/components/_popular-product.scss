@@ -154,11 +154,13 @@
     .popular-product__section {
       position: relative;
       width: 1150px;
+      margin-bottom: 160px;
+
 
       &::after {
         content: "";
         position: absolute;
-        bottom: -50px;
+        bottom: -98px;
         left: 52px;
         width: 1050px;
         height: 24px;
@@ -176,7 +178,7 @@
       margin-bottom: 49px;
       font-size: 53px;
       line-height: 57px;
-      z-index: 100;
+      z-index: 10;
     }
 
     .popular-product__mark {
