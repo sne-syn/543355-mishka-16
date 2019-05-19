@@ -9,12 +9,11 @@
 .reviews__title {
   @include heading-secondary;
   margin-bottom: 24px;
-  padding-left: 2px;
 }
 
 .reviews__list {
   @include indent-reset;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   list-style: none;
 }
 
@@ -25,14 +24,12 @@
 
 .reviews__autor-name {
   margin-bottom: -16px;
-  padding-left: 4px;
   font-size: 17px;
   font-weight: bold;
   color: $color-secondary;
 }
 
 .reviews__autor-login {
-  padding-left: 4px;
   margin-bottom: 24px;
   font-size: 17px;
 }
@@ -40,7 +37,7 @@
 .reviews__btn {
   display: block;
   width: 260px;
-  margin-bottom: 70px;
+  margin-bottom: 88px;
   padding-left: 20px;
 }
 

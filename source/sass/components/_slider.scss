@@ -5,7 +5,7 @@
   justify-content: center;
 
   @include indent-reset;
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 }
 
 .slider__btn {
@@ -14,7 +14,7 @@
 
   @include indent-reset;
   background-color: transparent;
-  border: 2px solid $color-tertiary;
+  border: 1px solid $color-tertiary;
 
   &:hover,
   &:focus {

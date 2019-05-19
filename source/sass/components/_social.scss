@@ -2,11 +2,14 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+  width: 147px;
+  box-sizing: border-box;
 
   @include indent-reset;
-  margin-bottom: 45px;
-  padding-left: 50px;
+  margin-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .social__item {
@@ -17,14 +20,22 @@
   font-size: 0;
 }
 
-.social__item {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
+.social__item--instagram {
+  padding-top: 5px;
+  margin-right: 42px;
 }
 
-.social__item__icon {
-  width: 32px;
-	height: 32px;
+.social__item--twitter {
+  padding-top: 5px;
+}
+
+.social__item--facebook {
+  margin-right: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    margin-bottom: 0;
+    padding-top: 8px;
+  }
 }

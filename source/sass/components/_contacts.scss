@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
 }
 
 .contacts__title {
@@ -10,7 +9,7 @@
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 30px;
+  padding-left: 29px;
   padding-right: 30px;
   font-size: 18px;
   font-weight: bold;
@@ -24,12 +23,11 @@
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
+  margin-bottom: 36px;
 }
 
 .contacts__table-row .contacts__table-header {
   width: 75px;
-  padding-left: 3px;
   padding-bottom: 29px;
 }
 
@@ -55,7 +53,7 @@
 .contacts__email::before {
   position: absolute;
   content: "";
-  top: 20px;
+  top: 24px;
   left: 0;
   width: 185px;
   height: 1px;
@@ -186,6 +184,7 @@
   .contacts__btn {
     display: block;
     width: 230px;
+    margin-bottom: 57px;
   }
 }
 
