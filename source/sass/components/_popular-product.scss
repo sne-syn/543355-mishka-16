@@ -1,167 +1,220 @@
 .popular-product {
-  width: 320px;
-  margin-bottom: 71px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: auto 6px;
+    background-repeat: repeat-x;
+  }
 }
 
-.popular-product__title {
-  @include heading-secondary;
-  margin-bottom: 5px;
-}
-
-.popular-product__mark {
-  margin: 0;
-  margin-bottom: 23px;
-  font-size: 17px;
-  line-height: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: $color-green-light;
-}
-
-.popular-product__text {
-  width: 260px;
-
-  @include indent-reset;
-  line-height: 24px;
-  margin-bottom: 21px;
-}
-
-.popular-product__table {
-  width: 260px;
-  margin-bottom: 25px;
-}
-
-.popular-product__table .table__header {
-  padding-left: 0;
-  padding-bottom: 8px;
-  padding-right: 7px;
-}
-
-.popular-product__image {
-  margin-bottom: -2px;
-}
-
-.popular-product__price {
-  width: 130px;
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: bold;
-  text-align: center;
-  margin-left: 63px;
-  margin-bottom: 26px;
-}
-
-.popular-product__btn {
-  display: block;
-  width: 258px;
-}
-
-@media (min-width: $tablet-width) {
-  .popular-product {
+  .popular-product__section {
     position: relative;
-    width: 768px;
-    margin-bottom: 118px;
+    width: 320px;
+    margin-bottom: 71px;
   }
 
   .popular-product__title {
-    position: relative;
-    margin-bottom: 48px;
-    font-size: 43px;
-    line-height: 50px;
+    @include heading-secondary;
+    margin-bottom: 5px;
   }
 
   .popular-product__mark {
-    position: absolute;
-    top: 10px;
-    right: 70px;
-    width: 85px;
-    line-height: 17px;
-    text-align: center;
+    margin: 0;
+    margin-bottom: 23px;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $color-green-light;
   }
 
   .popular-product__text {
-    width: 300px;
-    margin-bottom: 36px;
-    line-height: 30px;
+    width: 260px;
+
+    @include indent-reset;
+    line-height: 24px;
+    margin-bottom: 19px;
   }
 
   .popular-product__table {
-    width: 300px;
-    margin-bottom: 56px;
-    font-size: 15px;
-    line-height: 30px;
+    width: 260px;
+    margin-bottom: 28px;
   }
 
   .popular-product__table .table__header {
-    padding-top: 3px;
-    padding-bottom: 6px;
+    padding-left: 0;
+    padding-bottom: 5px;
+    padding-right: 7px;
+    padding-top: 4px;
   }
 
   .popular-product__table .table__cell {
-    vertical-align: middle;
-    padding-left: 0;
+   padding-top: 3px;
   }
 
   .popular-product__image {
-    position: absolute;
-    top: 106px;
-    right: 50px;
+    margin-bottom: -2px;
   }
 
   .popular-product__price {
-    width: 290px;
-    margin-left: 0;
-    margin-bottom: 34px;
-    font-size: 20px;
-  }
-
-  .popular-product__btn {
-    width: 290px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .popular-product {
-    width: 1150px;
-  }
-
-  .popular-product__title {
-    width: 530px;
-    margin-left: 171px;
-    margin-top: 126px;
-    margin-bottom: 49px;
-    font-size: 53px;
-    line-height: 57px;
-    z-index: 100;
-  }
-
-  .popular-product__mark {
-    top: 15px;
-    left: 89px;
-  }
-
-  .popular-product__text {
-    width: 300px;
-    margin-left: 175px;
-    margin-bottom: 49px;
-  }
-
-  .popular-product__table {
-    margin-left: 176px;
-    margin-bottom: 109px;
-  }
-
-  .popular-product__price {
-    margin-left: 176px;
+    width: 130px;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 63px;
+    margin-top: 25px;
+    margin-bottom: 26px;
   }
 
   .popular-product__btn {
     display: block;
-    margin-left: 176px;
+    width: 260px;
   }
 
-  .popular-product__image {
-    top: -52px;
-    right: 50px;
+  @media (min-width: $tablet-width) {
+
+    .popular-product::after {
+        bottom: -43px;
+        left: 0;
+        height: 24px;
+        background-size: auto 21px;
+        background-position-x: 130px;
+      }
+
+
+    .popular-product__section {
+      width: 768px;
+      margin-bottom: 118px;
+    }
+
+    .popular-product__title {
+      position: relative;
+      margin-bottom: 48px;
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    .popular-product__mark {
+      position: absolute;
+      top: 10px;
+      right: 70px;
+      width: 85px;
+      line-height: 17px;
+      text-align: center;
+    }
+
+    .popular-product__text {
+      width: 300px;
+      margin-bottom: 36px;
+      line-height: 30px;
+    }
+
+    .popular-product__table {
+      width: 300px;
+      margin-bottom: 56px;
+      font-size: 15px;
+      line-height: 30px;
+    }
+
+    .popular-product__table .table__header {
+      padding-top: 3px;
+      padding-bottom: 6px;
+    }
+
+    .popular-product__table .table__cell {
+      vertical-align: middle;
+      padding-left: 0;
+    }
+
+    .popular-product__image {
+      position: absolute;
+      top: 106px;
+      right: 50px;
+    }
+
+    .popular-product__price {
+      width: 290px;
+      margin-left: 0;
+      margin-bottom: 34px;
+      font-size: 20px;
+    }
+
+    .popular-product__btn {
+      width: 290px;
+    }
   }
-}
+
+  @media (min-width: $desktop-width) {
+    .popular-product::after {
+        display: none;
+      }
+
+    .popular-product__section {
+      position: relative;
+      width: 1150px;
+      margin-bottom: 160px;
+
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -98px;
+        left: 52px;
+        width: 1050px;
+        height: 24px;
+        background-image: url("../img/bg-zigzag-line.svg");
+        background-size: auto 21px;
+        background-position-x: 130px;
+        background-repeat: repeat-x;
+      }
+    }
+
+    .popular-product__title {
+      width: 530px;
+      margin-left: 171px;
+      margin-top: 126px;
+      margin-bottom: 49px;
+      font-size: 53px;
+      line-height: 57px;
+      z-index: 10;
+    }
+
+    .popular-product__mark {
+      top: 15px;
+      left: 89px;
+    }
+
+    .popular-product__text {
+      width: 300px;
+      margin-left: 175px;
+      margin-bottom: 49px;
+    }
+
+    .popular-product__table {
+      width: 290px;
+      margin-left: 176px;
+      margin-bottom: 109px;
+    }
+
+    .popular-product__price {
+      margin-left: 176px;
+    }
+
+    .popular-product__btn {
+      display: block;
+      margin-left: 176px;
+    }
+
+    .popular-product__image {
+      top: -52px;
+      right: 50px;
+    }
+  }

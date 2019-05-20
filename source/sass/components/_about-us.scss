@@ -1,7 +1,7 @@
 .about-us {
   width: 320px;
   margin-top: 50px;
-  margin-bottom: 48px;
+  margin-bottom: 49px;
 }
 
 .about-us__title {
@@ -21,9 +21,18 @@
 }
 
 .about-us__item {
+  position: relative;
   width: 255px;
-  padding-top: 84px;
-  padding-left: 3px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 34px;
+    left: 0;
+    width: 60px;
+    height: 40px;
+    background-repeat: no-repeat;
+  }
 }
 
 .about-us__item p {
@@ -32,22 +41,68 @@
 
 .about-us__item--eco {
   width: 195px;
+  padding-top: 86px;
+
+  &::before {
+    top: 32px;
+    left: 9px;
+    background-image: url("../img/icon-feature-flower.svg");
+  }
 }
 
 .about-us__item--style {
   width: 220px;
+  padding-top: 84px;
+
+  &::before {
+    top: 30px;
+    left: 1px;
+    background-image: url("../img/icon-feature-money.svg");
+  }
 }
 
 .about-us__item--likes {
   width: 200px;
+  padding-top: 82px;
+
+  &::before {
+    top: 35px;
+    left: 9px;
+    background-image: url("../img/icon-feature-heart.svg");
+  }
+}
+
+.about-us__item--local-support {
+  order: 1;
+  padding-top: 83px;
+
+  &::before {
+    top: 34px;
+    left: -5px;
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
 }
 
 .about-us__item--handmade {
   order: 1;
+  padding-top: 83px;
+
+  &::before {
+    top: 33px;
+    left: 4px;
+    background-image: url("../img/icon-feature-ball.svg");
+  }
 }
 
 .about-us__item--giftbox {
   width: 250px;
+  padding-top: 83px;
+
+  &::before {
+    top: 31px;
+    left: 4px;
+    background-image: url("../img/icon-feature-gift.svg");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -134,6 +189,8 @@
 @media (min-width: $desktop-width) {
   .about-us {
     width: 1150px;
+    margin-top: 0;
+    margin-bottom: 65px;
   }
 
   .about-us__title {
@@ -142,6 +199,59 @@
   }
 
   .about-us__list {
-    margin-left: 175px;
+    margin-left: 177px;
   }
+
+  .about-us__item {
+    margin-right: 48px;
+  }
+
+  .about-us__item--eco {
+    padding-top: 106px;
+
+    &::before {
+      top: 52px;
+      left: 13px;
+    }
+  }
+
+  .about-us__item--style {
+
+    &::before {
+      top: 57px;
+      left: 5px;
+    }
+  }
+
+  .about-us__item--likes {
+
+    &::before {
+      top: 63px;
+      left: 12px;
+    }
+  }
+
+  .about-us__item--local-support {
+
+    &::before {
+      top: 61px;
+      left: -3px;
+    }
+  }
+
+  .about-us__item--handmade {
+
+    &::before {
+      top: 56px;
+      left: 6px;
+    }
+  }
+
+  .about-us__item--giftbox {
+
+    &::before {
+      top: 58px;
+      left: 6px;
+    }
+}
 }

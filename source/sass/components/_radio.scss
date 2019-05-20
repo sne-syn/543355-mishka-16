@@ -12,6 +12,10 @@
   font-weight: bold;
 }
 
+.radio__field {
+  cursor: pointer;
+}
+
 .radio__button {
   position: relative;
   margin: 0;
@@ -62,15 +66,15 @@
   }
 
   .radio__field {
-    margin-bottom: 58px;
-    padding-left: 82px;
+    margin-bottom: 56px;
+    padding-left: 81px;
   }
 
   .radio__field input[type="radio"] + .radio__button {
-    top: -17px;
-    left: 2px;
-    width: 46px;
-    height: 46px;
+    top: -16px;
+    left: 0px;
+    width: 47px;
+    height: 47px;
   }
 
   .radio__field input[type="radio"]:checked + .radio__button::before {

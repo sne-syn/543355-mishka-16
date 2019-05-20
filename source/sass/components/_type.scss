@@ -1,15 +1,15 @@
 .type {
-  margin-top: -96px;
-  margin-bottom: 50px;
+  margin-top: -97px;
+  margin-bottom: 27px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .type__item {
+  z-index: 2;
   box-sizing: border-box;
-  padding-top: 27px;
-  padding-bottom: 28px;
-  padding-left: 29px;
+  padding-top: 26px;
+  padding-bottom: 29px;
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
@@ -35,19 +35,34 @@
 
 .type__box {
   box-sizing: border-box;
-  width: 320px;
+  width: 260px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .type__link {
+  position: relative;
   display: block;
   width: 120px;
   font-size: 19px;
   line-height: 24px;
   color: $color-white;
+}
+
+.type__link svg {
+  position: absolute;
+  right: -145px;
+  top: -3px;
+  fill: rgba($color-secondary, 0.2);
+
+  &:hover svg,
+  &:focus svg {
+    fill: rgba($color-secondary, 0.3);
+  }
+
+  &:active svg {
+    fill: rgba($color-secondary, 0.1);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -59,21 +74,8 @@
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 50px;
-    padding-right: 50px;
-
-    // &:hover {
-    //   margin-top: -5px;
-    //   padding-bottom: 39px;
-    // }
-
-    &:hover .type__link {
-      color: $color-white;
-    }
-
-    &:active .type__link {
-      color: rgba($color-white, 0.3);
-    }
+    margin-top: -125px;
+    margin-bottom: 50px;
   }
 
   .type__box {
@@ -82,20 +84,14 @@
   }
 
   .type__item {
+    box-sizing: border-box;
     width: 335px;
-  }
+    padding-bottom: 30px;
 
-  .type__link {
-    width: 120px;
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .type {
-    width: 1150px;
-
+    &:hover {
+      margin-top: -5px;
+      padding-bottom: 35px;
+    }
 
     &:hover .type__link {
       color: $color-white;
@@ -104,6 +100,20 @@
     &:active .type__link {
       color: rgba($color-white, 0.3);
     }
+  }
+
+  .type__link {
+    width: 120px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .type {
+    width: 1150px;
+    margin: 5px auto 50px;
   }
 
   .type__item {

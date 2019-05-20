@@ -1,4 +1,5 @@
 .menu {
+  z-index: 200;
   @include indent-reset;
 }
 
@@ -19,8 +20,8 @@
   background-color: #ececec;
 }
 
-.menu__item--new,
-.menu__item--sale {
+.menu .menu__item.menu__item--new,
+.menu .menu__item.menu__item--sale {
   display: none;
 }
 
@@ -50,12 +51,19 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
+    width: 370px;
   }
 
   .menu__item {
+    display: block;
+    padding-top: 18px;
+  }
+
+  .menu__link {
+    width: 184px;
+    padding: 0;
     text-align: right;
-    padding-left: 0;
-    padding-top: 14px;
   }
 
   .menu__item::after {
@@ -68,12 +76,6 @@
 
   .menu__item--order {
     order: 4;
-    padding-right: 14px;
-  }
-
-  .menu__item--new,
-  .menu__item--sale {
-    display: none;
   }
 
   .menu__item--catalog a,
@@ -81,9 +83,12 @@
     font-size: 15px;
   }
 
-  .menu__link {
-    width: 185px;
-    padding: 0;
+  .menu__item--catalog a {
+    padding-right: 4px;
+  }
+
+  .menu__item--order a {
+    padding-right: 15px;
   }
 }
 
@@ -93,33 +98,30 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   .menu__item {
-    width: 50%;
-    padding-top: 28px;
+    width: 225px;
+    box-sizing: border-box;
+    padding-top: 30px;
     padding-bottom: 30px;
-    text-align: left;
     border: none;
   }
 
-  .menu__item--sale,
-  .menu__item--new {
+  .menu .menu__item.menu__item--new,
+  .menu .menu__item.menu__item--sale {
     display: block;
+    width: 222px;
     padding-top: 15px;
-    font-size: 15px;
     border: none;
   }
 
   .menu__item--new {
-    width: 234px;
-    // padding-left: 50px;
+    padding-left: 5px;
   }
 
   .menu__item--sale {
-    width: 215px;
-    // padding-left: 33px;
+    padding-left: 0;
   }
 
   .menu__item--sale a,
@@ -133,17 +135,24 @@
   }
 
   .menu__item--catalog {
-    width: 234px;
+    width: 194px;
+    padding-left: 3px;
+    padding-bottom: 36px;
     border-right: 1px solid #ececec;
   }
 
   .menu__item--order {
-    width: 215px;
-    padding-left: 33px;
+    padding-left: 24px;
   }
 
-  .menu__link--order .menu__link,
-  .menu__link--catalog .menu__link {
+  .menu__item--order a,
+  .menu__item--catalog a {
     font-size: 17px;
+  }
+
+  .menu .menu__link {
+    width: 180px;
+    margin: 0 auto;
+    text-align: left;
   }
 }

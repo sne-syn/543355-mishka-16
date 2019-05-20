@@ -3,10 +3,7 @@
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding: 25px;
 }
 
 .footer {
@@ -19,8 +16,11 @@
 
 .footer__copyright {
   position: relative;
-  display: block;
-  width: 135px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 266px;
+  margin: 0;
+  padding-top: 17px;
   text-align: center;
   font-size: 19px;
   line-height: 18px;
@@ -31,11 +31,27 @@
 .footer__copyright::before {
   position: absolute;
   content: "";
-  top: -20px;
-  left: 0;
+  top: 3px;
+  left: 6px;
   width: 260px;
   height: 1px;
   background-color: #e5e5e5;
+}
+
+.footer__copyright-link {
+  display: inline-block;
+  vertical-align: middle;
+	width: 50px;
+  height: 50px;
+}
+
+.footer__copyright-name {
+  font-size: 0;
+}
+
+.footer__copyright-icon {
+  width: 27px;
+  height: 34px;
 }
 
 @media (min-width: $tablet-width) {
@@ -43,7 +59,7 @@
     width: 768px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-top: 50px;
     padding-bottom: 55px;
     padding-left: 50px;
@@ -52,10 +68,16 @@
 
   .footer__logo {
     display: block;
+    margin-right: 85px;
   }
 
-  .footer__copyright::before {
+  .footer__copyright {
+    width: 190px;
+    padding-top: 0;
+
+    &::before {
     display: none;
+    }
   }
 }
 

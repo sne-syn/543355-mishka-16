@@ -3,7 +3,7 @@
 }
 
 .checkbox__legend.form__legend {
-  margin-bottom: 30px;
+  margin-bottom: 36px;
 }
 
 .checkbox__field {
@@ -14,6 +14,7 @@
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .checkbox__field input[type="checkbox"] + .checkbox__indication {
@@ -59,7 +60,7 @@
 
 @media (min-width: $tablet-width) {
   .checkbox.form__fieldset {
-    padding-top: 65px;
+    padding-top: 68px;
     padding-bottom: 10px;
     background-color: $color-background;
   }

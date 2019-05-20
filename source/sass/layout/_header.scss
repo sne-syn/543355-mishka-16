@@ -1,25 +1,22 @@
 .header {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  width: auto;
 }
-
 
 .header__logo {
   position: relative;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   padding-top: 18px;
   padding-bottom: 22px;
-  padding-left: 120px;
 }
 
 .header__logo picture {
-  display: block;
-  width: 260px;
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 3px;
 }
 
 .header__logo::after {
@@ -46,11 +43,12 @@
 
 @media (min-width: $tablet-width) {
   .header__container {
+    width: 768px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 768px;
+    margin: 0 auto;
   }
 
   .header::after {
@@ -65,12 +63,12 @@
 
   .header__logo {
     order: 0;
+    display: block;
+    width: 370px;
     box-sizing: border-box;
-    width: 371px;
-    margin: 0;
-    padding-left: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 47px;
   }
 
   .header__logo::after {
@@ -82,10 +80,15 @@
     height: 47px;
   }
 
+  .header__logo picture {
+    align-self: flex-start;
+    padding: 0;
+  }
+
   .header__single-line {
     position: absolute;
-    bottom: 13px;
-    right: 48px;
+    bottom: 10px;
+    right: 50px;
     display: block;
     font-size: 15px;
     line-height: 24px;
@@ -93,21 +96,29 @@
 }
 
 @media (min-width: $desktop-width) {
+
+  // .header {
+  //   width: 1150px;
+
+  // }
+
   .header__container {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     width: 1150px;
+    margin: 0 auto;
   }
 
-  .header::after {
-    top: 88px;
+  .header__container::after {
+    top: 86px;
     height: 1px;
   }
 
   .header__logo {
     width: 250px;
+    min-height: 90px;
     padding: 0;
     padding-top: 7px;
     padding-bottom: 7px;
@@ -119,8 +130,9 @@
   }
 
   .header__single-line {
+    z-index: 5;
     right: 0;
-    bottom: 19px;
+    bottom: 14px;
     width: 281px;
   }
 }

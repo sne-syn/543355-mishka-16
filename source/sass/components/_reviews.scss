@@ -9,12 +9,11 @@
 .reviews__title {
   @include heading-secondary;
   margin-bottom: 24px;
-  padding-left: 2px;
 }
 
 .reviews__list {
   @include indent-reset;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   list-style: none;
 }
 
@@ -25,14 +24,12 @@
 
 .reviews__autor-name {
   margin-bottom: -16px;
-  padding-left: 4px;
   font-size: 17px;
   font-weight: bold;
   color: $color-secondary;
 }
 
 .reviews__autor-login {
-  padding-left: 4px;
   margin-bottom: 24px;
   font-size: 17px;
 }
@@ -40,7 +37,7 @@
 .reviews__btn {
   display: block;
   width: 260px;
-  margin-bottom: 70px;
+  margin-bottom: 88px;
   padding-left: 20px;
 }
 
@@ -65,7 +62,6 @@
   }
 
   .reviews__title {
-
     font-size: 43px;
     line-height: 50px;
   }
@@ -85,12 +81,12 @@
 @media (min-width: $desktop-width) {
   .reviews {
     width: 1150px;
-    background-position: 0 -18px;
+    background-position: 51px 20px;
   }
 
   .reviews__title {
-
-    margin-left: 175px;
+    margin-left: 170px;
+    margin-bottom: 47px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -102,10 +98,16 @@
   .reviews__text {
     width: 780px;
     margin-left: 175px;
+    margin-bottom: 37px;
   }
 
   .reviews__autor-name,
   .reviews__autor-login {
-    margin-left: 175px;
+    margin-left: 172px;
+  }
+
+  .reviews__btn {
+    top: 98px;
+    right: 48px;
   }
 }

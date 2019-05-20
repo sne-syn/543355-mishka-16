@@ -1,6 +1,5 @@
 .heading-innerpage {
   @include heading-colorblock;
-  margin-bottom: 80px;
 }
 
 .heading-innerpage__text {
@@ -10,17 +9,43 @@
 
 @media (min-width: $tablet-width) {
   .heading-innerpage {
-    margin-top: -70px;
+    position: relative;
+    margin-top: -68px;
+    padding-bottom: 88px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -7px;
+      left: 0;
+      width: 100%;
+      height: 25px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: auto 23px;
+      background-position-x: 150px;
+      z-index: 5;
+    }
   }
 
   .heading-innerpage__text {
+    display: block;
+    margin-top: 22px;
+
     @include heading-primary--tablet;
   }
 }
 
 @media (min-width: $desktop-width) {
   .heading-innerpage {
-    margin-top: -75px;
+    margin-top: -70px;
+    margin-bottom: 127px;
+    padding-top: 92px;
+    padding-bottom: 105px;
+
+    &::after {
+      background-size: auto 34px;
+      background-position-x: 130px;
+    }
   }
 
   .heading-innerpage__text {
