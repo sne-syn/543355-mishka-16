@@ -40,18 +40,23 @@
 
     @include indent-reset;
     line-height: 24px;
-    margin-bottom: 21px;
+    margin-bottom: 19px;
   }
 
   .popular-product__table {
     width: 260px;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
   }
 
   .popular-product__table .table__header {
     padding-left: 0;
-    padding-bottom: 8px;
+    padding-bottom: 5px;
     padding-right: 7px;
+    padding-top: 4px;
+  }
+
+  .popular-product__table .table__cell {
+   padding-top: 3px;
   }
 
   .popular-product__image {
@@ -65,18 +70,19 @@
     font-weight: bold;
     text-align: center;
     margin-left: 63px;
+    margin-top: 25px;
     margin-bottom: 26px;
   }
 
   .popular-product__btn {
     display: block;
-    width: 258px;
+    width: 260px;
   }
 
   @media (min-width: $tablet-width) {
 
     .popular-product::after {
-        bottom: -50px;
+        bottom: -43px;
         left: 0;
         height: 24px;
         background-size: auto 21px;

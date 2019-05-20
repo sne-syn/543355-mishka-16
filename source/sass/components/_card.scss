@@ -30,7 +30,6 @@
   margin-bottom: 26px;
 }
 
-
 .card__description {
   padding: 0 25px;
 }
@@ -164,7 +163,33 @@
     min-height: 660px;
   }
 
-  .card__table-row--price::before {
+  .card__link {
+    height: 460px;
+  }
+
+  .card__img {
+    width: 316px;
+    height: 460px;
+  }
+
+  .card__title {
+    @include indent-reset;
+
+    padding-bottom: 5px;
+  }
+
+  .card__table-row--price {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 60px;
+
+  &::before {
     width: 250px;
+  }
+  }
+
+  .card__basket-text {
+    display: inline-block;
+    vertical-align: middle;
   }
 }
