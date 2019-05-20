@@ -10,7 +10,9 @@
 
   @include indent-reset;
 
-  margin-bottom: 28px;
+  margin-bottom: 34px;
+  font-size: 17px;
+  line-height: 18px;
   font-weight: bold;
   color: $color-green-light;
   text-transform: uppercase;
@@ -19,7 +21,7 @@
 .form__legend::before {
   position: absolute;
   content: "";
-  top: 15px;
+  top: 10px;
   left: 62px;
   width: 199px;
   height: 1px;

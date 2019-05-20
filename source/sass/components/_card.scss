@@ -1,5 +1,6 @@
 .card {
   width: 320px;
+  margin-top: 31px;
 }
 
 .card__list {
@@ -13,7 +14,7 @@
   width: 260px;
   box-sizing: border-box;
   margin-bottom: 30px;
-  border: 2px solid $color-tertiary;
+  border: 1px solid $color-tertiary;
 
   &:hover {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
@@ -24,10 +25,16 @@
   }
 }
 
+.card__link {
+  display: block;
+  height: 195px;
+  margin-bottom: 25px;
+}
+
 .card__img {
   width: 260px;
   height: 195px;
-  margin-bottom: 26px;
+
 }
 
 .card__description {
@@ -35,6 +42,8 @@
 }
 
 .card__title {
+  display: block;
+  margin-bottom: 5px;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
@@ -57,6 +66,7 @@
 
 .card__table-row--inline {
   display: inline;
+  padding-left: 2px;
 }
 
 .card__table-header {
@@ -73,7 +83,8 @@
 
 .card__table-row--price {
   position: relative;
-  display: block;
+  display: inline-block;
+  width: 110px;
   margin-top: 42px;
   margin-bottom: 20px;
   letter-spacing: 1.1px;
@@ -82,18 +93,24 @@
 .card__table-row--price::before {
   position: absolute;
   content: "";
-  top: 0;
-  left: 0;
-  width: 205px;
+  top: -23px;
+  left: 4px;
+  width: 202px;
   height: 1px;
   background-color: $color-tertiary;
 }
 
 .card__table-cell--price {
-  display: inline;
+  display: inline-block;
   text-align: left;
   line-height: 24px;
   font-weight: bold;
+}
+
+.card__basket {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
 }
 
 .card__basket-text {

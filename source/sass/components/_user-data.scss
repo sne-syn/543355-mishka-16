@@ -1,9 +1,9 @@
 .user-data {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .user-data__legend {
-  margin-bottom: 22px;
+  margin-bottom: 30px;
 }
 
 .user-data__field {
@@ -53,6 +53,10 @@
   width: 179px;
 }
 
+.user-data__field--contacts .user-data__input {
+  margin-top: 6px;
+}
+
 .user-data__field--contacts {
   margin-bottom: 32px;
 }
@@ -68,7 +72,7 @@
 }
 
 .user-data__comment.form__legend::before {
-  top: 10px;
+  top: 12px;
 }
 
 .user-data__textarea {
@@ -77,6 +81,7 @@
   width: 260px;
   min-height: 142px;
   margin-top: 18px;
+  margin-bottom: 16px;
   padding-top: 15px;
   padding-left: 15px;
   font-family: "Open Sans", "Arial", sans-serif;
