@@ -66,6 +66,12 @@
   position: absolute;
 }
 
+.user-data__input:hover + .user-data__icon,
+.user-data__input:active + .user-data__icon,
+.user-data__input:focus + .user-data__icon {
+  fill: $color-green-light;
+}
+
 .user-data__icon--number {
   top: 35px;
   right: 7px;

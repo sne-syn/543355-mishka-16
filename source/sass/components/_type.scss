@@ -16,10 +16,6 @@
   cursor: pointer;
   transition: all;
 
-  &:hover .type__link {
-    color: $color-white;
-  }
-
   &:active .type__link {
     color: rgba($color-white, 0.3);
   }
@@ -49,21 +45,21 @@
   color: $color-white;
 }
 
-.type__link svg {
+.type__icon {
   position: absolute;
   right: -145px;
   top: -3px;
   fill: rgba($color-secondary, 0.2);
+}
 
-  &:hover svg,
-  &:focus svg {
+.type__item:hover .type__icon,
+.type__item:focus .type__icon {
     fill: rgba($color-secondary, 0.3);
-  }
+}
 
-  &:active svg {
+.type__item:active .type__icon {
     fill: rgba($color-secondary, 0.1);
   }
-}
 
 @media (min-width: $tablet-width) {
   .type {
@@ -93,10 +89,6 @@
       padding-bottom: 35px;
     }
 
-    &:hover .type__link {
-      color: $color-white;
-    }
-
     &:active .type__link {
       color: rgba($color-white, 0.3);
     }
@@ -107,7 +99,6 @@
     font-size: 20px;
     line-height: 30px;
   }
-
 }
 
 @media (min-width: $desktop-width) {

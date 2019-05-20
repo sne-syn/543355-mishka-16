@@ -41,17 +41,21 @@
 .footer__copyright-link {
   display: inline-block;
   vertical-align: middle;
-	width: 50px;
+  width: 50px;
   height: 50px;
-}
-
-.footer__copyright-name {
-  font-size: 0;
 }
 
 .footer__copyright-icon {
   width: 27px;
   height: 34px;
+
+  &:hover {
+    fill: $color-green-light;
+  }
+
+  &::active {
+    fill: rgba($color-green-light, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -71,12 +75,21 @@
     margin-right: 85px;
   }
 
+  .footer__logo:hover .footer__logo-image,
+  .footer__logo:focus .footer__logo-image {
+    fill: $color-green-light;
+  }
+
+  .footer__logo:active .footer__logo-image {
+    fill: rgba($color-green-light, 0.3);
+  }
+
   .footer__copyright {
     width: 190px;
     padding-top: 0;
 
     &::before {
-    display: none;
+      display: none;
     }
   }
 }

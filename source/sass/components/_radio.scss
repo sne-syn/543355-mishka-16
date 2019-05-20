@@ -10,9 +10,6 @@
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
-}
-
-.radio__field {
   cursor: pointer;
 }
 
@@ -72,7 +69,7 @@
 
   .radio__field input[type="radio"] + .radio__button {
     top: -16px;
-    left: 0px;
+    left: 0;
     width: 47px;
     height: 47px;
   }

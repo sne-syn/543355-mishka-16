@@ -22,12 +22,13 @@
   margin-bottom: 27px;
 }
 
-
-.demonstration__video-play {
+.demonstration__play-button {
   position: absolute;
   top: 37px;
   left: 80px;
   z-index: 100;
+  width: 101px;
+  height: 78px;
 }
 
 .demonstration__title {
@@ -51,7 +52,6 @@
     background-image: url("../img/icon-video.svg");
     background-repeat: no-repeat;
   }
-
 }
 
 .demonstration__description {
@@ -92,6 +92,20 @@
 
   .demonstration__video {
     order: -1;
+  }
+
+  .demonstartion__play-button {
+    &:hover,
+    &:focus {
+      width: 121px;
+      height: 94px;
+    }
+
+    &:active {
+      width: 81px;
+      height: 63px;
+      opacity: 0.6;
+    }
   }
 
   .demonstration__btn {

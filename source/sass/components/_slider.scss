@@ -15,6 +15,7 @@
   @include indent-reset;
   background-color: transparent;
   border: 1px solid $color-tertiary;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -26,10 +27,6 @@
     opacity: 0.3;
     outline: none;
   }
-}
-
-.slider__btn--text {
-  font-size: 0;
 }
 
 @media (min-width: $tablet-width) {

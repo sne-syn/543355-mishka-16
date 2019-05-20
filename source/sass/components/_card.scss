@@ -12,7 +12,6 @@
 
 .card__item {
   width: 260px;
-  box-sizing: border-box;
   margin-bottom: 30px;
   border: 1px solid $color-tertiary;
 
@@ -34,7 +33,6 @@
 .card__img {
   width: 260px;
   height: 195px;
-
 }
 
 .card__description {
@@ -108,13 +106,16 @@
 }
 
 .card__basket {
-  display: inline-block;
-  vertical-align: middle;
   width: 50px;
 }
 
-.card__basket-text {
-  font-size: 0;
+.card__basket:hover .card__icon,
+.card__basket:focus .card__icon {
+  fill: $color-green-light;
+}
+
+.card__basket:active .card__icon {
+  fill: rgba($color-green-light, 0.3);
 }
 
 @media (min-width: $tablet-width) {
@@ -200,9 +201,9 @@
     vertical-align: middle;
     margin-top: 60px;
 
-  &::before {
-    width: 250px;
-  }
+    &::before {
+      width: 250px;
+    }
   }
 
   .card__basket-text {

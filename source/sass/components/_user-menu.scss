@@ -24,7 +24,6 @@
   position: relative;
   display: block;
   width: 320px;
-  box-sizing: border-box;
   margin: 0 auto;
   padding-left: 75px;
   font-size: 17px;
@@ -41,24 +40,21 @@
   }
 }
 
-.user-menu__icon-search,
-.user-menu__icon-cart {
+.user-menu__link .user-menu__icon {
   position: absolute;
   top: 3px;
   left: 30px;
-  fill: rgba(0, 0, 0, 0.3);
+  fill: rgba($color-secondary, 0.3);
 }
 
-.user-menu__item--search:hover .user-menu__icon-search,
-.user-menu__item--cart:hover .user-menu__icon-cart {
+.user-menu__link:hover .user-menu__icon,
+.user-menu__link:focus .user-menu__icon {
   fill: $color-green-light;
 }
 
-.user-menu__item--search:active ,
-.user-menu__item--cart:active {
+.user-menu__link:active .user-menu__icon  {
   fill: rgba($color-green-light, 0.3);
 }
-
 
 @media (min-width: $tablet-width) {
   .user-menu {
@@ -79,9 +75,21 @@
   }
 
   .user-menu__item--search .user-menu__link {
-    font-size: 0;
     width: 80px;
     height: 40px;
+  }
+
+  .user-menu__search-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 
   .user-menu__item--cart {
@@ -96,12 +104,12 @@
     padding-left: 82px;
   }
 
-  .user-menu__link .user-menu__icon-search {
+  .user-menu__link .user-menu__icon--search {
     top: 13px;
     left: 32px;
   }
 
-  .user-menu__link .user-menu__icon-cart {
+  .user-menu__link .user-menu__icon--cart {
     left: 30px;
   }
 }

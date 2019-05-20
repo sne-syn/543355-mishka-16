@@ -215,20 +215,14 @@
     }
   }
 
-  .about-us__item--style {
-
-    &::before {
-      top: 57px;
-      left: 5px;
-    }
+  .about-us__item--style::before {
+    top: 57px;
+    left: 5px;
   }
 
-  .about-us__item--likes {
-
-    &::before {
-      top: 63px;
-      left: 12px;
-    }
+  .about-us__item--likes::before {
+    top: 63px;
+    left: 12px;
   }
 
   .about-us__item--local-support {
@@ -239,19 +233,13 @@
     }
   }
 
-  .about-us__item--handmade {
-
-    &::before {
-      top: 56px;
-      left: 6px;
-    }
+  .about-us__item--handmade::before {
+    top: 56px;
+    left: 6px;
   }
 
-  .about-us__item--giftbox {
-
-    &::before {
-      top: 58px;
-      left: 6px;
-    }
-}
+  .about-us__item--giftbox::before {
+    top: 58px;
+    left: 6px;
+  }
 }
