@@ -13,7 +13,6 @@
 
 .user-data__input {
   width: 260px;
-  box-sizing: border-box;
   padding-top: 15px;
   padding-bottom: 17px;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -53,12 +52,28 @@
   width: 179px;
 }
 
+.user-data__field--contacts.form__field {
+  position: relative;
+  margin-bottom: 32px;
+}
+
 .user-data__field--contacts .user-data__input {
+
   margin-top: 6px;
 }
 
-.user-data__field--contacts {
-  margin-bottom: 32px;
+.user-data__icon {
+  position: absolute;
+}
+
+.user-data__icon--number {
+  top: 35px;
+  right: 7px;
+}
+
+.user-data__icon--mail {
+  top: 35px;
+  right: 3px;
 }
 
 .user-data__number .user-data__input,
@@ -66,20 +81,6 @@
   padding-top: 21px;
   padding-bottom: 17px;
   padding-right: 35px;
-}
-
-.user-data__number + .user-data__input {
-  background-image: url("../img/icon-phone.svg");
-  background-size: 25px 25px;
-  background-position: 228px 12px;
-  background-repeat: no-repeat;
-}
-
-.user-data__email + .user-data__input {
-  background-image: url("../img/icon-mail.svg");
-  background-size: 33px 30px;
-  background-position: 224px 12px;
-  background-repeat: no-repeat;
 }
 
 .user-data--communicate .form__list {
@@ -92,7 +93,6 @@
 
 .user-data__textarea {
   display: block;
-  box-sizing: border-box;
   width: 260px;
   min-height: 142px;
   margin-top: 18px;
@@ -195,13 +195,8 @@
     margin-bottom: 0;
   }
 
-  .user-data__number + .user-data__input {
-    background-position: 450px 15px;
-  }
-
   .user-data__email + .user-data__input {
     padding-bottom: 12px;
-    background-position: 447px 15px;
   }
 
   .user-data--suggestion {
