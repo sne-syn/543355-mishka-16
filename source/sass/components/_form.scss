@@ -74,7 +74,7 @@
 
 @media (min-width: $tablet-width) {
   .form {
-    margin-top: 72px;
+    margin-top: 57px;
     margin-bottom: 51px;
   }
 
@@ -83,7 +83,7 @@
   }
 
   .form__legend {
-    width: 166px;
+    width: 165px;
     letter-spacing: 0;
     font-size: 17px;
     line-height: 16px;
@@ -106,6 +106,7 @@
 
   .form__small-note {
     width: 302px;
+    margin-top: 15px;
     align-self: baseline;
     font-size: 17px;
     line-height: 20px;

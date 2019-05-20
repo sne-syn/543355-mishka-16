@@ -10,7 +10,8 @@
 @media (min-width: $tablet-width) {
   .heading-innerpage {
     position: relative;
-    margin-top: -70px;
+    margin-top: -68px;
+    padding-bottom: 88px;
 
     &::after {
       content: "";
@@ -21,11 +22,15 @@
       height: 25px;
       background-image: url("../img/bg-zigzag-fill.svg");
       background-size: auto 23px;
+      background-position-x: 150px;
       z-index: 5;
     }
   }
 
   .heading-innerpage__text {
+    display: block;
+    margin-top: 22px;
+
     @include heading-primary--tablet;
   }
 }

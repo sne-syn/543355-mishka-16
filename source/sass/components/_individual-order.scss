@@ -16,13 +16,14 @@
 @media (min-width: $tablet-width) {
   .individual-order .wrapper {
     width: 768px;
+    margin-top: 0;
     padding-left: 52px;
     padding-right: 48px;
   }
 
   .individual-order__entry .individual-order__intro {
     width: 620px;
-    margin-top: 72px;
+    margin-top: 66px;
     font-size: 17px;
     line-height: 30px;
   }
