@@ -89,7 +89,7 @@
   border: none;
 }
 
-.contacts__map--link picture {
+.contacts__map-link picture {
   position: absolute;
   width: 320px;
   top: 0;
@@ -99,7 +99,7 @@
     content: "";
     position: absolute;
     top: 145px;
-    left: 360px;
+    // left: 360px;
     width: 66px;
     height: 101px;
     background-image: url("../img/icon-map-pin.svg");
@@ -173,7 +173,7 @@
     margin-bottom: 56px;
   }
 
-  .contacts__map--link picture {
+  .contacts__map-link picture {
 
     &::after {
       top: 145px;
