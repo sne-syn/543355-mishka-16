@@ -81,7 +81,7 @@
     background-image: url("../img/map-desktop@2x.jpg");
   }
 }
-.contacts__map iframe {
+.contacts__map-iframe {
   position: relative;
   z-index: 30;
   width: 100%;
@@ -89,7 +89,7 @@
   border: none;
 }
 
-.contacts__map picture {
+.contacts__map--link picture {
   position: absolute;
   width: 320px;
   top: 0;
@@ -173,7 +173,7 @@
     margin-bottom: 56px;
   }
 
-  .contacts__map picture {
+  .contacts__map--link picture {
 
     &::after {
       top: 145px;
