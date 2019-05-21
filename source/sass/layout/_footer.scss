@@ -20,7 +20,7 @@
   vertical-align: middle;
   width: 266px;
   margin: 0;
-  padding-top: 17px;
+  padding-top: 23px;
   text-align: center;
   font-size: 19px;
   line-height: 18px;
@@ -31,7 +31,7 @@
 .footer__copyright::before {
   position: absolute;
   content: "";
-  top: 3px;
+  top: 9px;
   left: 6px;
   width: 260px;
   height: 1px;
@@ -41,6 +41,8 @@
 .footer__copyright-link {
   display: inline-block;
   vertical-align: middle;
+  padding-top: 10px;
+  padding-left: 28px;
   width: 50px;
   height: 50px;
 }

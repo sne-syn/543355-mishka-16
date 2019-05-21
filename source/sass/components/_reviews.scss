@@ -52,7 +52,8 @@
     background-position: 0 -18px;
     background-size: 350px auto;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
       background-image: url("../img/review@2x.jpg");
     }
   }
@@ -80,8 +81,23 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
+    position: relative;
     width: 1150px;
+    margin-bottom: 168px;
     background-position: 51px 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -27px;
+      left: 51px;
+      width: 1177px;
+      height: 24px;
+      background-size: auto 21px;
+      background-image: url(../img/bg-zigzag-line.svg);
+      background-position-x: -29px;
+      background-repeat: no-repeat;
+    }
   }
 
   .reviews__title {
@@ -97,7 +113,7 @@
 
   .reviews__text {
     width: 780px;
-    margin-left: 175px;
+    margin-left: 173px;
     margin-bottom: 37px;
   }
 
