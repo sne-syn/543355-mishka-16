@@ -117,3 +117,19 @@ gulp.task("build", gulp.series(
 ));
 
 gulp.task("start", gulp.series("build", "server"));
+
+gulp.task("webp", function () {
+     return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("source/img"))
+});
+
+
+var svgo = require("gulp-svgo");
+
+gulp.task("images", function () {
+
+    return gulp.src("source/img/**/*.svg")
+        .pipe(svgo())
+        .pipe(gulp.dest("source/img/optimo"));
+});

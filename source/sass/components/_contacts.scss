@@ -85,6 +85,8 @@
   border: none;
 }
 
+// Карта не кликается
+
 .contacts__map-link {
   position: absolute;
   display: block;
@@ -95,6 +97,7 @@
   right: 0;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 
   &::after {
     content: "";
