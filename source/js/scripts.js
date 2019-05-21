@@ -35,6 +35,8 @@ buttonMenu.addEventListener("click", function (evt) {
 
 
 var cardLink = document.querySelector(".card__basket");
+
+if (cardLink) {
 var popup = document.querySelector(".modal");
 var close = popup.querySelector(".modal__overlay");
 
@@ -55,9 +57,11 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
-
+}
 
 var form = document.querySelector("form");
+
+if (form) {
 var userName = form.querySelector("[name=user-name]");
 var surname = form.querySelector("[name=user-surname]");
 var number = form.querySelector("[name=number]");
@@ -72,7 +76,6 @@ form.addEventListener("submit", function (evt) {
     buttonSubmit.classList.remove("form__btn--error");
     buttonSubmit.offsetWidth = buttonSubmit.offsetWidth;
     buttonSubmit.classList.add("form__btn--error");
-  } else {
-    console.log("Ваш заказ принят");
   }
 });
+}
