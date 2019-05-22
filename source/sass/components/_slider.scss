@@ -47,7 +47,7 @@
   .slider__btn--forward {
     position: absolute;
     top: -83px;
-    right: -4px;
+    right: 2px;
   }
 }
 
@@ -58,10 +58,10 @@
   }
 
   .slider__btn--forward {
-    right: -160px;
+    right: 0;
   }
 
   .slider__btn--back {
-    right: -73px;
+    right: 88px;
   }
 }

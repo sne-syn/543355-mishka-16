@@ -4,7 +4,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: -50px;
+    bottom: -43px;
     left: 0;
     width: 100%;
     height: 6px;
@@ -91,11 +91,12 @@
 
   .popular-product__section {
     width: 768px;
-    margin-bottom: 115px;
+    margin-bottom: 118px;
   }
 
   .popular-product__title {
     position: relative;
+    margin-left: -3px;
     margin-bottom: 48px;
     font-size: 43px;
     line-height: 50px;
@@ -199,7 +200,16 @@
   .popular-product__table {
     width: 290px;
     margin-left: 176px;
-    margin-bottom: 109px;
+    margin-bottom: 111px;
+  }
+
+  .popular-product__table .table__header {
+    padding-bottom: 5px;
+  }
+
+  .popular-product__table .table__cell {
+    padding-left: 8px;
+    padding-top: 0;
   }
 
   .popular-product__price {

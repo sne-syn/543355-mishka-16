@@ -23,22 +23,25 @@
 }
 
 .reviews__autor-name {
-  margin-bottom: -16px;
+  display: block;
+  @include indent-reset;
   font-size: 17px;
   font-weight: bold;
   color: $color-secondary;
 }
 
 .reviews__autor-login {
-  margin-bottom: 24px;
+  display: block;
+  @include indent-reset;
+  margin-bottom: 30px;
   font-size: 17px;
 }
 
 .reviews__btn {
   display: block;
   width: 260px;
-  margin-bottom: 88px;
-  padding-left: 20px;
+  margin-bottom: 87px;
+  padding: 13px 25px 14px 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -46,7 +49,7 @@
     position: relative;
     width: 768px;
     padding-top: 77px;
-    padding-bottom: 90px;
+    margin-bottom: 161px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 -18px;
@@ -64,6 +67,7 @@
   }
 
   .reviews__title {
+    margin-left: -4px;
     margin-bottom: 49px;
     font-size: 43px;
     line-height: 50px;
@@ -76,9 +80,10 @@
 
   .reviews__btn {
     position: absolute;
-    top: 80px;
+    top: 78px;
     right: 49px;
     width: 175px;
+    padding: 15px 25px 13px 20px;
   }
 }
 
@@ -86,43 +91,44 @@
   .reviews {
     position: relative;
     width: 1150px;
-    margin-bottom: 168px;
+    margin-bottom: 295px;
+    padding-top: 90px;
     background-position: 51px 20px;
 
     &::after {
       content: "";
       position: absolute;
-      bottom: -27px;
-      left: 51px;
-      width: 1177px;
-      height: 24px;
+      bottom: -153px;
+      left: 0;
+      width: 1150px;
+      height: 21px;
       background-size: auto 21px;
       background-image: url(../img/bg-zigzag-line.svg);
-      background-position-x: -29px;
-      background-repeat: no-repeat;
+      background-position-x: 80px;
+      background-repeat: repeat;
     }
   }
 
   .reviews__title {
     margin-left: 170px;
-    margin-bottom: 47px;
+    margin-bottom: 50px;
     font-size: 53px;
     line-height: 57px;
   }
 
   .reviews__block {
-    width: 888px;
+    width: 1050px;
   }
 
   .reviews__text {
     width: 780px;
-    margin-left: 173px;
-    margin-bottom: 37px;
+    margin-left: 175px;
+    margin-bottom: 36px;
   }
 
   .reviews__autor-name,
   .reviews__autor-login {
-    margin-left: 172px;
+    margin-left: 176px;
   }
 
   .reviews__btn {
