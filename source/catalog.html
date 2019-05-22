@@ -59,7 +59,7 @@
   </header>
   <main>
     <div class="heading-innerpage">
-      <h1 class="heading-innerpage__text">Каталог товаров</h1>
+      <h1 class="heading-innerpage__text heading-innerpage__text--catalog">Каталог товаров</h1>
     </div>
     <section class="card wrapper">
       <h2 class="visually-hidden">Товары</h2>
@@ -90,16 +90,17 @@
                 <th class="card__table-header table__header">вес</th>
                 <td class="card__table-cell table__cell">200 г</td>
               </tr>
-              <tr class="card__table-row card__table-row--price table__row">
-                <th class="visually-hidden">Цена</th>
-                <td class="card__table-cell card__table-cell--price table__cell">1 200 руб.</td>
-              </tr>
             </table>
-            <a class="card__basket" href="#">
-              <svg class="card__icon" width="21" height="19">
+            <div class="card__buy-line">
+              <span class="visually-hidden">Цена</span>
+              <span class="card__price">1 200 руб.</span>
+              <a class="card__basket" href="#">
+                <svg class="card__icon" width="21" height="19">
                   <use xlink:href="#sprite-icon-cart"></use>
-                </svg><span class="visually-hidden">Добавить в корзину</span>
-            </a>
+                </svg>
+                <span class="visually-hidden">Добавить в корзину</span>
+              </a>
+            </div>
           </div>
         </li>
         <li class="card__item">
@@ -117,7 +118,7 @@
               alt="Изображение корзинки для белья">
             </picture>
           </a>
-          <div class="card__description">
+          <div class="card__description card__description--laundry-basket">
             <a class="card__title" href="#">Корзинка для белья</a>
             <table class="card__table table">
               <tr class="card__table-row card__table-row--inline table__row">
@@ -128,16 +129,17 @@
                 <th class="card__table-header table__header">высота</th>
                 <td class="card__table-cell table__cell">10 см</td>
               </tr>
-              <tr class="card__table-row card__table-row--price table__row">
-                <th class="visually-hidden">Цена</th>
-                <td class="card__table-cell card__table-cell--price  table__cell">690 руб.</td>
-              </tr>
             </table>
-            <a class="card__basket" href="#">
-              <svg class="card__icon" width="21" height="19">
-                  <use xlink:href="#sprite-icon-cart"></use>
-                </svg><span class="visually-hidden">Добавить в корзину</span>
-            </a>
+            <div class="card__buy-line">
+                <span class="visually-hidden">Цена</span>
+                <span class="card__price">690 руб.</span>
+                <a class="card__basket" href="#">
+                  <svg class="card__icon" width="21" height="19">
+                    <use xlink:href="#sprite-icon-cart"></use>
+                  </svg>
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </a>
+              </div>
           </div>
         </li>
         <li class="card__item">
@@ -154,7 +156,7 @@
               alt="Изображение большой корзинки для игрушек">
             </picture>
           </a>
-          <div class="card__description">
+          <div class="card__description card__description--huge-basket">
             <a class="card__title" href="#">Большая корзинка для игрушек</a>
             <table class="card__table table">
               <tr class="card__table-row card__table-row--inline table__row">
@@ -165,16 +167,17 @@
                 <th class="card__table-header table__header">высота</th>
                 <td class="card__table-cell table__cell">30см</td>
               </tr>
-              <tr class="card__table-row card__table-row--price table__row">
-                <th class="visually-hidden">Цена</th>
-                <td class="card__table-cell card__table-cell--price  table__cell">1 500 руб.</td>
-              </tr>
             </table>
-            <a class="card__basket" href="#">
-              <svg class="card__icon" width="21" height="19">
-                  <use xlink:href="#sprite-icon-cart"></use>
-                </svg><span class="visually-hidden">Добавить в корзину</span>
-            </a>
+            <div class="card__buy-line">
+                <span class="visually-hidden">Цена</span>
+                <span class="card__price">1 500 руб.</span>
+                <a class="card__basket" href="#">
+                  <svg class="card__icon" width="21" height="19">
+                    <use xlink:href="#sprite-icon-cart"></use>
+                  </svg>
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </a>
+              </div>
           </div>
         </li>
       </ul>
