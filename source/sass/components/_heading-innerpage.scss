@@ -50,5 +50,7 @@
 
   .heading-innerpage__text {
     @include heading-primary--desktop;
+
+    margin-top: 0;
   }
 }

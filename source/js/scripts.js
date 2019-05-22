@@ -1,5 +1,6 @@
 var body = document.querySelector("body");
-body.classList.replace("no-js", "js");
+body.classList.remove("no-js");
+body.classList.add("js");
 
 var buttonMenu = document.querySelector(".main-nav__toggle");
 var nav = document.querySelector(".main-nav--closed");

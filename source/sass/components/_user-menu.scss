@@ -4,9 +4,9 @@
 
 .user-menu__item {
   position: relative;
-  box-sizing: border-box;
-  padding-top: 23px;
-  padding-bottom: 25px;
+  padding-top: 26px;
+  padding-bottom: 28px;
+  padding-left: 10px;
   list-style: none;
 }
 
@@ -63,10 +63,13 @@
     flex-direction: row;
   }
 
-  .user-menu__item::after {
+  .user-menu__item {
+    padding-left: 0;
+
+  &::after {
     display: none;
   }
-
+}
   .user-menu__item--search {
     width: 84px;
     height: 88px;
@@ -105,7 +108,7 @@
   }
 
   .user-menu__link .user-menu__icon--search {
-    top: 13px;
+    top: 11px;
     left: 32px;
   }
 

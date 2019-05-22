@@ -60,7 +60,6 @@
 
 .card__table {
   width: 205px;
-  box-sizing: border-box;
   font-size: 13px;
 }
 
@@ -215,7 +214,7 @@
 
   .card__item {
     width: 315px;
-    min-height: 660px;
+    min-height: 195px;
   }
 
   .card__link {
@@ -234,8 +233,7 @@
   }
 
   .card__table-row--price {
-    display: inline-block;
-    vertical-align: middle;
+    position: unset;
     margin-top: 60px;
 
     &::before {
