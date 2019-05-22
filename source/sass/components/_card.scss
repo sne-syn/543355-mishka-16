@@ -87,7 +87,6 @@
   width: 110px;
   margin-top: 42px;
   margin-bottom: 20px;
-  letter-spacing: 1.1px;
 
   &::before {
     position: absolute;
@@ -125,19 +124,27 @@
 @media (min-width: $tablet-width) {
   .card {
     width: 768px;
+    margin-top: 70px;
   }
 
   .card__list {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 768px;
   }
 
   .card__item {
-    width: 667px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 670px;
+    margin-bottom: 53px;
+  }
+
+  .card__link {
+    height: 333px;
+    margin-bottom: 0;
   }
 
   .card__img {
@@ -145,25 +152,49 @@
     height: 334px;
   }
 
+  .card__description {
+    padding: 0 29px;
+  }
+
   .card__title {
     display: block;
     width: 240px;
     margin-bottom: 5px;
-    padding-top: 23px;
+    padding-top: 26px;
+    padding-left: 0;
     font-size: 20px;
   }
 
   .card__table {
+    width: 240px;
     font-size: 15px;
   }
 
-  .card__table-row--price::before {
+  .card__table-row--inline {
+    padding-left: 0;
+  }
+
+  .card__table-row--price {
+    position: absolute;
+    bottom: 22px;
+    left: 30px;
+
+    @include indent-reset;
+
+    &::before {
     width: 270px;
+    }
   }
 
   .card__table-cell--price {
     font-size: 17px;
     line-height: 24px;
+  }
+
+  .card__basket {
+    bottom: 24;
+    right: -14px;
+    width: 30px;
   }
 }
 
@@ -208,10 +239,5 @@
     &::before {
       width: 250px;
     }
-  }
-
-  .card__basket-text {
-    display: inline-block;
-    vertical-align: middle;
   }
 }

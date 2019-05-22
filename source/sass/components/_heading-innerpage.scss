@@ -22,14 +22,14 @@
       height: 25px;
       background-image: url("../img/bg-zigzag-fill.svg");
       background-size: auto 23px;
-      background-position-x: 150px;
+      background-position-x: 140px;
       z-index: 5;
     }
   }
 
   .heading-innerpage__text {
     display: block;
-    margin-top: 22px;
+    margin-top: 24px;
 
     @include heading-primary--tablet;
   }
