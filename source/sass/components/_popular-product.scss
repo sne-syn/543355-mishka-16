@@ -82,16 +82,16 @@
 @media (min-width: $tablet-width) {
 
   .popular-product::after {
-    bottom: -43px;
+    bottom: -77px;
     left: 0;
     height: 24px;
-    background-size: auto 21px;
-    background-position-x: 130px;
+    background-size: auto 15px;
+    background-position-x: 135px;
   }
 
   .popular-product__section {
     width: 768px;
-    margin-bottom: 118px;
+    margin-bottom: 115px;
   }
 
   .popular-product__title {
@@ -112,7 +112,7 @@
 
   .popular-product__text {
     width: 300px;
-    margin-bottom: 36px;
+    margin-bottom: 37px;
     line-height: 30px;
   }
 
@@ -130,7 +130,7 @@
 
   .popular-product__table .table__cell {
     vertical-align: middle;
-    padding-left: 0;
+    padding-left: 6px;
   }
 
   .popular-product__image {

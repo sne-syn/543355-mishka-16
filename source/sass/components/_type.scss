@@ -53,6 +53,7 @@
 .type__item:hover .type__icon,
 .type__item:focus .type__icon {
     fill: rgba($color-secondary, 0.3);
+    outline: none;
 }
 
 .type__item:active .type__icon {
@@ -74,6 +75,7 @@
   .type__item {
     width: 335px;
     padding-bottom: 30px;
+    padding-top: 28px;
 
     &:hover {
       margin-top: -5px;
@@ -95,12 +97,16 @@
     right: -151px;
     top: 4px;
   }
+
+  .type__icon--toys {
+    right: -142px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .type {
     width: 1150px;
-    margin: -125px auto 50px;
+    margin: -125px auto 47px;
   }
 
   .type__item {
@@ -120,5 +126,9 @@
   .type__icon {
     right: -338px;
     top: 4px;
+  }
+
+  .type__icon--toys {
+    right: -335px;
   }
 }
