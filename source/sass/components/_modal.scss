@@ -6,7 +6,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba($color-white, 0.9);
-  z-index: 100;
+  z-index: 300;
 }
 
 .modal__position {
@@ -15,7 +15,7 @@
   top: 50%;
   margin-left: -160px;
   margin-top: -175px;
-  z-index: 200;
+  z-index: 400;
 }
 
 .modal__wrapper {
@@ -101,27 +101,5 @@
     width: 350px;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-
-@keyframes shake {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translateX(-10px);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translateX(10px);
   }
 }
