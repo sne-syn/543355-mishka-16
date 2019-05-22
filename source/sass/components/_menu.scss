@@ -1,6 +1,7 @@
 .menu {
   position: relative;
   z-index: 100;
+
   @include indent-reset;
 }
 
@@ -60,7 +61,7 @@
   .menu__item {
     display: block;
     padding-top: 18px;
-    padding-left: 0px;
+    padding-left: 0;
   }
 
   .menu__link {

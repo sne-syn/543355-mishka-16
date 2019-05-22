@@ -10,7 +10,7 @@
 @media (min-width: $tablet-width) {
   .heading-innerpage {
     position: relative;
-    margin-top: -68px;
+    margin-top: -70px;
     padding-bottom: 88px;
 
     &::after {
@@ -33,10 +33,6 @@
 
     @include heading-primary--tablet;
   }
-
-  .heading-innerpage .heading-innerpage__text--catalog {
-    margin-top: 21px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -55,6 +51,10 @@
   .heading-innerpage__text {
     @include heading-primary--desktop;
 
+    margin-top: 0;
+  }
+
+  .heading-innerpage .heading-innerpage__text--catalog {
     margin-top: 0;
   }
 }

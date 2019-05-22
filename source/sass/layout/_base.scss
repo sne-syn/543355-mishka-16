@@ -14,9 +14,9 @@
   src: local("Open Sans Bold"), local("Open Sans-Bold"), url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
 }
 
-* {
-  outline: 1px solid $color-green-light;
-}
+// * {
+//   outline: 1px solid $color-green-light;
+// }
 
 html {
   box-sizing: border-box;
@@ -55,5 +55,3 @@ img {
 a {
   text-decoration: none;
 }
-
-

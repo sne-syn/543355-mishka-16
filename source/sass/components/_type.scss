@@ -52,13 +52,13 @@
 
 .type__item:hover .type__icon,
 .type__item:focus .type__icon {
-    fill: rgba($color-secondary, 0.3);
-    outline: none;
+  fill: rgba($color-secondary, 0.3);
+  outline: none;
 }
 
 .type__item:active .type__icon {
-    fill: rgba($color-secondary, 0.1);
-  }
+  fill: rgba($color-secondary, 0.1);
+}
 
 @media (min-width: $tablet-width) {
   .type {

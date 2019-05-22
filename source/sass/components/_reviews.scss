@@ -24,6 +24,7 @@
 
 .reviews__autor-name {
   display: block;
+
   @include indent-reset;
   font-size: 17px;
   font-weight: bold;
@@ -32,6 +33,7 @@
 
 .reviews__autor-login {
   display: block;
+
   @include indent-reset;
   margin-bottom: 30px;
   font-size: 17px;
@@ -57,7 +59,7 @@
     background-color: white;
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+      (min-resolution: $retina-dppx) {
       background-image: url("../img/review@2x.jpg");
     }
   }
@@ -108,7 +110,7 @@
       width: 1150px;
       height: 21px;
       background-size: auto 21px;
-      background-image: url(../img/bg-zigzag-line.svg);
+      background-image: url("../img/bg-zigzag-line.svg");
       background-position-x: 80px;
       background-repeat: repeat;
     }

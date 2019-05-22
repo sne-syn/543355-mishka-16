@@ -52,7 +52,7 @@
   fill: $color-green-light;
 }
 
-.user-menu__link:active .user-menu__icon  {
+.user-menu__link:active .user-menu__icon {
   fill: rgba($color-green-light, 0.3);
 }
 
@@ -66,10 +66,11 @@
   .user-menu__item {
     padding-left: 0;
 
-  &::after {
-    display: none;
+    &::after {
+      display: none;
+    }
   }
-}
+
   .user-menu__item--search {
     width: 84px;
     height: 88px;

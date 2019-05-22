@@ -55,7 +55,7 @@
     fill: $color-green-light;
   }
 
-  &::active {
+  &:active {
     fill: rgba($color-green-light, 0.3);
   }
 }

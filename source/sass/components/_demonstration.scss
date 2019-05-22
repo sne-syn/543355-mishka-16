@@ -152,27 +152,38 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    min-height: 455px;
+    margin-bottom: 106px;
+    // min-height: 455px;
   }
 
   .demonstration__title {
     width: 155px;
-    margin-left: 657px;
+    margin-left: 757px;
+    margin-top: 95px;
+    padding: 0;
+
+    &::before {
+      top: -55px;
+      left: 2px;
+    }
   }
 
   .demonstration__description {
     width: 280px;
-    margin-left: 750px;
+    margin-left: 757px;
+    margin-bottom: 47px;
   }
 
   .demonstration__video {
     position: absolute;
     left: 0;
     order: -1;
+    width: 677px;
   }
 
   .demonstration__btn {
-    width: 191px;
-    margin-left: 750px;
+    width: 229px;
+    margin-left: 759px;
+    margin-bottom: 57px;
   }
 }
