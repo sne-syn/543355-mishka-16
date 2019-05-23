@@ -112,11 +112,13 @@
 @media (min-width: $desktop-width) {
   .checkbox.form__fieldset {
     padding-top: 65px;
+    padding-bottom: 13px;
   }
 
   .checkbox__legend.form__legend {
     width: 111px;
     margin-left: -4px;
+    padding-top: 2px;
   }
 
   .checkbox__list {
@@ -126,4 +128,11 @@
   .checkbox__item {
     margin-right: 25px;
   }
+
+  .checkbox__field input[type=checkbox] + .checkbox__indication {
+    top: -15px;
+    left: 4px;
+    width: 53px;
+    height: 54px;
+}
 }

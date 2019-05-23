@@ -33,6 +33,10 @@
 
     @include heading-primary--tablet;
   }
+
+  .heading-innerpage .heading-innerpage__text--form {
+    margin-top: 21px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -48,17 +52,9 @@
     }
   }
 
-  .heading-innerpage__text {
+  .heading-innerpage .heading-innerpage__text {
     @include heading-primary--desktop;
 
     margin-top: 0;
-  }
-
-  .heading-innerpage .heading-innerpage__text--catalog {
-    margin-top: 0;
-  }
-
-  .heading-innerpage .heading-innerpage__text--form {
-    margin-top: 22px;
   }
 }
