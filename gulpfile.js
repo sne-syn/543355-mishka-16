@@ -22,7 +22,7 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("html", function () {
+gulp.task("htmlmin", function () {
   return gulp.src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
@@ -121,6 +121,7 @@ gulp.task("build", gulp.series(
   "css",
   "sprite",
   "html",
+  "htmlmin",
   "compress"
 ));
 
