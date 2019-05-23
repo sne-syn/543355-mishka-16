@@ -36,6 +36,8 @@
 
 .card__description {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
   padding: 27px 26px 25px;
 }
 
