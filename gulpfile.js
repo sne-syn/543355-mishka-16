@@ -22,7 +22,7 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("html", function() {
+gulp.task("html", function () {
   return gulp.src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
