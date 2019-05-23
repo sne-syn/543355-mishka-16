@@ -75,18 +75,19 @@
 @media (min-width: $tablet-width) {
   .form {
     margin-top: 57px;
-    margin-bottom: 51px;
+    margin-bottom: 50px;
   }
 
-  .form__legend::before {
-    display: none;
-  }
 
   .form__legend {
     width: 165px;
     letter-spacing: 0;
     font-size: 17px;
     line-height: 16px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .form__field {
