@@ -12,7 +12,7 @@
 
 .card__item {
   width: 260px;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   border: 1px solid $color-tertiary;
 
   &:hover {
@@ -27,7 +27,6 @@
 .card__link {
   display: block;
   height: 195px;
-  margin-bottom: 26px;
 }
 
 .card__img {
@@ -37,12 +36,12 @@
 
 .card__description {
   position: relative;
-  padding: 0 26px;
+  padding: 27px 26px 25px;
 }
 
 .card__title {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
   padding-left: 1px;
   font-size: 17px;
   line-height: 24px;
@@ -60,7 +59,7 @@
 
 .card__table {
   width: 205px;
-  margin-bottom: 38px;
+  margin-bottom: 37px;
   font-size: 13px;
 }
 
@@ -88,12 +87,13 @@
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
-  margin-bottom: 23px;
+  @include indent-reset;
+  margin-top: auto;
 
   &::before {
     position: absolute;
     content: "";
-    top: -20px;
+    top: -19px;
     left: 4px;
     width: 202px;
     height: 1px;
@@ -104,7 +104,6 @@
 .card__price {
   display: block;
   width: 110px;
-  padding-left: 1px;
   line-height: 24px;
   font-weight: bold;
 }
@@ -145,6 +144,7 @@
 
   .card__link {
     height: 333px;
+    width: 332px;
     margin-bottom: 0;
   }
 
@@ -156,35 +156,40 @@
   .card__description {
     width: 310px;
     padding-right: 0;
-    padding-left: 27px;
+    padding-bottom: 21px;
+    padding-top: 25px;
   }
 
   .card__title {
     display: block;
     width: 240px;
-    margin-bottom: 5px;
-    padding-top: 26px;
+    margin-bottom: 6px;
     padding-left: 0;
     font-size: 20px;
   }
 
-  .card__description--laundry-basket .card__title {
-    margin-bottom: 9px;
-  }
+  // .card__description.card__description--huge-basket {
+  //   margin-bottom: 0;
+  // }
+
+
+  // .card__description--laundry-basket .card__title {
+  //   margin-bottom: 9px;
+  // }
 
   .card__table {
     width: 240px;
     font-size: 15px;
-    margin-bottom: 195px;
+    margin-bottom: 0;
   }
 
-  .card__description--laundry-basket .card__table {
-    margin-bottom: 192px;
-  }
+  // .card__description--laundry-basket .card__table {
+  //   margin-bottom: 192px;
+  // }
 
-  .card__description--huge-basket .card__table {
-    margin-bottom: 172px;
-  }
+  // .card__description--huge-basket .card__table {
+  //   margin-bottom: 172px;
+  // }
 
   .card__table-row--inline {
     padding-left: 0;
@@ -192,7 +197,9 @@
 
   .card__buy-line {
     @include indent-reset;
-    padding-left: 3px;
+
+    padding-left: 5px;
+    margin-top: auto;
 
     &::before {
       display: none;
@@ -240,9 +247,10 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-
     width: 315px;
+    min-height: 196px;
     padding-left: 23px;
+    padding-top: 26px;
   }
 
   .card__title {

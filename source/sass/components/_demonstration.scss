@@ -24,8 +24,8 @@
 
 .demonstration__play-button {
   position: absolute;
-  top: 37px;
-  left: 78px;
+  top: 35px;
+  left: 80px;
   z-index: 100;
   width: 101px;
   height: 78px;
@@ -61,7 +61,7 @@
 .demonstration__description {
   width: 191px;
   margin: 0 auto;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
   font-size: 13px;
   line-height: 24px;
 }
@@ -73,7 +73,7 @@
   padding-left: 23px;
   padding-right: 23px;
   padding-bottom: 17px;
-  padding-top: 16px;
+  padding-top: 15px;
   line-height: 16px;
 }
 
@@ -103,7 +103,7 @@
 
     &::before {
       top: -5px;
-      left: 43px;
+      left: 40px;
     }
   }
 
