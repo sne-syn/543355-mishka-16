@@ -195,6 +195,7 @@
     padding-left: 3px;
 
     &::before {
+      display: none;
       width: 270px;
       top: -21px;
     }
@@ -217,6 +218,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: stretch;
     justify-content: space-between;
   }
 
@@ -234,10 +236,11 @@
   }
 
   .card__description {
-    // display: flex;
-    // flex-wrap: wrap;
-    // flex-direction: column;
-    // justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+
     width: 315px;
     padding-left: 23px;
   }
@@ -245,17 +248,23 @@
   .card__title {
     @include indent-reset;
 
-    padding-bottom: 5px;
-    padding-top: 25px;
+    padding-bottom: 0;
+    padding-top: 0;
     padding-left: 2px;
   }
 
   .card__description--huge-basket .card__title {
-    padding-top: 25px;
+    padding-top: 0;
   }
 
   .card__table {
-    margin-bottom: 25px;
+    margin-bottom: 0;
+  }
+
+  .card__description--laundry-basket .card__table,
+  .card__description--huge-basket .card__table,
+  .card__description--laundry-basket .card__title {
+    margin-bottom: 0;
   }
 
   .card__buy-line {
@@ -266,10 +275,6 @@
       width: 270px;
       top: -21px;
     }
-  }
-
-  .card__description--big-title .card__table-row--price {
-    margin-top: 38px;
   }
 
   .card__basket {

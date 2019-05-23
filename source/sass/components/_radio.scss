@@ -52,7 +52,7 @@
 
 @media (min-width: $tablet-width) {
   .radio {
-    padding-top: 18px;
+    padding-top: 15px;
     margin-bottom: 17px;
   }
 
@@ -62,23 +62,27 @@
     flex-wrap: wrap;
   }
 
+  .radio__legend {
+    padding-top: 2px;
+  }
+
   .radio__field {
-    margin-bottom: 56px;
-    padding-left: 81px;
+    margin-bottom: 58px;
+    padding-left: 85px;
   }
 
   .radio__field input[type="radio"] + .radio__button {
-    top: -16px;
-    left: 0;
-    width: 47px;
-    height: 47px;
+    top: -14px;
+    left: 4px;
+    width: 50px;
+    height: 50px;
   }
 
   .radio__field input[type="radio"]:checked + .radio__button::before {
     top: 12px;
     left: 12px;
-    width: 19px;
-    height: 19px;
+    width: 21px;
+    height: 21px;
   }
 }
 

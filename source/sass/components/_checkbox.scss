@@ -89,9 +89,9 @@
 
   .checkbox__field input[type="checkbox"] + .checkbox__indication {
     top: -16px;
-    left: 1px;
-    width: 50px;
-    height: 48px;
+    left: 4px;
+    width: 53px;
+    height: 50px;
   }
 
   .checkbox__field input[type="checkbox"]:checked + .checkbox__indication::before {
