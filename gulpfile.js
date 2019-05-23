@@ -99,7 +99,7 @@ gulp.task("copy", function () {
     .pipe(gulp.dest("build"));
 });
 
- gulp.task("compress", done => {
+ gulp.task("compress", function(done) {
    gulp.src("source/js/scripts.js")
      .pipe(minify())
      .pipe(rename("scripts.min.js"))
@@ -122,7 +122,7 @@ gulp.task("start", gulp.series("build", "server"));
 
 //var svgmin = require("gulp-svgmin");
 //
-//gulp.task("images", function () {
+//gulp.task("svg", function () {
 //
 //    return gulp.src("source/img/*.svg")
 //        .pipe(svgmin())
