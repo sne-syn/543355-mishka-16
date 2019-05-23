@@ -112,8 +112,7 @@ gulp.task("build", gulp.series(
 gulp.task("start", gulp.series("build", "server"));
 
 
-//
-
+//var gulp = require("gulp");
 //var svgmin = require("gulp-svgmin");
 //
 //gulp.task("images", function () {
@@ -122,8 +121,6 @@ gulp.task("start", gulp.series("build", "server"));
 //        .pipe(svgmin())
 //        .pipe(gulp.dest("source/img/optimo"));
 //});
-//
-//
 
 
 // gulp.task("compress", function () {
