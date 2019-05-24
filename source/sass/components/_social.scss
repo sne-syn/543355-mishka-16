@@ -16,8 +16,13 @@
   list-style: none;
 }
 
-.social__name {
-  font-size: 0;
+.social__item:hover .social__icon,
+.social__item:focus .social__icon {
+  fill: $color-green-light;
+}
+
+.social__item:active .social__icon {
+  fill: rgba($color-green-light, 0.3);
 }
 
 .social__item--instagram {

@@ -15,6 +15,7 @@
   width: 260px;
   padding-top: 15px;
   padding-bottom: 17px;
+  padding-left: 0;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   color: $color-primary;
@@ -42,6 +43,10 @@
   box-shadow: 0 0 0 30px white inset;
 }
 
+.user-data__field--contacts .user-data__input:focus {
+  background-color: $color-white;
+}
+
 .user-data__number.form__legend::before {
   top: 12px;
 }
@@ -58,12 +63,19 @@
 }
 
 .user-data__field--contacts .user-data__input {
-
   margin-top: 6px;
+  padding-right: 36px;
 }
 
 .user-data__icon {
   position: absolute;
+  fill: rgba($color-secondary, 0.2);
+}
+
+.user-data__input:hover + .user-data__icon,
+.user-data__input:active + .user-data__icon,
+.user-data__input:focus + .user-data__icon {
+  fill: $color-green-light;
 }
 
 .user-data__icon--number {
@@ -117,10 +129,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .user-data {
-    padding-top: 56px;
-  }
-
   .user-data__block {
     display: flex;
     flex-wrap: wrap;
@@ -129,7 +137,7 @@
 
   .user-data--communicate {
     margin-bottom: 0;
-    padding-top: 44px;
+    padding-top: 50px;
     padding-bottom: 35px;
     background-color: $color-background;
   }
@@ -139,7 +147,7 @@
   }
 
   .user-data__legend {
-    width: 165px;
+    width: 168px;
     margin-top: 19px;
   }
 
@@ -150,9 +158,10 @@
   .user-data__input {
     width: 371px;
     margin-left: 19px;
-    padding-left: 18px;
-    padding-bottom: 11px;
+    padding-left: 17px;
+    padding-bottom: 17px;
     font-size: 19px;
+    line-height: 20px;
     letter-spacing: 0.5px;
   }
 
@@ -168,7 +177,8 @@
   }
 
   .user-data.form__fieldset {
-    margin-bottom: 29px;
+    margin-bottom: 27px;
+    padding-top: 57px;
   }
 
   .user-data__field--contacts {
@@ -178,13 +188,17 @@
     margin-bottom: 21px;
   }
 
+  .user-data__field--contacts.form__field {
+    margin-bottom: 24px;
+  }
+
   .user-data__field--contacts .user-data__input {
     width: 500px;
     margin-left: 0;
     margin-top: 0;
-    padding-top: 16px;
-    padding-bottom: 13px;
-    padding-right: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 55px;
     background-color: #f1f1f1;
   }
 
@@ -195,14 +209,28 @@
     margin-bottom: 0;
   }
 
+  .user-data__email.form__legend {
+    width: 167px;
+  }
+
+  .user-data__icon--number {
+    top: 12px;
+    right: 74px;
+  }
+
+  .user-data__icon--mail {
+    top: 12px;
+    right: 70px;
+  }
+
   .user-data__email + .user-data__input {
-    padding-bottom: 12px;
+    padding-bottom: 14px;
   }
 
   .user-data--suggestion {
-    margin-top: 7px;
-    margin-bottom: 51px;
-    padding-top: 45px;
+    margin-top: 0;
+    margin-bottom: 52px;
+    padding-top: 51px;
   }
 
   .user-data__text {
@@ -213,7 +241,7 @@
   }
 
   .user-data__comment.form__legend {
-    width: 166px;
+    width: 168px;
     margin-top: 17px;
     margin-bottom: 0;
   }
@@ -233,6 +261,11 @@
     padding-left: 111px;
   }
 
+  .user-data.form__fieldset {
+    margin-bottom: 30px;
+    padding-top: 55px;
+  }
+
   .user-data__fieldset {
     margin-bottom: 29px;
   }
@@ -241,23 +274,38 @@
     width: 116px;
   }
 
+  .user-data__field {
+    margin-bottom: 21px;
+  }
+
   .user-data__input {
     width: 570px;
-    padding-bottom: 16px;
+    padding-top: 18px;
+    padding-bottom: 15px;
   }
 
   .user-data__name + .user-data__input {
-    width: 620px;
+    width: 625px;
   }
 
   .user-data__surname + .user-data__input,
   .user-data__patronymic + .user-data__input {
-    width: 562px;
+    width: 572px;
     padding-bottom: 15px;
   }
 
   .user-data--communicate {
-    padding-top: 47px;
+    padding-top: 49px;
+    padding-bottom: 32px;
+  }
+
+  .user-data--communicate .form__legend {
+    width: 115px;
+    margin-bottom: 0;
+  }
+
+  .user-data__field--contacts.form__field {
+    margin-bottom: 25px;
   }
 
   .user-data__field--contacts .user-data__input {
@@ -273,22 +321,23 @@
     letter-spacing: -0.9px;
   }
 
-  .user-data--communicate .form__legend {
-    width: 113px;
-    margin-bottom: 0;
+  .user-data__icon--number {
+    top: 11px;
+    right: 232px;
   }
 
-  .user-data__field--contacts {
-    margin-bottom: 22px;
+  .user-data__icon--mail {
+    top: 11px;
+    right: 227px;
   }
 
   .user-data--suggestion {
-    margin-top: 6px;
-    margin-bottom: 47px;
+    margin-bottom: 50px;
+    padding-top: 50px;
   }
 
   .user-data__comment.form__legend {
-    width: 113px;
+    width: 115px;
   }
 
   .user-data__textarea {

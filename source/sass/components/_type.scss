@@ -7,7 +7,6 @@
 
 .type__item {
   z-index: 2;
-  box-sizing: border-box;
   padding-top: 26px;
   padding-bottom: 29px;
   font-size: 19px;
@@ -16,25 +15,20 @@
   cursor: pointer;
   transition: all;
 
-  &:hover .type__link {
-    color: $color-white;
-  }
-
   &:active .type__link {
     color: rgba($color-white, 0.3);
   }
 }
 
-.type__item--interior {
+.type__item-interior {
   background-color: $color-green-light;
 }
 
-.type__item--toys {
+.type__item-toys {
   background-color: $color-green-dark;
 }
 
 .type__box {
-  box-sizing: border-box;
   width: 260px;
   margin-left: auto;
   margin-right: auto;
@@ -49,20 +43,21 @@
   color: $color-white;
 }
 
-.type__link svg {
+.type__icon {
   position: absolute;
   right: -145px;
   top: -3px;
   fill: rgba($color-secondary, 0.2);
+}
 
-  &:hover svg,
-  &:focus svg {
-    fill: rgba($color-secondary, 0.3);
-  }
+.type__item:hover .type__icon,
+.type__item:focus .type__icon {
+  fill: rgba($color-secondary, 0.3);
+  outline: none;
+}
 
-  &:active svg {
-    fill: rgba($color-secondary, 0.1);
-  }
+.type__item:active .type__icon {
+  fill: rgba($color-secondary, 0.1);
 }
 
 @media (min-width: $tablet-width) {
@@ -70,31 +65,21 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 768px;
-    box-sizing: border-box;
+    width: 770px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -125px;
-    margin-bottom: 50px;
-  }
-
-  .type__box {
-    padding-left: 5px;
-    padding-right: 0;
+    margin-top: -120px;
+    margin-bottom: 47px;
   }
 
   .type__item {
-    box-sizing: border-box;
     width: 335px;
     padding-bottom: 30px;
+    padding-top: 28px;
 
     &:hover {
       margin-top: -5px;
       padding-bottom: 35px;
-    }
-
-    &:hover .type__link {
-      color: $color-white;
     }
 
     &:active .type__link {
@@ -108,19 +93,42 @@
     line-height: 30px;
   }
 
+  .type__icon {
+    right: -151px;
+    top: 4px;
+  }
+
+  .type__icon--toys {
+    right: -142px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .type {
     width: 1150px;
-    margin: 5px auto 50px;
+    margin: -125px auto 47px;
   }
 
   .type__item {
-    width: 530px;
+    width: 525px;
+    padding-top: 27px;
+  }
+
+  .type__box {
+    padding-left: 36px;
+    margin: 0;
   }
 
   .type__link {
     width: 125px;
+  }
+
+  .type__icon {
+    right: -338px;
+    top: 4px;
+  }
+
+  .type__icon--toys {
+    right: -335px;
   }
 }

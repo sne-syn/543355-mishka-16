@@ -10,7 +10,7 @@
 @media (min-width: $tablet-width) {
   .heading-innerpage {
     position: relative;
-    margin-top: -68px;
+    margin-top: -70px;
     padding-bottom: 88px;
 
     &::after {
@@ -22,16 +22,20 @@
       height: 25px;
       background-image: url("../img/bg-zigzag-fill.svg");
       background-size: auto 23px;
-      background-position-x: 150px;
+      background-position-x: 140px;
       z-index: 5;
     }
   }
 
   .heading-innerpage__text {
     display: block;
-    margin-top: 22px;
+    margin-top: 24px;
 
     @include heading-primary--tablet;
+  }
+
+  .heading-innerpage .heading-innerpage__text--form {
+    margin-top: 21px;
   }
 }
 
@@ -48,7 +52,9 @@
     }
   }
 
-  .heading-innerpage__text {
+  .heading-innerpage .heading-innerpage__text {
     @include heading-primary--desktop;
+
+    margin-top: 0;
   }
 }

@@ -5,7 +5,15 @@
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="preload" href="css/style.min.css" as="style">
   <link href="css/style.min.css" rel="stylesheet">
+
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="js/scripts.min.js" as="script">
+
+  <script src="js/picturefill.min.js"></script>
 </head>
 
 <body class="no-js">
@@ -24,41 +32,41 @@
       </a>
 
       <nav class="main-nav main-nav--nojs main-nav--closed">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="menu">
-            <li class="menu__item menu__item--catalog">
-              <a class="menu__link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="menu__item menu__item--order">
-              <a class="menu__link " href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="menu__item menu__item--new">
-              <a class="menu__link" href="#">Новые поступления</a>
-            </li>
-            <li class="menu__item menu__item--sale">
-              <a class="menu__link" href="#">Распродажа</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="user-menu user-menu--nojs user-menu--closed">
-          <li class="user-menu__item user-menu__item--search">
-            <a class="user-menu__link" href="#"><svg class="user-menu__icon-search" width="18" height="18">
-                <use xlink:href="#icon-search"></use>
-              </svg>Поиск по сайту</a>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="menu">
+          <li class="menu__item menu__item--catalog">
+            <a class="menu__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="user-menu__item user-menu__item--cart">
-            <a class="user-menu__link" href="#"><svg class="user-menu__icon-cart" width="21" height="19">
-                <use xlink:href="#icon-cart"></use>
-              </svg>Корзина: пока пуста</a>
+          <li class="menu__item menu__item--order">
+            <a class="menu__link " href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="menu__item menu__item--new">
+            <a class="menu__link" href="#">Новые поступления</a>
+          </li>
+          <li class="menu__item menu__item--sale">
+            <a class="menu__link" href="#">Распродажа</a>
           </li>
         </ul>
+      </nav>
+      <ul class="user-menu user-menu--nojs user-menu--closed">
+        <li class="user-menu__item user-menu__item--search">
+          <a class="user-menu__link" href="#"><svg class="user-menu__icon user-menu__icon--search" width="18" height="18">
+              <use xlink:href="#sprite-icon-search"></use>
+            </svg><span class="user-menu__search-text">Поиск по сайту</span></a>
+        </li>
+        <li class="user-menu__item user-menu__item--cart">
+          <a class="user-menu__link" href="#"><svg class="user-menu__icon user-menu__icon--cart" width="21" height="19">
+              <use xlink:href="#sprite-icon-cart"></use>
+            </svg>Корзина: пока пуста</a>
+        </li>
+      </ul>
       <p class="header__single-line">Бесплатная доставка по России</p>
     </div>
   </header>
 
   <main>
     <div class="heading-innerpage">
-      <h1 class="heading-innerpage__text">Вязание на заказ</h1>
+      <h1 class="heading-innerpage__text heading-innerpage__text--form">Вязание на заказ</h1>
     </div>
     <section class="individual-order">
       <div class="individual-order__entry wrapper">
@@ -143,35 +151,37 @@
               </li>
               <li class="user-data__field form__field">
                 <label class="user-data__surname" for="surname">Фамилия:</label>
-                <input class="user-data__input" id="surname" name="user-surname" placeholder="Укажите фамилию*" type="text">
+                <input class="user-data__input" id="surname" name="user-surname" placeholder="Укажите фамилию*"
+                  type="text">
               </li>
               <li class="user-data__field form__field">
                 <label class="user-data__patronymic" for="patronymic">Отчество:</label>
-                <input class="user-data__input" id="patronymic" name="user-patronymic" placeholder="Отчество, если желаете"
-                  type="text">
+                <input class="user-data__input" id="patronymic" name="user-patronymic"
+                  placeholder="Отчество, если желаете" type="text">
               </li>
             </ul>
           </div>
-
         </fieldset>
+
         <div class="user-data user-data--communicate">
           <ul class="form__list wrapper">
             <li class="user-data__field user-data__field--contacts form__field">
               <label class="user-data__number form__legend " for="number">тел</label>
               <input class="user-data__input" id="number" name="number" placeholder="+7 XXX XXX XX XX*" type="tel">
               <svg class="user-data__icon user-data__icon--number" width="25" height="25">
-                <use xlink:href="#icon-phone"></use>
+                <use xlink:href="#sprite-icon-phone"></use>
               </svg>
             </li>
             <li class="user-data__field user-data__field--contacts form__field">
               <label class="user-data__email form__legend" for="email">e-mail</label>
               <input class="user-data__input" id="email" name="email" placeholder="Ваш Email*" type="email">
               <svg class="user-data__icon user-data__icon--mail" width="33" height="30">
-                <use xlink:href="#icon-mail"></use>
+                <use xlink:href="#sprite-icon-mail"></use>
               </svg>
             </li>
           </ul>
         </div>
+
         <div class="user-data user-data--suggestion">
           <div class="user-data__text wrapper">
             <label class="user-data__comment form__legend" for="comment">доп</label>
@@ -188,35 +198,39 @@
       </form>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer footer__form-page">
     <div class="footer__wrapper">
       <a class="footer__logo" href="index.html">
-        <img class="footer__logo-image" src="img/logo-footer.svg" width="102" height="34" alt="Магазин «Мишка»">
+          <svg class="footer__logo-image" width="102" height="32">
+              <use xlink:href="#sprite-logo-footer"></use>
+            </svg>
       </a>
       <ul class="social">
-          <li class="social__item social__item--instagram">
-            <a href="#"><span class="social__name"><svg class="social__item__icon" width="22" height="22">
-                <use xlink:href="#icon-insta"></use>
-              </svg>Instagram</span></a>
-          </li>
-          <li class="social__item social__item--facebook">
-            <a href="#"><span class="social__name"><svg class="social__item__icon" width="15" height="28">
-                <use xlink:href="#icon-fb"></use>
-              </svg>Facebook</span></a>
-          </li>
-          <li class="social__item social__item--twitter">
-            <a href="#"><span class="social__name"><svg class="social__item__icon" width="24" height="21">
-                <use xlink:href="#icon-twitter"></use>
-              </svg>Twitter</span></a>
-          </li>
-        </ul>
-      <p class="footer__copyright">Разработано<a
-          class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><span class="footer__copyright-name">HTML Academy</span>
-          </a></p>
+        <li class="social__item social__item--instagram">
+          <a href="#"><svg class="social__icon" width="22" height="22">
+              <use xlink:href="#sprite-icon-insta"></use>
+            </svg><span class="visually-hidden">Instagram</span></a>
+        </li>
+        <li class="social__item social__item--facebook">
+          <a href="#"><svg class="social__icon" width="15" height="28">
+              <use xlink:href="#sprite-icon-fb"></use>
+            </svg><span class="visually-hidden">Facebook</span></a>
+        </li>
+        <li class="social__item social__item--twitter">
+          <a href="#"><svg class="social__icon" width="24" height="21">
+              <use xlink:href="#sprite-icon-twitter"></use>
+            </svg><span class="visually-hidden">Twitter</span></a>
+        </li>
+      </ul>
+      <p class="footer__copyright">Разработано<a class="footer__copyright-link"
+          href="https://htmlacademy.ru/intensive/adaptive"><svg class="footer__copyright-icon" width="27" height="34">
+            <use xlink:href="#sprite-logo-htmlacademy"></use>
+          </svg><span class="visually-hidden">HTML Academy</span>
+        </a>
+      </p>
     </div>
   </footer>
-  <script src="js/scripts.js">
-	</script>
+  <script src="js/scripts.min.js"></script>
 </body>
 
 </html>

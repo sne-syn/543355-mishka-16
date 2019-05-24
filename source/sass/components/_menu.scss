@@ -1,12 +1,15 @@
 .menu {
-  z-index: 200;
+  position: relative;
+  z-index: 100;
+
   @include indent-reset;
 }
 
 .menu__item {
   position: relative;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 10px;
   list-style: none;
 }
 
@@ -58,6 +61,7 @@
   .menu__item {
     display: block;
     padding-top: 18px;
+    padding-left: 0;
   }
 
   .menu__link {

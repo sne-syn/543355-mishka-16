@@ -112,6 +112,7 @@
 
   .about-us {
     width: 768px;
+    margin-bottom: 78px;
   }
 
   .about-us__title {
@@ -133,32 +134,62 @@
     display: flex;
     margin-right: 32px;
     padding-top: 111px;
-    padding-left: 3px;
+    padding-left: 6px;
   }
 
   .about-us__item--eco {
     padding-top: 103px;
+
+    &::before {
+      top: 49px;
+      left: 14px;
+    }
   }
 
   .about-us__item--handmade {
     order: 1;
     padding-top: 103px;
+
+    &::before {
+      top: 52px;
+      left: 10px;
+    }
   }
 
   .about-us__item--style {
     order: 2;
+
+    &::before {
+      top: 58px;
+      left: 6px;
+    }
   }
 
   .about-us__item--local-support {
     order: 3;
+
+    &::before {
+      top: 61px;
+      left: 1px;
+    }
   }
 
   .about-us__item--likes {
     order: 4;
+
+    &::before {
+      top: 63px;
+      left: 14px;
+    }
   }
 
   .about-us__item--giftbox {
     order: 5;
+
+    &::before {
+      top: 58px;
+      left: 10px;
+    }
   }
 
   .about-us__item--eco p {
@@ -204,6 +235,7 @@
 
   .about-us__item {
     margin-right: 48px;
+    padding-left: 4px;
   }
 
   .about-us__item--eco {
@@ -215,43 +247,28 @@
     }
   }
 
-  .about-us__item--style {
-
-    &::before {
-      top: 57px;
-      left: 5px;
-    }
+  .about-us__item--style::before {
+    top: 57px;
+    left: 5px;
   }
 
-  .about-us__item--likes {
-
-    &::before {
-      top: 63px;
-      left: 12px;
-    }
+  .about-us__item--likes::before {
+    top: 63px;
+    left: 12px;
   }
 
-  .about-us__item--local-support {
-
-    &::before {
-      top: 61px;
-      left: -3px;
-    }
+  .about-us__item--local-support::before {
+    top: 61px;
+    left: -3px;
   }
 
-  .about-us__item--handmade {
-
-    &::before {
-      top: 56px;
-      left: 6px;
-    }
+  .about-us__item--handmade::before {
+    top: 56px;
+    left: 6px;
   }
 
-  .about-us__item--giftbox {
-
-    &::before {
-      top: 58px;
-      left: 6px;
-    }
-}
+  .about-us__item--giftbox::before {
+    top: 58px;
+    left: 6px;
+  }
 }

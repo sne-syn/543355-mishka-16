@@ -20,7 +20,7 @@
   vertical-align: middle;
   width: 266px;
   margin: 0;
-  padding-top: 17px;
+  padding-top: 23px;
   text-align: center;
   font-size: 19px;
   line-height: 18px;
@@ -31,7 +31,7 @@
 .footer__copyright::before {
   position: absolute;
   content: "";
-  top: 3px;
+  top: 9px;
   left: 6px;
   width: 260px;
   height: 1px;
@@ -41,17 +41,23 @@
 .footer__copyright-link {
   display: inline-block;
   vertical-align: middle;
-	width: 50px;
+  padding-top: 10px;
+  padding-left: 28px;
+  width: 50px;
   height: 50px;
-}
-
-.footer__copyright-name {
-  font-size: 0;
 }
 
 .footer__copyright-icon {
   width: 27px;
   height: 34px;
+
+  &:hover {
+    fill: $color-green-light;
+  }
+
+  &:active {
+    fill: rgba($color-green-light, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -71,12 +77,21 @@
     margin-right: 85px;
   }
 
+  .footer__logo:hover .footer__logo-image,
+  .footer__logo:focus .footer__logo-image {
+    fill: $color-green-light;
+  }
+
+  .footer__logo:active .footer__logo-image {
+    fill: rgba($color-green-light, 0.3);
+  }
+
   .footer__copyright {
     width: 190px;
     padding-top: 0;
 
     &::before {
-    display: none;
+      display: none;
     }
   }
 }
@@ -84,5 +99,13 @@
 @media (min-width: $desktop-width) {
   .footer__wrapper {
     width: 1150px;
+  }
+
+  .footer__form-page .footer__copyright {
+    margin-top: -4px;
+  }
+
+  .footer__form-page .footer__copyright-link {
+    padding-top: 9px;
   }
 }

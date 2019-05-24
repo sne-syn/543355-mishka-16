@@ -75,18 +75,19 @@
 @media (min-width: $tablet-width) {
   .form {
     margin-top: 57px;
-    margin-bottom: 51px;
+    margin-bottom: 50px;
   }
 
-  .form__legend::before {
-    display: none;
-  }
 
   .form__legend {
     width: 165px;
     letter-spacing: 0;
     font-size: 17px;
     line-height: 16px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .form__field {
@@ -101,7 +102,7 @@
     justify-content: space-between;
     width: 768px;
     padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 49px;
   }
 
   .form__small-note {
@@ -136,8 +137,8 @@
 
   .form__submit-wrapper {
     width: 1150px;
-    padding-left: 224px;
-    padding-right: 224px;
+    padding-left: 225px;
+    padding-right: 222px;
   }
 }
 

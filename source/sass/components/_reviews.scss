@@ -23,87 +23,124 @@
 }
 
 .reviews__autor-name {
-  margin-bottom: -16px;
+  display: block;
+
+  @include indent-reset;
   font-size: 17px;
   font-weight: bold;
   color: $color-secondary;
 }
 
 .reviews__autor-login {
-  margin-bottom: 24px;
+  display: block;
+
+  @include indent-reset;
+  margin-bottom: 30px;
   font-size: 17px;
 }
 
 .reviews__btn {
   display: block;
   width: 260px;
-  margin-bottom: 88px;
-  padding-left: 20px;
+  margin-bottom: 87px;
+  padding: 13px 25px 14px 20px;
 }
 
 @media (min-width: $tablet-width) {
   .reviews {
     position: relative;
     width: 768px;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 77px;
+    margin-bottom: 148px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 -18px;
-    background-size: 350px auto;
+    background-size: 351px 474px;
+    background-color: white;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
       background-image: url("../img/review@2x.jpg");
     }
   }
 
   .reviews__block {
     width: 670px;
+    padding-bottom: 15px;
   }
 
   .reviews__title {
+    margin-left: -4px;
+    margin-bottom: 49px;
     font-size: 43px;
     line-height: 50px;
   }
 
+  .reviews__list {
+    margin: 0;
+  }
+
   .reviews__text {
     width: 670px;
+    margin-bottom: 55px;
   }
 
   .reviews__btn {
     position: absolute;
-    top: 90px;
-    right: 0;
-    width: 176px;
+    top: 78px;
+    right: 49px;
+    width: 175px;
+    padding: 15px 25px 13px 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .reviews {
+    position: relative;
     width: 1150px;
+    margin-bottom: 233px;
+    padding-top: 90px;
     background-position: 51px 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -90px;
+      left: 0;
+      width: 1150px;
+      height: 21px;
+      background-size: auto 21px;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-position-x: 80px;
+      background-repeat: repeat;
+    }
   }
 
   .reviews__title {
-    margin-left: 170px;
+    margin-left: 172px;
     margin-bottom: 47px;
     font-size: 53px;
     line-height: 57px;
   }
 
   .reviews__block {
-    width: 888px;
+    width: 1050px;
+    padding-bottom: 48px;
+  }
+
+  .reviews__list {
+    margin-bottom: 45px;
   }
 
   .reviews__text {
     width: 780px;
     margin-left: 175px;
-    margin-bottom: 37px;
+    margin-bottom: 36px;
   }
 
   .reviews__autor-name,
   .reviews__autor-login {
-    margin-left: 172px;
+    margin-left: 176px;
   }
 
   .reviews__btn {

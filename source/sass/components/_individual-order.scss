@@ -17,7 +17,7 @@
   .individual-order .wrapper {
     width: 768px;
     margin-top: 0;
-    padding-left: 52px;
+    padding-left: 50px;
     padding-right: 48px;
   }
 
@@ -31,7 +31,7 @@
 
 @media (min-width: $desktop-width) {
   .individual-order {
-    margin-top: 150px;
+    margin-top: -6px;
   }
 
   .individual-order .wrapper {
@@ -40,7 +40,7 @@
   }
 
   .individual-order__entry .individual-order__intro {
-    width: 680px;
+    width: 785px;
     padding-left: 110px;
   }
 }

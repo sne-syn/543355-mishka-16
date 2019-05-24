@@ -20,9 +20,9 @@
 .checkbox__field input[type="checkbox"] + .checkbox__indication {
   position: absolute;
   top: -11px;
-  left: 1px;
-  width: 36px;
-  height: 35px;
+  left: 0;
+  width: 40px;
+  height: 39px;
   border: 2px solid $color-primary;
 }
 
@@ -89,9 +89,9 @@
 
   .checkbox__field input[type="checkbox"] + .checkbox__indication {
     top: -16px;
-    left: 1px;
-    width: 50px;
-    height: 48px;
+    left: 4px;
+    width: 53px;
+    height: 50px;
   }
 
   .checkbox__field input[type="checkbox"]:checked + .checkbox__indication::before {
@@ -109,15 +109,16 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .checkbox.form__fieldset {
     padding-top: 65px;
+    padding-bottom: 13px;
   }
 
   .checkbox__legend.form__legend {
     width: 111px;
     margin-left: -4px;
+    padding-top: 2px;
   }
 
   .checkbox__list {
@@ -126,5 +127,12 @@
 
   .checkbox__item {
     margin-right: 25px;
+  }
+
+  .checkbox__field input[type="checkbox"] + .checkbox__indication {
+    top: -15px;
+    left: 4px;
+    width: 53px;
+    height: 54px;
   }
 }
