@@ -159,7 +159,7 @@
   .card__description {
     width: 310px;
     padding-right: 0;
-    padding-bottom: 21px;
+    padding-bottom: 23px;
     padding-top: 25px;
   }
 
@@ -171,28 +171,11 @@
     font-size: 20px;
   }
 
-  // .card__description.card__description--huge-basket {
-  //   margin-bottom: 0;
-  // }
-
-
-  // .card__description--laundry-basket .card__title {
-  //   margin-bottom: 9px;
-  // }
-
   .card__table {
     width: 240px;
     font-size: 15px;
     margin-bottom: 0;
   }
-
-  // .card__description--laundry-basket .card__table {
-  //   margin-bottom: 192px;
-  // }
-
-  // .card__description--huge-basket .card__table {
-  //   margin-bottom: 172px;
-  // }
 
   .card__table-row--inline {
     padding-left: 0;
@@ -224,7 +207,7 @@
   }
 
   .card__list {
-    width: 1050px;
+    width: 1049px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -234,16 +217,16 @@
 
   .card__item {
     width: 315px;
-
+    margin-bottom: 58px;
   }
 
   .card__link {
-    height: 460px;
+    height: 462px;
   }
 
   .card__img {
     width: 315px;
-    height: 460px;
+    height: 462px;
   }
 
   .card__description {
@@ -253,34 +236,26 @@
     width: 315px;
     min-height: 196px;
     padding-left: 23px;
+    padding-right: 23px;
     padding-top: 26px;
   }
 
   .card__title {
     @include indent-reset;
 
-    padding-bottom: 0;
-    padding-top: 0;
+    margin-bottom: 5px;
     padding-left: 2px;
-  }
-
-  .card__description--huge-basket .card__title {
-    padding-top: 0;
   }
 
   .card__table {
     margin-bottom: 0;
   }
 
-  .card__description--laundry-basket .card__table,
-  .card__description--huge-basket .card__table,
-  .card__description--laundry-basket .card__title {
-    margin-bottom: 0;
-  }
-
   .card__buy-line {
     @include indent-reset;
+
     padding-left: 3px;
+    margin-top: auto;
 
     &::before {
       width: 270px;

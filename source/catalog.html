@@ -5,14 +5,11 @@
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <!-- <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous"> -->
   <link href="css/style.min.css" rel="stylesheet">
   <script src="js/picturefill.min.js"></script>
 </head>
 
 <body class="no-js">
-
   <div style="display:none">
     <include src="build/img/sprite.svg"></include>
   </div>
@@ -119,7 +116,7 @@
               alt="Изображение корзинки для белья">
             </picture>
           </a>
-          <div class="card__description card__description--laundry-basket">
+          <div class="card__description">
             <a class="card__title" href="#">Корзинка для белья</a>
             <table class="card__table table">
               <tr class="card__table-row card__table-row--inline table__row">
@@ -157,7 +154,7 @@
               alt="Изображение большой корзинки для игрушек">
             </picture>
           </a>
-          <div class="card__description card__description--huge-basket">
+          <div class="card__description">
             <a class="card__title" href="#">Большая корзинка для игрушек</a>
             <table class="card__table table">
               <tr class="card__table-row card__table-row--inline table__row">
@@ -258,17 +255,9 @@
     </div>
     <div class="modal__overlay"></div>
   </section>
-  <script>
 
-    var cardLink = document.querySelectorAll(".card__basket");
-
-    for (var i = 0; i < cardLink.length; i++) {
-      console.log("Que tal? " + cardLink[i])
-    }
-
+  <script src="js/scripts.js">
   </script>
-  <!-- <script src="js/scripts.js">
-  </script> -->
 
 </body>
 

@@ -69,6 +69,7 @@
 
 .user-data__icon {
   position: absolute;
+  fill: rgba($color-secondary, 0.2);
 }
 
 .user-data__input:hover + .user-data__icon,
@@ -220,7 +221,7 @@
   .user-data__icon--mail {
     top: 12px;
     right: 70px
-}
+  }
 
   .user-data__email + .user-data__input {
     padding-bottom: 14px;
@@ -263,7 +264,7 @@
   .user-data.form__fieldset {
     margin-bottom: 30px;
     padding-top: 55px;
-}
+  }
 
   .user-data__fieldset {
     margin-bottom: 29px;
@@ -305,7 +306,7 @@
 
   .user-data__field--contacts.form__field {
     margin-bottom: 25px;
-}
+  }
 
   .user-data__field--contacts .user-data__input {
     padding-bottom: 15px
@@ -319,6 +320,7 @@
   .user-data__number + .user-data__input {
     letter-spacing: -0.9px;
   }
+
   .user-data__icon--number {
     top: 11px;
     right: 232px;
