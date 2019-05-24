@@ -26,19 +26,24 @@
 }
 
 .modal {
-  display: none;
+  display: block;
 }
 
 .modal--show {
   display: block;
 }
 
+.modal__form {
+  margin-bottom: 47px;
+}
+
 .modal__title {
-  width: 150px;
+  width: 160px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  padding-left: 5px;
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
@@ -47,24 +52,92 @@
   color: $color-secondary;
 }
 
+.modal__fieldset {
+  @include indent-reset;
+
+  border: none;
+}
+
 .modal__text {
-  margin-bottom: 20px;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
 }
 
 .modal__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
   width: 260px;
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   padding: 0;
+  list-style: none;
+}
+
+.modal__radio-item {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 79px;
+  box-sizing: border-box;
+
+  margin-right: 10px;
+}
+
+.modal__radio-item--l {
+  margin-right: 0;
+}
+
+.modal__label {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: 80px;
+  padding-left: 26px;
+  padding-top: 16px;
+  padding-right: 27px;
+  padding-bottom: 16px;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: $color-primary;
+  background-color: $color-white;
+}
+
+.modal__input[type="radio"] + .modal__radio-button {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 80px;
+  height: 51px;
+  border: 2px solid $color-tertiary;
+
+  &:hover {
+    border: 2px solid rgba(68, 68, 68, 0.3);
+  }
+
+  &:active {
+    border: 2px solid $color-green-light;
+    outline: none;
+  }
+}
+
+.modal__input[type="radio"]:checked + .modal__radio-button {
+  border: 2px solid $color-green-light;
+  outline: none;
 }
 
 .modal__btn {
   width: 258px;
   margin: 0 auto;
-  margin-bottom: 45px;
+
+  padding: 16px 25px 14px;
   color: $color-white;
   background-color: $color-green-light;
   border: none;
@@ -89,12 +162,34 @@
   }
 
   .modal__title {
-    width: 350px;
+    width: 450px;
+    margin-top: 32px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 57px;
+    font-weight: bold;
     text-align: center;
   }
 
   .modal__list {
     width: 350px;
+  }
+
+  .modal__radio-item {
+    width: 110px;
+    margin-right: 10px;
+  }
+
+  .modal__label {
+    width: 110px;
+  }
+
+  .modal__input[type="radio"] + .modal__radio-button {
+    width: 110px;
+  }
+
+  .modal__radio-item--l {
+    margin-right: 0;
   }
 
   .modal__btn {

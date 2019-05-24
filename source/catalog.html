@@ -245,23 +245,38 @@
       </p>
     </div>
   </footer>
+
   <section class="modal">
-    <div class="modal__position">
-      <div class="modal__wrapper wrapper">
-        <h2 class="modal__title">Добавить в корзину</h2>
-        <p class="modal__text">Выберите размер:</p>
-        <form action="https://echo.htmlacademy.ru" class="modal__form" method="post">
-          <ul class="modal__list size">
-            <li class="size__item"><button class="size__btn" type="button">S</button></li>
-            <li class="size__item"><button class="size__btn" type="button">M</button></li>
-            <li class="size__item"><button class="size__btn" type="button">L</button></li>
-          </ul>
+      <div class="modal__position">
+        <div class="modal__wrapper wrapper">
+          <h2 class="modal__title">Добавить в корзину</h2>
+          <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="modal__fieldset">
+              <legend class="modal__text">Выберите размер:</legend>
+            <ul class="modal__list">
+              <li class="modal__radio-item">
+                  <label class="modal__label" for="S">
+                  <input class="visually-hidden modal__input" id="S" name="size" type="radio">
+                  <span class="modal__radio-button modal__radio-button--s"></span>S</label>
+              </li>
+              <li class="modal__radio-item">
+                  <label class="modal__label" for="M">
+                  <input class="visually-hidden modal__input" id="M" name="size" type="radio">
+                  <span class="modal__radio-button modal__radio-button--m"></span>M</label>
+              </li>
+              <li class="modal__radio-item modal__radio-item--l">
+                  <label class="modal__label" for="L">
+                  <input class="visually-hidden modal__input" id="L" name="size" type="radio">
+                  <span class="modal__radio-button modal__radio-button--l"></span>L</label>
+              </li>
+            </ul>
+          </fieldset>
           <button class="btn modal__btn" type="submit">Добавить</button>
-        </form>
+          </form>
+        </div>
       </div>
-    </div>
-    <div class="modal__overlay"></div>
-  </section>
+      <div class="modal__overlay"></div>
+    </section>
 
   <script src="js/scripts.min.js"></script>
 </body>
