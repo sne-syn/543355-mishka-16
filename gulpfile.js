@@ -116,8 +116,8 @@ gulp.task("build", gulp.series(
   "css",
   "sprite",
   "html",
-  "compress",
-  //  "htmlmin"
+  "compress"
+//    "htmlmin"
 ));
 
 gulp.task("start", gulp.series("build", "server"));
@@ -130,13 +130,3 @@ gulp.task("webp", function () {
     }))
     .pipe(gulp.dest("build/img"));
 });
-
-//var svgmin = require("gulp-svgmin");
-//
-//gulp.task("svg", function () {
-//
-//    return gulp.src("source/img/*.svg")
-//        .pipe(svgmin())
-//        .pipe(gulp.dest("source/img/svg"));
-//});
-//
