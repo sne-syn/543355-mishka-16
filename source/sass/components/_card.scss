@@ -189,7 +189,6 @@
     margin-top: auto;
 
     &::before {
-      display: none;
       width: 270px;
       top: -21px;
     }
@@ -199,6 +198,7 @@
     bottom: 24;
     right: 0;
     width: 30px;
+    fill: rgba($color-secondary, 0.3);
   }
 }
 
