@@ -106,9 +106,8 @@
     }
   }
 
-
   .popular-product__section {
-    width: 760px;
+    width: 750px;
     margin-bottom: 118px;
   }
 
@@ -122,7 +121,7 @@
   .popular-product__mark {
     position: absolute;
     top: 12px;
-    right: 69px;
+    right: 60px;
     width: 85px;
     line-height: 17px;
     text-align: center;
@@ -131,20 +130,21 @@
   .popular-product__text {
     width: 300px;
     margin-bottom: 37px;
+    padding-left: 2px;
     line-height: 30px;
   }
 
   .popular-product__table {
     width: 300px;
-    margin-bottom: 56px;
-    margin-left: 2px;
+    margin-bottom: 57px;
+    margin-left: 3px;
     font-size: 15px;
     line-height: 30px;
   }
 
   .popular-product__table .table__header {
     padding-top: 3px;
-    padding-bottom: 6px;
+    padding-bottom: 5px;
   }
 
   .popular-product__table .table__cell {
@@ -156,7 +156,7 @@
   .popular-product__image {
     position: absolute;
     top: 106px;
-    right: 50px;
+    right: 42px;
   }
 
   .popular-product__price {

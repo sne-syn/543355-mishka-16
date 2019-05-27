@@ -49,7 +49,7 @@
 @media (min-width: $tablet-width) {
   .reviews {
     position: relative;
-    width: 768px;
+    width: 750px;
     padding-top: 77px;
     margin-bottom: 148px;
     background-image: url("../img/review@1x.jpg");
@@ -70,7 +70,7 @@
   }
 
   .reviews__title {
-    margin-left: -4px;
+    margin-left: -2px;
     margin-bottom: 49px;
     font-size: 43px;
     line-height: 50px;
@@ -78,11 +78,13 @@
 
   .reviews__list {
     margin: 0;
+    padding-left: 2px;
   }
 
   .reviews__text {
     width: 670px;
     margin-bottom: 57px;
+
   }
 
   .reviews__autor-name {
@@ -95,8 +97,9 @@
   .reviews__btn {
     position: absolute;
     top: 79px;
-    right: 48px;
+    right: 40px;
     width: 175px;
+    margin-bottom: 0;
     padding: 15px 25px 13px 20px;
   }
 }

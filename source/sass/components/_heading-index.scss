@@ -41,6 +41,10 @@
     width: auto;
 
     @include heading-primary--tablet;
+  }
+
+  .heading-index__text.wrapper {
+    @include indent-reset;
     padding-top: 154px;
   }
 }
