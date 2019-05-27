@@ -61,7 +61,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 51.41%;
+    width: 52%;
   }
 
   .user-menu__item {
@@ -108,6 +108,7 @@
     box-sizing: border-box;
     width: auto;
     padding-left: 27%;
+    text-align: right;
   }
 
   .user-menu__link .user-menu__icon--search {
@@ -116,7 +117,7 @@
   }
 
   .user-menu__link .user-menu__icon--cart {
-    left: 30px;
+    left: 12%;
   }
 }
 
