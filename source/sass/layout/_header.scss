@@ -43,20 +43,13 @@
   outline: none;
 }
 
-// .header__logo-link picture {
-//   box-sizing: border-box;
-//   margin-left: auto;
-//   margin-right: auto;
-//   padding-left: 3px;
-// }
-
 .header__single-line {
   display: none;
 }
 
 @media (min-width: $tablet-width) {
   .header__container {
-    width: 768px;
+    width: 87%;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -75,8 +68,7 @@
   }
 
   .header__logo {
-    width: 372px;
-    padding-left: 49px;
+    width: 48.15%;
   }
 
   .header__logo-link::after {
