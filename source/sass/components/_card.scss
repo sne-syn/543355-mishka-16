@@ -131,15 +131,20 @@
 
 @media (min-width: $tablet-width) {
   .card {
-    width: 768px;
+    width: 750px;
     margin-top: 70px;
+  }
+
+  .card.wrapper {
+    padding-left: 44px;
+    padding-right: 39px;
   }
 
   .card__list {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 670px;
+    width: 667px;
   }
 
   .card__item {
@@ -171,7 +176,7 @@
   .card__title {
     display: block;
     width: 240px;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     padding-left: 0;
     font-size: 20px;
   }

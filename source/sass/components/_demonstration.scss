@@ -79,7 +79,12 @@
 
 @media (min-width: $tablet-width) {
   .demonstration {
-    width: 768px;
+    width: 750px;
+  }
+
+  .demonstration.wrapper {
+    padding-left: 42px;
+    padding-right: 40px;
   }
 
   .demonstration__content {
@@ -120,8 +125,8 @@
   }
 
   .demonstration__play-button {
-    top: 187px;
-    left: 285px;
+    top: 188px;
+    left: 282px;
 
     &:hover,
     &:focus {
