@@ -11,6 +11,9 @@
 }
 
 .card__item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   width: 260px;
   margin-bottom: 29px;
   border: 1px solid $color-tertiary;
@@ -90,6 +93,7 @@
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
+  margin-top: auto;
 
   @include indent-reset;
   margin-top: auto;

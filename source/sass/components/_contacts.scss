@@ -68,7 +68,7 @@
   content: "";
   top: 24px;
   left: 0;
-  width: 185px;
+  width: 180px;
   height: 1px;
   background-color: $color-green-light;
 }
@@ -147,7 +147,7 @@
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 48px;
-    padding-left: 22px;
+    padding-left: 24px;
     padding-right: 0;
     font-size: 43px;
     line-height: 50px;
@@ -156,7 +156,7 @@
       position: absolute;
       content: "";
       top: -14px;
-      right: 72px;
+      right: 70px;
       width: 4px;
       height: 80px;
       background-color: #221f1f;
@@ -166,7 +166,7 @@
       position: absolute;
       content: "";
       top: -12px;
-      right: 29px;
+      right: 27px;
       width: 0;
       height: 0;
       border-style: solid;
@@ -187,6 +187,14 @@
 
   .contacts__table-row--direction {
     margin-left: 50px;
+  }
+
+  .contacts__table-row .contacts__table-header {
+    width: 78px;
+  }
+
+  .contacts__email::before {
+    width: 200px;
   }
 
   .contacts__direction {
@@ -222,7 +230,7 @@
   .contacts {
     position: relative;
     width: 1150px;
-    margin-bottom: 105px;
+    margin-bottom: 102px;
 
     &::after {
       display: none;
@@ -278,6 +286,11 @@
       top: 145px;
       left: 239px;
     }
+  }
+
+  .contacts__email::before {
+    top: 26px;
+    width: 203px;
   }
 
   .contacts__btn {

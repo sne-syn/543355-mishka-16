@@ -96,16 +96,15 @@
 
   .popular-product__title {
     position: relative;
-    margin-left: -3px;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
     font-size: 43px;
     line-height: 50px;
   }
 
   .popular-product__mark {
     position: absolute;
-    top: 10px;
-    right: 70px;
+    top: 12px;
+    right: 69px;
     width: 85px;
     line-height: 17px;
     text-align: center;
@@ -120,6 +119,7 @@
   .popular-product__table {
     width: 300px;
     margin-bottom: 56px;
+    margin-left: 2px;
     font-size: 15px;
     line-height: 30px;
   }
@@ -131,7 +131,8 @@
 
   .popular-product__table .table__cell {
     vertical-align: middle;
-    padding-left: 6px;
+    padding-left: 7px;
+    padding-top: 1px;
   }
 
   .popular-product__image {
@@ -148,7 +149,7 @@
   }
 
   .popular-product__btn {
-    width: 290px;
+    width: 292px;
   }
 }
 

@@ -82,13 +82,20 @@
 
   .reviews__text {
     width: 670px;
-    margin-bottom: 55px;
+    margin-bottom: 57px;
+  }
+
+  .reviews__autor-name {
+    display: block;
+    padding-bottom: 4px;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .reviews__btn {
     position: absolute;
-    top: 78px;
-    right: 49px;
+    top: 79px;
+    right: 48px;
     width: 175px;
     padding: 15px 25px 13px 20px;
   }
