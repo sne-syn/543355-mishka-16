@@ -43,10 +43,6 @@
   box-shadow: 0 0 0 30px white inset;
 }
 
-.user-data__field--contacts .user-data__input:focus {
-  background-color: $color-white;
-}
-
 .user-data__number.form__legend::before {
   top: 12px;
 }
@@ -200,6 +196,13 @@
     padding-bottom: 15px;
     padding-right: 55px;
     background-color: #f1f1f1;
+  }
+
+  .user-data__field--contacts .user-data__input:-webkit-autofill,
+  .user-data__field--contacts .user-data__input:-webkit-autofill:hover,
+  .user-data__field--contacts .user-data__input:-webkit-autofill:focus,
+  .user-data__field--contacts .user-data__input:-webkit-autofill:active {
+    box-shadow: 0 0 0 30px #f1f1f1 inset;
   }
 
   .user-data__number.form__legend,
