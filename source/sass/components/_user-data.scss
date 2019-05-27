@@ -161,6 +161,19 @@
     letter-spacing: 0.5px;
   }
 
+  .user-data__field .user-data__name {
+    width: 53px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .user-data__field .user-data__surname,
+  .user-data__field .user-data__patronymic {
+    width: 108px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
   .user-data__name + .user-data__input {
     width: 428px;
     margin-left: 15px;
