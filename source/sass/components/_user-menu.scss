@@ -124,14 +124,27 @@
 @media (min-width: $desktop-width) {
   .user-menu {
     order: 5;
-    width: 400px;
+    width: 350px;
+  }
+
+  .user-menu__item--search {
+    width: 83px;
+    height: 88px;
+  }
+
+  .user-menu__item--cart {
+    width: 265px;
   }
 
   .user-menu__item--cart .user-menu__link {
     order: 2;
-    width: 300px;
+    width: 265px;
     box-sizing: border-box;
     padding-left: 83px;
     padding-top: 0;
   }
+
+  .user-menu__link .user-menu__icon--cart {
+    left: 32px;
+}
 }

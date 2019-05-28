@@ -95,36 +95,35 @@
 
 @media (min-width: $desktop-width) {
   .menu {
-    width: 500px;
+    width: 447px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   .menu__item {
-    width: 225px;
+    width: 226px;
     box-sizing: border-box;
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 0;
     border: none;
   }
 
   .menu .menu__item.menu__item--new,
   .menu .menu__item.menu__item--sale {
     display: block;
-    width: 222px;
     padding-top: 15px;
     border: none;
   }
 
-  .menu__item--new {
-    padding-left: 5px;
+  .menu .menu__item.menu__item--new, {
+    width: 219px;
   }
 
-  .menu__item--sale {
-    padding-left: 0;
+  .menu .menu__item.menu__item--sale {
+    width: 227px;
   }
-
   .menu__item--sale a,
   .menu__item--new a {
     font-size: 15px;
@@ -136,24 +135,22 @@
   }
 
   .menu__item--catalog {
-    width: 194px;
-    padding-left: 3px;
+    width: 220px;
+    padding-left: 0;
     padding-bottom: 36px;
     border-right: 1px solid #ececec;
   }
 
-  .menu__item--order {
-    padding-left: 24px;
-  }
 
   .menu__item--order a,
   .menu__item--catalog a {
     font-size: 17px;
+    padding-left: 0;
   }
 
   .menu .menu__link {
-    width: 180px;
-    margin: 0 auto;
+    width: 185px;
+    margin: 0;
     text-align: left;
   }
 }
