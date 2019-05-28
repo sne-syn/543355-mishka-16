@@ -35,27 +35,25 @@
   }
 
   .slider__btn {
+    position: absolute;
     width: 85px;
+    top: -84px;
     border: none;
   }
 
   .slider__btn--back {
-    position: absolute;
-    top: -83px;
-    right: 91px;
+    right: 89px;
   }
 
   .slider__btn--forward {
-    position: absolute;
-    top: -83px;
-    right: 4px;
+    right: 2px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .slider__btn {
     border: none;
-    top: -85px;
+    top: -100px;
   }
 
   .slider__btn--forward {

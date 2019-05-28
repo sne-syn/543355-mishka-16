@@ -78,7 +78,6 @@
     margin-bottom: 50px;
   }
 
-
   .form__legend {
     width: 165px;
     letter-spacing: 0;
@@ -100,9 +99,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 768px;
-    padding-left: 50px;
-    padding-right: 49px;
+    width: 750px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .form__small-note {
@@ -135,10 +134,10 @@
     width: 110px;
   }
 
-  .form__submit-wrapper {
-    width: 1150px;
-    padding-left: 225px;
-    padding-right: 222px;
+  .form .form__submit-wrapper {
+    width: 1050px;
+    padding-left: 176px;
+    padding-right: 172px;
   }
 }
 

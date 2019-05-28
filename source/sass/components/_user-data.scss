@@ -161,6 +161,19 @@
     letter-spacing: 0.5px;
   }
 
+  .user-data__field .user-data__name {
+    width: 53px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .user-data__field .user-data__surname,
+  .user-data__field .user-data__patronymic {
+    width: 108px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
   .user-data__name + .user-data__input {
     width: 428px;
     margin-left: 15px;
@@ -208,7 +221,7 @@
   .user-data__number.form__legend,
   .user-data__email.form__legend {
     align-self: center;
-    width: 165px;
+    width: 168px;
     margin-bottom: 0;
   }
 
@@ -218,12 +231,12 @@
 
   .user-data__icon--number {
     top: 12px;
-    right: 74px;
+    right: 67px;
   }
 
   .user-data__icon--mail {
     top: 12px;
-    right: 70px;
+    right: 62px;
   }
 
   .user-data__email + .user-data__input {
@@ -261,7 +274,7 @@
 
 @media (min-width: $desktop-width) {
   .user-data .wrapper {
-    padding-left: 111px;
+    padding-left: 62px;
   }
 
   .user-data.form__fieldset {
@@ -274,11 +287,25 @@
   }
 
   .user-data__legend {
-    width: 116px;
+    width: 115px;
+    margin-top: 20px;
   }
 
   .user-data__field {
     margin-bottom: 21px;
+  }
+
+  .user-data__field label {
+    margin-top: -4px;
+  }
+
+  .user-data__field .user-data__name {
+    width: 50px;
+  }
+
+  .user-data__field .user-data__patronymic,
+  .user-data__field .user-data__surname {
+    width: 105px;
   }
 
   .user-data__input {
@@ -318,6 +345,7 @@
   .user-data__number + .user-data__input,
   .user-data__email + .user-data__input {
     width: 700px;
+    padding-left: 14px;
   }
 
   .user-data__number + .user-data__input {
@@ -326,12 +354,12 @@
 
   .user-data__icon--number {
     top: 11px;
-    right: 232px;
+    right: 183px;
   }
 
   .user-data__icon--mail {
     top: 11px;
-    right: 227px;
+    right: 178px;
   }
 
   .user-data--suggestion {

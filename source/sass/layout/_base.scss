@@ -14,10 +14,6 @@
   src: local("Open Sans Bold"), local("Open Sans-Bold"), url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
 }
 
-// * {
-//   outline: 1px solid $color-green-light;
-// }
-
 html {
   box-sizing: border-box;
 }
@@ -38,6 +34,10 @@ body {
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   color: $color-primary;
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    overflow-x: hidden;
+  }
 }
 
 @media (min-width: $tablet-width) {

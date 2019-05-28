@@ -7,7 +7,8 @@
   background-size: 582px auto;
   background-color: #f9f9f9;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
   }
 }
@@ -17,41 +18,31 @@
   @include indent-reset;
 
   width: 320px;
-  padding-top: 72px;
+  padding-top: 70px;
 }
 
 @media (min-width: $tablet-width) {
   .heading-index {
     position: relative;
     min-height: 746px;
-    margin-top: -70px;
+    margin-top: -69px;
     background-image: url("../img/hero-tablet@1x.jpg");
-    background-size: 1150px auto;
-    background-position: 49% 0;
+    background-size: 1148px auto;
+    background-position: 50% 0;
 
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -13px;
-      left: 0;
-      width: 100%;
-      height: 25px;
-      background-image: url("../img/bg-zigzag-fill.svg");
-      background-size: auto 23px;
-      z-index: 5;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
     }
   }
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/hero-tablet@2x.jpg");
-  }
-
   .heading-index__text {
-    width: 610px;
+    width: auto;
 
     @include heading-primary--tablet;
+  }
 
+  .heading-index__text.wrapper {
+    @include indent-reset;
     padding-top: 154px;
   }
 }
@@ -61,17 +52,11 @@
     min-height: 750px;
     margin-top: -70px;
     background-image: url("../img/hero-desktop@1x.jpg");
-    background-size: 1148px auto;
+    background-size: 1150px auto;
     background-position-x: 50%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
-    }
-
-    &::after {
-      bottom: 0;
-      background-size: auto 37px;
-      background-position-x: 70px;
     }
   }
 
@@ -79,5 +64,9 @@
     width: 720px;
 
     @include heading-primary--desktop;
+  }
+
+  .heading-index__text.wrapper {
+    margin: 0 auto;
   }
 }

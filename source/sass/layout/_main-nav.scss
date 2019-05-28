@@ -74,6 +74,7 @@
   .main-nav {
     order: 2;
     display: flex;
+    width: 48.15%;
     margin: 0;
   }
 
@@ -85,11 +86,12 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     order: -1;
-    // flex-direction: row;
-    // justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 450px;
   }
 
   .main-nav__list {
-    width: 1150px;
+    width: 1135px;
   }
 }

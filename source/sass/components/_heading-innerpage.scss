@@ -30,6 +30,7 @@
   .heading-innerpage__text {
     display: block;
     margin-top: 24px;
+    padding: 0;
 
     @include heading-primary--tablet;
   }

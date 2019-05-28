@@ -42,8 +42,10 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(rename("style.css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
-    .pipe(rename("style.min.css"))
+    .pipe(rename({ suffix: '-min' }))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"));
 });
@@ -97,9 +99,8 @@ gulp.task("html", function () {
 
 
 gulp.task("compress", function (done) {
-  gulp.src("source/js/scripts.js")
+  gulp.src("source/js/*.js")
     .pipe(minify())
-    .pipe(rename("scripts.min.js"))
     .pipe(gulp.dest("build/js"))
   done();
 });
@@ -121,7 +122,6 @@ gulp.task("build", gulp.series(
 ));
 
 gulp.task("start", gulp.series("build", "server"));
-
 
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")

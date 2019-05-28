@@ -11,8 +11,11 @@
 }
 
 .card__item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   width: 260px;
-  margin-bottom: 29px;
+  margin-bottom: 31px;
   border: 1px solid $color-tertiary;
 
   &:hover {
@@ -39,7 +42,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 27px 26px 25px;
+  padding: 26px 26px 24px;
 }
 
 .card__title {
@@ -62,7 +65,6 @@
 
 .card__table {
   width: 205px;
-  margin-bottom: 37px;
   font-size: 13px;
 }
 
@@ -71,33 +73,30 @@
   padding-left: 1px;
 }
 
-.card__table-header {
-  display: inline;
-
-  @include indent-reset;
-}
-
+.card__table-header,
 .card__table-cell {
   display: inline;
 
   @include indent-reset;
+  padding-right: 2px;
 }
 
 .card__buy-line {
+  @include indent-reset;
+
   position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
-
-  @include indent-reset;
-  margin-top: auto;
+  margin-top: 14px;
+  padding-top: 21px;
 
   &::before {
     position: absolute;
     content: "";
-    top: -19px;
+    top: 3px;
     left: 4px;
     width: 202px;
     height: 1px;
@@ -110,10 +109,12 @@
   width: 110px;
   line-height: 24px;
   font-weight: bold;
+  color: $color-secondary;
 }
 
 .card__basket {
   width: 21px;
+  fill: rgba($color-secondary, 0.3);
 }
 
 .card__basket:hover .card__icon,
@@ -127,22 +128,27 @@
 
 @media (min-width: $tablet-width) {
   .card {
-    width: 768px;
+    width: 750px;
     margin-top: 70px;
+  }
+
+  .card.wrapper {
+    padding-left: 44px;
+    padding-right: 39px;
   }
 
   .card__list {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 670px;
+    width: 667px;
   }
 
   .card__item {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 667px;
+    width: 665px;
     margin-bottom: 53px;
   }
 
@@ -182,15 +188,21 @@
     padding-left: 0;
   }
 
+  .card__table-header,
+  .card__table-cell {
+    padding-right: 3px;
+  }
+
   .card__buy-line {
     @include indent-reset;
 
-    padding-left: 5px;
     margin-top: auto;
+    padding-top: 35px;
+    padding-left: 5px;
 
     &::before {
       width: 270px;
-      top: -21px;
+      top: 15px;
     }
   }
 
@@ -204,11 +216,16 @@
 
 @media (min-width: $desktop-width) {
   .card {
-    width: 1150px;
+    width: 1050px;
+  }
+
+  .card.wrapper {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .card__list {
-    width: 1049px;
+    width: 1050px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -252,15 +269,21 @@
     margin-bottom: 0;
   }
 
+  .card__table-header,
+  .card__table-cell {
+    padding-right: 4px;
+  }
+
   .card__buy-line {
     @include indent-reset;
 
-    padding-left: 3px;
     margin-top: auto;
+    padding-top: 35px;
+    padding-left: 3px;
 
     &::before {
-      width: 270px;
-      top: -21px;
+      width: 250px;
+      top: 14px;
     }
   }
 

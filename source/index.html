@@ -6,14 +6,14 @@
   <title>HTML Academy: Мишка</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <link rel="preload" href="css/style.min.css" as="style">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="css/style-min.css" as="style">
+  <link href="css/style-min.css" rel="stylesheet">
 
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="js/scripts.min.js" as="script">
+  <link rel="preload" href="js/scripts-min.js" as="script">
 
-  <script src="js/picturefill.min.js"></script>
+  <script src="js/picturefill-min.js"></script>
 </head>
 
 <body class="no-js">
@@ -24,11 +24,13 @@
   <header class="header">
     <div class="header__container">
       <div class="header__logo">
+        <span class="header__logo-link header__logo-link--no-active">
         <picture>
           <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
         </picture>
+      </span>
       </div>
 
       <nav class="main-nav main-nav--nojs main-nav--closed">
@@ -71,18 +73,23 @@
       <h1 class="heading-index__text wrapper">Милые штуки ручной<br> работы для дома</h1>
     </div>
     <div class="type">
-      <div class="type__item type__item-interior">
-        <div class="type__box"><a class="type__link" href="#">Предметы интерьера<svg
-              class="type__icon type__icon--interior" width="60" height="60">
-              <use xlink:href="#sprite-icon-interior"></use>
-            </svg></a></div>
-      </div>
-      <div class="type__item type__item-toys">
-        <div class="type__box"><a class="type__link" href="#">Детские игрушки<svg class="type__icon type__icon--toys"
+      <a class="type__item type__item-interior" href="#">
+        <div class="type__box">
+          <p class="type__name">Предметы интерьера<svg
+            class="type__icon type__icon--interior" width="60" height="60">
+            <use xlink:href="#sprite-icon-interior"></use>
+        </svg></p>
+        </div>
+      </a>
+      <a class="type__item type__item-toys" href="#">
+        <div class="type__box">
+          <p class="type__name">Детские игрушки<svg class="type__icon type__icon--toys"
               width="60" height="60">
               <use xlink:href="#sprite-icon-toy"></use>
-            </svg></a></div>
-      </div>
+            </svg>
+          </p>
+        </div>
+      </a>
     </div>
     <div class="popular-product">
       <section class="popular-product__section wrapper">
@@ -235,32 +242,15 @@
             </svg><span class="visually-hidden">Twitter</span></a>
         </li>
       </ul>
-      <p class="footer__copyright">Разработано<a class="footer__copyright-link"
-          href="https://htmlacademy.ru/intensive/adaptive"><svg class="footer__copyright-icon" width="27" height="34">
+      <div class="footer__copyright">
+        <a class="footer__copyright-link"
+          href="https://htmlacademy.ru/intensive/adaptive">Разработано<svg class="footer__copyright-icon" width="27" height="35">
             <use xlink:href="#sprite-logo-htmlacademy"></use>
           </svg><span class="visually-hidden">HTML Academy</span>
         </a>
-      </p>
-    </div>
-  </footer>
-  <!-- <section class="modal">
-    <div class="modal__position">
-      <div class="modal__wrapper wrapper">
-        <h2 class="modal__title">Добавить в корзину</h2>
-        <p class="modal__text">Выберите размер:</p>
-        <form action="https://echo.htmlacademy.ru" class="modal__form" method="post">
-          <ul class="modal__list size">
-            <li class="size__item"><button class="size__btn" type="button">S</button></li>
-            <li class="size__item"><button class="size__btn" type="button">M</button></li>
-            <li class="size__item"><button class="size__btn" type="button">L</button></li>
-          </ul>
-          <button class="btn modal__btn" type="submit">Добавить</button>
-        </form>
       </div>
     </div>
-    <div class="modal__overlay"></div>
-  </section> -->
-
+  </footer>
   <section class="modal">
     <div class="modal__position">
       <div class="modal__wrapper wrapper">
@@ -292,8 +282,8 @@
     </div>
     <div class="modal__overlay"></div>
   </section>
+  <script src="js/scripts-min.js"></script>
 
-  <script src="js/scripts.min.js"></script>
 </body>
 
 </html>
