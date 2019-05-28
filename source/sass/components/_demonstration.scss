@@ -114,7 +114,7 @@
 
   .demonstration__description {
     width: 590px;
-    margin-bottom: 35px;
+    margin-bottom: 37px;
     font-size: 15px;
     line-height: 30px;
   }
@@ -153,7 +153,12 @@
 
 @media (min-width: $desktop-width) {
   .demonstration {
-    width: 1150px;
+    width: 1050px;
+  }
+
+  .demonstration.wrapper {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .demonstration__content {
