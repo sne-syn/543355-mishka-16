@@ -188,7 +188,7 @@
 
   .popular-product__section {
     position: relative;
-    width: 1150px;
+    width: 1050px;
     margin-bottom: 160px;
     &::after {
       content: "";
@@ -216,19 +216,20 @@
 
   .popular-product__mark {
     top: 15px;
-    left: 89px;
+    left: 40px;
   }
 
   .popular-product__text {
     width: 300px;
     margin-left: 175px;
     margin-bottom: 49px;
+    padding-left: 0;
   }
 
   .popular-product__table {
     width: 290px;
     margin-left: 176px;
-    margin-bottom: 111px;
+    margin-bottom: 109px;
   }
 
   .popular-product__table .table__header {
@@ -251,6 +252,6 @@
 
   .popular-product__image {
     top: -52px;
-    right: 50px;
+    right: 0;
   }
 }
