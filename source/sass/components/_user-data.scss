@@ -274,7 +274,7 @@
 
 @media (min-width: $desktop-width) {
   .user-data .wrapper {
-    padding-left: 111px;
+    padding-left: 62px;
   }
 
   .user-data.form__fieldset {
@@ -287,11 +287,24 @@
   }
 
   .user-data__legend {
-    width: 116px;
+    width: 115px;
+    margin-top: 20px;
   }
 
   .user-data__field {
     margin-bottom: 21px;
+  }
+
+  .user-data__field label {
+    margin-top: -4px;
+  }
+
+  .user-data__field .user-data__name {
+    width: 50px;
+  }
+
+  .user-data__field .user-data__patronymic, .user-data__field .user-data__surname {
+    width: 105px;
   }
 
   .user-data__input {
@@ -331,6 +344,7 @@
   .user-data__number + .user-data__input,
   .user-data__email + .user-data__input {
     width: 700px;
+    padding-left: 14px;
   }
 
   .user-data__number + .user-data__input {
@@ -339,12 +353,12 @@
 
   .user-data__icon--number {
     top: 11px;
-    right: 232px;
+    right: 183px;
   }
 
   .user-data__icon--mail {
     top: 11px;
-    right: 227px;
+    right: 178px;
   }
 
   .user-data--suggestion {
