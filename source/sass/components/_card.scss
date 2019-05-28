@@ -83,6 +83,7 @@
 }
 
 .card__buy-line {
+  @include indent-reset;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -90,8 +91,8 @@
   align-items: baseline;
   justify-content: space-between;
   margin-top: auto;
-
-  @include indent-reset;
+  margin-top: 14px;
+  padding-top: 21px;
 
   &::before {
     position: absolute;
@@ -267,8 +268,6 @@
     @include indent-reset;
 
     padding-left: 3px;
-    margin-top: 14px;
-    padding-top: 21px;
 
     &::before {
       width: 270px;
