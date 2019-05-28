@@ -4,9 +4,9 @@
 
 .user-menu__item {
   position: relative;
-  padding-top: 26px;
+  padding-top: 27px;
   padding-bottom: 28px;
-  padding-left: 4px;
+  padding-left: 0;
   list-style: none;
 }
 
@@ -42,7 +42,7 @@
 
 .user-menu__link .user-menu__icon {
   position: absolute;
-  top: 3px;
+  top: 5px;
   left: 30px;
   fill: rgba($color-secondary, 0.3);
 }
