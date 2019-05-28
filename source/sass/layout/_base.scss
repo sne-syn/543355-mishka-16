@@ -36,10 +36,8 @@ body {
   color: $color-primary;
 
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    body {
       overflow-x: hidden;
     }
-  }
 }
 
 @media (min-width: $tablet-width) {
