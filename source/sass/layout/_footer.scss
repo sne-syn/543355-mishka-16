@@ -108,8 +108,12 @@
 
 @media (min-width: $desktop-width) {
   .footer__wrapper {
-    width: 1150px;
-    padding-top: 48px;
+    width: 1050px;
+    padding-top: 50px;
+  }
+
+  .footer__logo {
+    margin-right: 85px;
   }
 
   .footer__copyright {

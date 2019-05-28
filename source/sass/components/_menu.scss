@@ -135,12 +135,16 @@
   }
 
   .menu__item--catalog {
-    width: 220px;
+    width: 185px;
     padding-left: 0;
     padding-bottom: 36px;
     border-right: 1px solid #ececec;
   }
 
+  .menu__item--order  {
+    width: 260px;
+    padding-left: 34px;
+  }
 
   .menu__item--order a,
   .menu__item--catalog a {

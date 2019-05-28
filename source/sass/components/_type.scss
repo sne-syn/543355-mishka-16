@@ -120,13 +120,8 @@
 
 @media (min-width: $desktop-width) {
   .type {
+    width: 1050px;
     margin: -125px auto 47px;
-
-    &::after {
-      bottom: -10px;
-      background-size: auto 37px;
-      background-position-x: 84px;
-    }
   }
 
   .type__item {

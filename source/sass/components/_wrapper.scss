@@ -11,3 +11,10 @@
     padding-right: 38px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

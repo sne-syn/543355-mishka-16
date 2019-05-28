@@ -172,15 +172,24 @@
 }
 
 @media (min-width: $desktop-width) {
-  .popular-product::after {
-    display: none;
+  .popular-product {
+
+    &::before {
+      top: -140px;
+      background-size: auto 35px;
+      background-position-x: 76px;
+      background-repeat: repeat-x;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 
   .popular-product__section {
     position: relative;
     width: 1150px;
     margin-bottom: 160px;
-
     &::after {
       content: "";
       position: absolute;
