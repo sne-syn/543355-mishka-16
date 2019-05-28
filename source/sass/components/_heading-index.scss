@@ -8,7 +8,7 @@
   background-color: #f9f9f9;
 
   @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
+    (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
   }
 }
@@ -30,9 +30,7 @@
     background-size: 1148px auto;
     background-position: 50% 0;
 
-
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
     }
   }
@@ -57,8 +55,7 @@
     background-size: 1150px auto;
     background-position-x: 50%;
 
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
     }
   }

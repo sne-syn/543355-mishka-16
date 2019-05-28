@@ -55,14 +55,13 @@
   fill: $color-green-light;
 }
 
-  .footer__copyright:hover svg.footer__copyright-icon {
-    fill: #46c1ae;
-  }
+.footer__copyright:hover svg.footer__copyright-icon {
+  fill: #46c1ae;
+}
 
-  .footer__copyright:active svg.footer__copyright-icon {
-    fill: rgba($color-green-light, 0.3);
-  }
-
+.footer__copyright:active svg.footer__copyright-icon {
+  fill: rgba($color-green-light, 0.3);
+}
 
 @media (min-width: $tablet-width) {
   .footer__wrapper {
